@@ -3,13 +3,16 @@
 body {
   background-color: #fff;
   /* change font font-family */
-  text-align: center;
+  /* To hide the Horizontzl Scroll */
+  max-width: 100%;
+  overflow-x: hidden;
+  scrollbar-base-color: #53bf9d;
 }
 
 /* Doted Horizontal Rule */
 hr {
   border-style: dotted none none;
-  border-color: rgb(240, 240, 240);
+  border-color: rgb(255, 255, 255);
   border-width: 4px;
   height: 0px;
   width: 5%;
@@ -18,7 +21,8 @@ hr {
 /* Header Section */
 
 #Header .container-fluid {
-  height: 40em;
+  height: 42em;
+  width: 100%;
   /* negative margin is used to make expand the header section and fill while background */
   text-align: center;
   line-height: 1;
@@ -46,29 +50,30 @@ hr {
 }
 
 .ShortIntro {
-  font-size: 15px;
+  font-size: 1rem;
   font-family: monospace;
 }
 /* Quote section */
 
-.firstQuote {
+.container-fluid .firstQuote {
   display: block;
-  padding: 50px 5px 50px;
-  margin: auto;
+  background-color: beige;
+  padding: 4rem 0.4rem;
+  margin: 0px -10px;
   color: #000;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* About section */
-#About .container-fluid {
-  height: 40rem;
-  color: #fff;
-  background-color: #125b50;
-  position: relative;
-}
 .text_box {
   padding: 6em;
+}
+
+/* Skill section */
+.skill-div {
+  height: 20rem;
+  background-color: #53bf9d;
 }
 
 /* Android Responsive */
@@ -76,5 +81,8 @@ hr {
   .firstQuote {
     padding: 30px 10px;
     font-size: 1rem;
+  }
+  .text_box {
+    padding: 0px;
   }
 }
