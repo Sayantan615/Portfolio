@@ -3,19 +3,21 @@
 html {
   margin: 0%;
   padding: 0%;
-  width: 100%;
+  width: auto;
+  height: auto;
+  overflow-x: hidden;
 }
-section{
-  margin: auto;
-  padding: 0px;
-}
+
 body {
   background-color: #fff;
   /* change font font-family */
   font-family: "Montserrat";
   /* To hide the Horizontzl Scroll */
+  margin: 0%;
+  padding: 0%;
+  width: auto;
+  height: auto;
   overflow-x: hidden;
-  scrollbar-face-color: #000;
 }
 
 /* Doted Horizontal Rule */
@@ -33,15 +35,11 @@ body {
 nav {
   background-color: #53bf9d;
 }
-.navbar-brand {
-  font-size: 2rem;
-}
 /* Header Section */
 
-.name-div {
-  padding: 5%;
+#Header {
+  padding: 7%;
   height: 400%;
-  max-width: 100%;
   padding-bottom: 10%;
   /* negative margin is used to make expand the header section and fill while background */
   text-align: center;
@@ -51,7 +49,6 @@ nav {
 }
 
 .img-1 {
-  display: block;
   margin-right: auto;
   margin-left: auto;
   margin-top: 1%;
@@ -67,7 +64,7 @@ nav {
 }
 .Name {
   font-family: "sacramento";
-  font-size: 500%;
+  font-size: 450%;
   color: #fff;
 }
 
@@ -78,7 +75,6 @@ nav {
 /* Quote section */
 
 .firstQuote .container-fluid {
-  /* display: block; */
   background-color: beige;
   padding: 4rem 4rem;
   margin: 0px;
@@ -100,12 +96,22 @@ nav {
 
 /* Android Responsive */
 @media (max-width: 530px) and (min-width: 0px) {
-  .firstQuote {
+  /* .firstQuote {
     padding: 0px 0px;
+    font-size: 0.2rem;
+  } */
+  .firstQuote .container-fluid{
+    padding: 2rem 2rem;
     font-size: 1rem;
   }
   .text_box {
     padding: 2em;
     height: max-content;
+  }
+  .Name {
+    font-size: 350%;
+  }
+  .ShortIntro {
+    font-size: 0.7rem;
   }
 }
