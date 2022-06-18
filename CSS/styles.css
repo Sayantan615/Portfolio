@@ -1,6 +1,9 @@
 /* CSS */
 /* body */
-html body{
+* {
+  box-sizing: border-box;
+}
+html body {
   margin: 0%;
   padding: 0%;
   width: auto;
@@ -36,6 +39,9 @@ body {
 }
 h3 {
   font-weight: bolder;
+}
+div {
+  display: block;
 }
 
 /* Navbar */
@@ -106,10 +112,45 @@ nav {
   padding: 6rem;
 }
 
-/* Skill section */
-
-#skills {
+.btn-1 {
+  background-color: #000;
+  color: #fff;
+  transition: transform 0.3s ease;
 }
+
+.btn-1::after,
+.btn-1::before {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  background-color: #000;
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-1:hover {
+  transform: translate(-6px, -6px);
+}
+
+.btn-1:hover::after {
+  transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before {
+  transform: translate(12px, 12px);
+}
+
+/* Skill section */
 
 .skill-div {
   height: 20rem;
@@ -118,23 +159,39 @@ nav {
   padding: 4rem;
 }
 /* Project Section */
-.project-div {
+.info-div {
   text-align: center;
-  border: #000 solid 2px;
+  padding: 0rem;
 }
-.row {
-  width: 100%;
-  padding: 0%;
+#Projects .container {
   margin: 0%;
-  box-sizing: border-box;
+  padding: 4rem;
+  max-width: 100%;
+  background-color: #fff;
 }
-.p{
-  display: ;
-  height: 12rem;
-  width: 12rem;
-  margin: 2rem auto;
-  border:5px solid black;
+#Projects .project-grid {
+  margin: 1rem 0rem 2rem;
+  /* box-sizing: border-box; */
 }
+
+.columns {
+  padding: 2% 20%;
+  display: grid;
+  gap: 0.5em;
+}
+
+.Contaner-div:hover {
+  box-shadow: 4px 4px rgb(0, 0, 0);
+}
+.Contaner-div{
+  margin: 0.2rem;
+  height: 10rem;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  background-color: blanchedalmond;
+}
+
 
 /* Contact Section */
 #Contact {
@@ -143,6 +200,21 @@ nav {
 }
 #Contact .innerdiv {
   height: 12rem;
+}
+
+/* Desktop Special */
+@media screen and (min-width: 1080px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .column:last-child:nth-child(3n-2) {
+    grid-column-end: 3; */
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Android Responsive */
@@ -164,6 +236,11 @@ nav {
   .firstQuote .container-fluid {
     padding: 2rem 2rem;
     font-size: 1rem;
+  }
+  /* Project Section  */
+  #Projects .container {
+    margin: 0%;
+    padding: 4rem 1rem;
   }
 }
 
