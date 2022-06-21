@@ -46,29 +46,29 @@ div {
 
 /* Navbar */
 nav {
-  /* background-color: #53bf9d; */
-  background: #fff;
+  background: #53bf9d;
 }
-.hid {
-  visibility: hidden;
+.navbar-brand {
   position: absolute;
+  visibility: hidden;
 }
-nav {
-  border: #fff;
+.nav-link {
+  color: #fff;
 }
 /* Header Section */
 
 #Header {
   padding: 5%;
-  height: 40rem;
-  /* padding-bottom: 20%; */
-  /* negative margin is used to make expand the header section and fill while background */
+  height: 100%;
   text-align: center;
   line-height: 1;
   /* background-color: #53bf9d; */
-  background: linear-gradient(to bottom, #53bf9d,rgb(226, 146, 224));
+  background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
   margin: auto;
 }
+/* #auotheight{
+  height: 100%;
+} */
 #Header .container-fluid {
   display: inline-block;
   padding-top: 1rem;
@@ -202,7 +202,7 @@ nav {
 }
 /* Hobby Section */
 #Hobbys {
-  background-color: rgb(226, 146, 224);
+  /* background-color: rgb(226, 146, 224); */
   margin-top: 0%;
   /* height: 200px; */
   height: 50vh;
@@ -214,16 +214,19 @@ nav {
   /* padding-bottom: 5px; */
 }
 #Contact .innerdiv {
-  height: 10rem;
+  height: 20rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
 }
 
 #Contact ul {
   position: relative;
   z-index: 1;
   display: flex;
+  align-self: flex-end;
+  padding: 0%;
 }
 
 #Contact ul li {
@@ -231,7 +234,7 @@ nav {
   list-style: none;
   margin: 10px;
 }
-
+/* Make it more down and center */
 #Contact ul li a {
   overflow: hidden;
   position: relative;
@@ -322,14 +325,18 @@ nav {
 
 @media screen and (max-width: 768px) {
   /* For Hidden Navbar */
-  /* .navbar {
+  .navbar {
     visibility: hidden;
     position: absolute;
     width: 100%;
-  } */
+  }
   .hid {
-    visibility: visible;
-    position: static;
+    visibility: hidden;
+    position: absolute;
+  }
+  /* Header Section */
+  #Header {
+    height: 42rem;
   }
   /* About Section */
   .text_box {
@@ -411,4 +418,41 @@ nav {
     background: #fff;
     color: #333;
   }
+}
+
+
+/* Navigation Buttons for Android */
+.UpDown {
+  position: fixed;
+  top: 540px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.118);
+  width: 50px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.UpDown button {
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.UpDown button:hover {
+  box-shadow: 2px 2px #000;
+}
+
+.UpDown .Nav_down {
+  width: 40px;
+  height: 40px;
+}
+
+.UpDown .Nav_up {
+  width: 40px;
+  height: 40px;
 }

@@ -16,3 +16,31 @@ window.onscroll = function () {
   progressBar.style.width = progress + "%";
   persent.innerHTML = "Page Scrolled " + Math.round(progress) + "%";
 };
+
+const menu_toggler = document.querySelector(".menu-toggler");
+const navigation = document.querySelector(".Navigation");
+menu_toggler.onclick = function () {
+  navigation.classList.toggle("active");
+};
+
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+//* Script for Auto-Height */
+var setElementHeight = function () {
+  var height = $(window).height();
+  $(".autoheight").css("min-height", height);
+};
+
+$(window)
+  .on("resize", function () {
+    setElementHeight();
+  })
+  .resize();
