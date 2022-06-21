@@ -33,7 +33,7 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
-//* Script for Auto-Height */
+// ? Script for Auto-Height
 var setElementHeight = function () {
   var height = $(window).height();
   $(".autoheight").css("min-height", height);
