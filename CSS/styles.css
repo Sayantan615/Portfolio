@@ -354,14 +354,6 @@ nav {
   }
 
   /* Message popup */
-  .callout{
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    display: block;
-    margin-left: 0px;
-    max-width: 10vh;
-  }
 }
 
 /* CSS Special Styling */
@@ -462,30 +454,18 @@ nav {
 
 /* Message popup */
 .callout {
-  position: fixed;
+  position: absolute;
+  width: 100%;
   top: 45px;
-  left: 20px;
-  margin-left: 20px;
-  max-width: max-content;
+
+  /* max-width: max-content; */
 }
 
 .callout-header {
   padding: 10px 45px;
-  background-color: #333;
+  background-color: rgb(199, 199, 199);
   opacity: 0.3;
   font-size: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-.closebtn {
-  position: absolute;
-  top: 7px;
-  right: 15px;
-  color: white;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.closebtn:hover {
-  color: lightgrey;
-}

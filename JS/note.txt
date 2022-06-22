@@ -3,5 +3,6 @@
 3.complete informations 
 4.add download function in the CV download button
 5.add bengali art as background
-6. Write media quries more sorted ways
-7. 100vh height for full viewport width
+6.Write media quries more sorted ways
+7.100vh height for full viewport width
+8.bengali style good bye message
