@@ -3,12 +3,14 @@
 * {
   box-sizing: border-box;
 }
+
 html body {
   margin: 0%;
   padding: 0%;
   width: auto;
   height: auto;
   overflow-x: hidden;
+  text-align: center;
 }
 
 body {
@@ -66,9 +68,7 @@ nav {
   background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
   margin: auto;
 }
-/* #auotheight{
-  height: 100%;
-} */
+
 #Header .container-fluid {
   display: inline-block;
   padding-top: 1rem;
@@ -278,7 +278,7 @@ nav {
   margin: auto;
 }
 
-/* Desktop Special */
+/* Desktop Responsive */
 @media screen and (min-width: 1080px) {
   .columns {
     grid-template-columns: repeat(2, 1fr);
@@ -288,16 +288,47 @@ nav {
   } */
 }
 @media screen and (min-width: 720px) and (max-width: 1080px) {
+  #Header {
+    height: 42rem;
+  }
   .columns {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 768px) {
+  /* For Hidden Navbar */
+  .navbar {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .hid {
+    visibility: hidden;
+    position: absolute;
+  }
+  /* Header Section */
+  #Header {
+    padding-bottom: 6rem;
+    padding-top: 5rem;
+  }
+  /* About Section */
+  .text_box {
+    padding: 2rem;
+    height: max-content;
+  }
+  /* Skill Section */
+  .skill-div {
+    padding-top: 2rem;
+  }
+}
 
 /* Android Responsive */
-@media screen and (max-width: 530px) and (min-width: 0px) {
+@media screen and (max-width: 700px) and (min-width: 0px) {
   /* Header Section */
   #Header {
     line-height: 1.5;
+    height: 100%;
+    padding-top: 0rem;
   }
   #Header .container-fluid {
     padding-top: 5rem;
@@ -321,31 +352,15 @@ nav {
   .columns {
     padding: 10%;
   }
-}
 
-@media screen and (max-width: 768px) {
-  /* For Hidden Navbar */
-  .navbar {
-    visibility: hidden;
+  /* Message popup */
+  .callout{
     position: absolute;
-    width: 100%;
-  }
-  .hid {
-    visibility: hidden;
-    position: absolute;
-  }
-  /* Header Section */
-  #Header {
-    height: 42rem;
-  }
-  /* About Section */
-  .text_box {
-    padding: 2rem;
-    height: max-content;
-  }
-  /* Skill Section */
-  .skill-div {
-    padding-top: 2rem;
+    top: 2px;
+    left: 2px;
+    display: block;
+    margin-left: 0px;
+    max-width: 10vh;
   }
 }
 
@@ -436,13 +451,6 @@ nav {
   display: block;
   cursor: pointer;
 }
-
-/* .fixed-div{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-} */
-
 .navigation-buttons span.prev {
   background: #222 url(/images/nav-prev.9b7656600ce9922302fa591f0be905b7.png)
     no-repeat 5px 5px;
@@ -450,4 +458,34 @@ nav {
 .navigation-buttons span.next {
   background: #222 url(/images/nav-next.dacef369fbedad44046aa690538793ff.png)
     no-repeat 5px 5px;
+}
+
+/* Message popup */
+.callout {
+  position: fixed;
+  top: 45px;
+  left: 20px;
+  margin-left: 20px;
+  max-width: max-content;
+}
+
+.callout-header {
+  padding: 10px 45px;
+  background-color: #333;
+  opacity: 0.3;
+  font-size: 20px;
+  color: white;
+}
+
+.closebtn {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
 }

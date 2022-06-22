@@ -1,0 +1,7 @@
+1.I have to add a custom alert messege with my styles
+2.add navigation button java script 
+3.complete informations 
+4.add download function in the CV download button
+5.add bengali art as background
+6. Write media quries more sorted ways
+7. 100vh height for full viewport width

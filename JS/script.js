@@ -44,3 +44,12 @@ $(window)
     setElementHeight();
   })
   .resize();
+
+function initialSetup() {
+  document.getElementById("hide").style.visibility = "visible";
+  setTimeout(function(){
+    document.getElementById('hide').style.visibility = 'hidden'},
+    8000
+  );
+}
+initialSetup();
