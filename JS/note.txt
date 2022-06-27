@@ -7,3 +7,4 @@
 7.100vh height for full viewport width
 8.bengali style good bye message
 add projects in code pen and add leetcode profile link in the bio
+make the notification apear at the top of the page
