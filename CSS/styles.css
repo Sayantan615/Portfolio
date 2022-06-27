@@ -444,12 +444,17 @@ nav {
   cursor: pointer;
 }
 .navigation-buttons span.prev {
-  background: #222 url(/CSS/Images/nav-prev.9b7656600ce9922302fa591f0be905b7.png) no-repeat 5px 5px;
+  background: #222;
+}
+.prev img {
+  padding-top: 4px;
 }
 .navigation-buttons span.next {
-  background: #222 url(/CSS/Images/nav-next.dacef369fbedad44046aa690538793ff.png) no-repeat 5px 5px;
+  background: #222;
 }
-
+.next img {
+  padding-top: 4px;
+}
 
 /* Message popup */
 .callout {
