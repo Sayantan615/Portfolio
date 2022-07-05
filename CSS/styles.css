@@ -19,6 +19,10 @@ body {
   font-family: "Montserrat";
   /* To hide the Horizontzl Scroll */
 }
+/* Full View port size */
+.autoheight {
+  height: 100vh;
+}
 
 /* Doted Horizontal Rule */
 .hr-1 {
@@ -71,7 +75,7 @@ nav {
 
 #Header .container-fluid {
   display: inline-block;
-  padding-top: 1rem;
+  padding-top: 0rem;
 }
 
 .img-1 {
@@ -104,7 +108,7 @@ nav {
 
 .firstQuote .container-fluid {
   background-color: beige;
-  padding: 4rem 4rem;
+  padding: 4rem;
   margin: 0px;
   color: #000;
   text-align: center;
@@ -113,8 +117,13 @@ nav {
 
 /* About section */
 .text_box {
-  text-align: center;
-  padding: 6rem;
+  text-align: left;
+  word-spacing: normal;
+  padding: 6rem 20rem;
+}
+
+.text_box a {
+  display: inline;
 }
 
 .btn-1 {
@@ -277,16 +286,35 @@ nav {
   justify-content: center;
   margin: auto;
 }
+/* Message popup */
+.callout {
+  position: absolute;
+  width: 100%;
+  top: 50px;
 
+  /* max-width: max-content; */
+}
+
+.callout-header {
+  padding: 10px 45px;
+  background-color: rgb(199, 199, 199);
+  opacity: 0.3;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Resposive Site */
 /* Desktop Responsive */
 @media screen and (min-width: 1080px) {
   .columns {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* Last div appper in the center */
   /* .column:last-child:nth-child(3n-2) {
     grid-column-end: 3;
   } */
 }
+
 @media screen and (min-width: 720px) and (max-width: 1080px) {
   #Header {
     height: 42rem;
@@ -323,15 +351,14 @@ nav {
 }
 
 /* Android Responsive */
-@media screen and (max-width: 700px) and (min-width: 0px) {
+@media screen and (max-width: 750px) {
   /* Header Section */
   #Header {
     line-height: 1.5;
     height: 100%;
-    padding-top: 0rem;
   }
   #Header .container-fluid {
-    padding-top: 5rem;
+    padding-top: 1.5rem;
   }
   .Name {
     font-size: 350%;
@@ -353,7 +380,27 @@ nav {
     padding: 10%;
   }
 
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: none;
+  }
+
   /* Message popup */
+  .callout {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+
+    /* max-width: max-content; */
+  }
+
+  .callout-header {
+    padding: 10px 25px;
+    background-color: rgb(199, 199, 199);
+    font-size: 20px;
+    opacity: 0.3;
+    color: rgb(0, 0, 0);
+  }
 }
 
 /* CSS Special Styling */
@@ -456,19 +503,8 @@ nav {
   padding-top: 4px;
 }
 
-/* Message popup */
-.callout {
-  position: absolute;
-  width: 100%;
-  top: 45px;
-
-  /* max-width: max-content; */
-}
-
-.callout-header {
-  padding: 10px 45px;
-  background-color: rgb(199, 199, 199);
-  opacity: 0.3;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
+@media (max-width: 900px) {
+  .autoheight {
+    height: max-content;
+  }
 }
