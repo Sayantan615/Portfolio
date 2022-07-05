@@ -19,10 +19,6 @@ body {
   font-family: "Montserrat";
   /* To hide the Horizontzl Scroll */
 }
-/* Full View port size */
-.autoheight {
-  height: 100vh;
-}
 
 /* Doted Horizontal Rule */
 .hr-1 {
@@ -61,14 +57,39 @@ nav {
 .nav-link {
   color: #fff;
 }
-/* Header Section */
 
+/* Full View port size */
+.autoheight {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Message popup */
+.callout {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+
+  /* max-width: max-content; */
+}
+
+.callout-header {
+  padding: 10px 45px;
+  background-color: rgb(199, 199, 199);
+  opacity: 0.3;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* Header Section */
 #Header {
+  height: inherit;
+  display: flex;
   padding: 5%;
-  height: 100%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   line-height: 1;
-  /* background-color: #53bf9d; */
   background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
   margin: auto;
 }
@@ -79,10 +100,8 @@ nav {
 }
 
 .img-1 {
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 1rem;
 }
 .profile_pic {
   height: 12rem;
@@ -116,6 +135,7 @@ nav {
 }
 
 /* About section */
+
 .text_box {
   text-align: left;
   word-spacing: normal;
@@ -169,45 +189,42 @@ nav {
 .skill-div {
   height: 20rem;
   background-color: beige;
-  text-align: center;
-  padding: 4rem;
+  text-align: left;
+  word-spacing: normal;
+  padding: 6rem 10rem;
 }
 /* Project Section */
-.info-div {
-  text-align: center;
-  padding: 0rem;
+#Projects {
+  height: 100vh;
+  text-align: left;
+  word-spacing: normal;
+  padding: 6rem 10rem;
+  margin-left: 0%;
 }
-#Projects .container {
-  margin: 0%;
-  padding: 4rem;
-  max-width: 100%;
-  background-color: beige;
-}
-#Projects .project-grid {
-  margin: 1rem 0rem 2rem;
-  /* box-sizing: border-box; */
+#Projects h4 {
+  color: red;
 }
 
-.columns {
-  padding: 2% 20%;
-  display: grid;
-  gap: 0.5em;
+
+#Projects .Contaner-div {
+  display: inline-block;
+  width: 100%;
+  height: 170px;
+  margin-bottom: 25px;
+  text-align: justify;
+  overflow-y: hidden;
 }
 
-.Contaner-div:hover {
-  box-shadow: 4px 4px rgb(0, 0, 0);
+.Content {
+  float: left;
+  text-align: justify;
 }
-.Contaner-div {
-  margin: 0.2rem;
-  height: 10rem;
-  border-radius: 10px;
-  border: 2px solid rgb(0, 0, 0);
-  background: rgb(255, 255, 255);
-  background-color: blanchedalmond;
-}
-.Contaner-div {
-  word-wrap: break-word;
-  overflow: hidden;
+.img img {
+  margin-right: 20px;
+  float: right;
+  width: 400px;
+  height: 80px;
+  
 }
 /* Hobby Section */
 #Hobbys {
@@ -286,44 +303,54 @@ nav {
   justify-content: center;
   margin: auto;
 }
-/* Message popup */
-.callout {
-  position: absolute;
-  width: 100%;
-  top: 50px;
 
-  /* max-width: max-content; */
-}
-
-.callout-header {
-  padding: 10px 45px;
-  background-color: rgb(199, 199, 199);
-  opacity: 0.3;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-
-/* Resposive Site */
+/* New Responsive settings */
 /* Desktop Responsive */
 @media screen and (min-width: 1080px) {
-  .columns {
-    grid-template-columns: repeat(2, 1fr);
-  }
   /* Last div appper in the center */
   /* .column:last-child:nth-child(3n-2) {
     grid-column-end: 3;
   } */
 }
 
-@media screen and (min-width: 720px) and (max-width: 1080px) {
+/* Tablet respostive */
+@media screen and (max-width: 1600px) and (max-height: 1200px) {
+  /* Header Section */
   #Header {
-    height: 42rem;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    line-height: 1;
+    background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
+    margin: auto;
   }
-  .columns {
-    grid-template-columns: repeat(2, 1fr);
+  /* About section */
+  .text_box {
+    text-align: left;
+    word-spacing: normal;
+    padding: 6rem 10rem;
+  }
+
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 6rem 10rem;
+    margin-left: 0%;
+  }
+
+  #Hobbys {
+    background-color: #00ffe7;
+    padding: 6rem 2rem;
   }
 }
-@media screen and (max-width: 768px) {
+
+/* Android Responsive */
+@media screen and (max-width: 800px) {
   /* For Hidden Navbar */
   .navbar {
     visibility: hidden;
@@ -336,32 +363,20 @@ nav {
   }
   /* Header Section */
   #Header {
-    padding-bottom: 6rem;
-    padding-top: 5rem;
-  }
-  /* About Section */
-  .text_box {
-    padding: 2rem;
-    height: max-content;
-  }
-  /* Skill Section */
-  .skill-div {
-    padding-top: 2rem;
-  }
-}
-
-/* Android Responsive */
-@media screen and (max-width: 750px) {
-  /* Header Section */
-  #Header {
+    height: 100vh;
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
     line-height: 1.5;
-    height: 100%;
+    background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
+    margin: auto;
   }
   #Header .container-fluid {
     padding-top: 1.5rem;
   }
   .Name {
-    font-size: 350%;
+    font-size: 450%;
   }
   .ShortIntro {
     font-size: 0.7rem;
@@ -371,13 +386,26 @@ nav {
     padding: 2rem 2rem;
     font-size: 1rem;
   }
-  /* Project Section  */
-  #Projects .container {
-    margin: 0%;
-    padding: 4rem 1rem;
+
+  /* About section */
+  .text_box {
+    text-align: left;
+    word-spacing: normal;
+    padding: 6rem 2rem;
   }
-  .columns {
-    padding: 10%;
+
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+    margin-left: 0%;
+  }
+
+  #Hobbys {
+    background-color: #00ffe7;
+    padding: 6rem 2rem;
   }
 
   /* Navigation Buttons */
@@ -390,8 +418,6 @@ nav {
     position: absolute;
     width: 100%;
     top: 10px;
-
-    /* max-width: max-content; */
   }
 
   .callout-header {
@@ -400,6 +426,24 @@ nav {
     font-size: 20px;
     opacity: 0.3;
     color: rgb(0, 0, 0);
+  }
+}
+
+/* Resposive Settings */
+
+@media screen and (max-width: 400px) {
+  /* Message popup */
+  .callout-header {
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  html body {
+    margin: 0%;
+    padding: 0%;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    text-align: center;
   }
 }
 
