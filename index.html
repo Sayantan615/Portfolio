@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sayantan Chowdhury Programmer</title>
+    <title>Sayantan Chowdhury Programmer and Font-end Devloper</title>
     <link rel="icon" href="Images/favicon-32x32.png" />
     <!-- CSS only -->
     <link
@@ -67,10 +67,12 @@
               <a class="nav-link" href="#Projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Contect">Contact</a>
+              <a class="nav-link" href="#Contact">Contact</a>
             </li>
           </ul>
-          <i>a</i>
+          <div class="switch">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </div>
         </div>
       </div>
     </nav>
@@ -118,7 +120,7 @@
     <!-- About Section -->
     <section id="About">
       <div class="text_box">
-        <h3>About</h3>
+        <h3 class="heading" data-outline="About">About</h3>
         <h5>Let me tell you about myself</h5>
         <p style="margin-bottom: 0">
           I am an Engineer seeking job in the tech sector.
@@ -139,65 +141,98 @@
         </p>
         <button class="btn btn-1">Download My CV</button>
         <!-- Add download function -->
-        <!-- solve the color change when clicked problem -->
       </div>
     </section>
     <!-- About Section end -->
+    <!-- Exprience Section-->
+    <!-- Exprience Section end -->
     <!-- Skills Section -->
     <section id="Skills">
       <div class="skill-div">
-        <h3>Skills</h3>
+        <h3 class="heading" data-outline="Skills">Skills</h3>
       </div>
     </section>
     <!-- Skill Section end -->
     <!-- Project Section start -->
     <section id="Projects">
-      <h3>Projects</h3>
+      <h3 class="heading" data-outline="Projects">Projects</h3>
       <!-- Add a icon to link to github for per project -->
-      <h5>Some of my work</h5>
-      <div class="Contaner-div">
-        <h4>Snake Game</h4>
-        <div class="Content">
-          This game is a replica of the old day's snake game we were all fans
-          of. I made the game with HTML5, CSS, and Javascript.
-        </div>
-        <div class="img">
-          <img src="Images/code.png" alt="" />
-        </div>
-      </div>
-      <div class="Contaner-div">
-        <h4>JS Clock</h4>
-        <div class="Content">
-            This site contains a working clock made with HTML5, CSS, and
-            Javascript.
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="Images/SnakeGame.png" alt="" />
+            </div>
           </div>
-          <div class="img">
-            <img src="Images/android-chrome-192x192.png" alt="" />
+          <div class="right">
+            <h2 class="project-title">Snake Game</h2>
+            <h3 class="project-sub-title">A reminder to the good old days.</h3>
+            <p class="project-desc">
+              This game is a replica of the old day's snake game we were all
+              fans of. I made the game with HTML5, CSS, and Javascript.
+            </p>
+            <div class="buttons">
+              <button class="btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-codepen"></i> Codepen
+              </button>
+            </div>
           </div>
-
-      </div>
-      <div class="Contaner-div">
-        <h4>Play The Drum</h4>
-        <div class="Content">
-          What are you doing Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ab eveniet porro cumque quod dolore quam hic dolor autem alias
-          fugit animi expedita a qui sapiente perspiciatis, id totam deserunt
-          aliquid.
         </div>
-      </div>
-      <div class="Contaner-div">
-        <h4>Comming Soon</h4>
-        <div class="Content">
-          What are you doing Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Ab eveniet porro cumque quod dolore quam hic dolor autem alias
-          fugit animi expedita a qui sapiente perspiciatis, id totam deserunt
-          aliquid.
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="Images/PlayTheDrum.png" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Play The Drum</h2>
+            <h3 class="project-sub-title">A site for rock 🤘 lovers.</h3>
+            <p class="project-desc">
+              If you are a fan of rock music than you definitly gonna love the
+              site, The site is a online drum kit simulator made with HTML, CSS,
+              and JS.
+            </p>
+            <div class="buttons">
+              <button class="btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-codepen"></i> Codepen
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="Images/SnakeGame.png" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Snake Game</h2>
+            <h3 class="project-sub-title">A reminder to the good old days.</h3>
+            <p class="project-desc">
+              This game is a replica of the old day's snake game we were all
+              fans of. I made the game with HTML5, CSS, and Javascript.
+            </p>
+            <div class="buttons">
+              <button class="btn">
+                <i class="fa-brands fa-github"></i> GitHub
+              </button>
+              <button class="btn">
+                <i class="fa-brands fa-codepen"></i> Codepen
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Hobbys Section start -->
     <section id="Hobbys">
-      <h3>My Hobbis :</h3>
+      <h3 class="heading" data-outline="Hobbys">Hobbis</h3>
       <ul>
         <li>Reading Books</li>
         <li>
@@ -212,10 +247,9 @@
       </ul>
     </section>
     <!-- Contect Section -->
-    <!-- Change the whole Contect section -->
     <section id="Contact">
       <div class="continer-fluid">
-        <!-- Make the icons center -->
+        <div class="content"></div>
         <div class="innerdiv">
           <ul>
             <li>
@@ -252,10 +286,11 @@
       <span class="prev">
         <img src="Images/buttonPrev.png" alt="" />
       </span>
-      <span class="next"> <img src="Images/buttonNext.png" alt="" /> </span>
+      <!-- <span class="next"> <img src="Images/buttonNext.png" alt="" /> </span> -->
     </div>
 
     <!-- Still under Devlopment Alert -->
+    <!-- it Will change to Thank you for visiting message -->
     <div class="callout" id="hide">
       <div class="callout-header">
         The website is under Devlopment. Thank you for visiting.
@@ -263,7 +298,7 @@
     </div>
 
     <!-- Script -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="JS/script.js"></script>
   </body>
 </html>
