@@ -197,6 +197,11 @@ nav {
   z-index: -1;
 }
 
+.btn-1 a{
+  text-decoration: none;
+  height: inherit;
+  /* color: #fff; */
+}
 .btn-1 {
   background-color: #000;
   color: #fff;
@@ -443,6 +448,7 @@ nav {
   position: relative;
   margin-bottom: 2rem;
   z-index: 3;
+  color: rgba(0, 0, 0, 0.827);
 }
 #Hobbys .heading::before {
   content: attr(data-outline);
