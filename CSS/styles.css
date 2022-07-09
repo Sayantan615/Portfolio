@@ -11,6 +11,7 @@ html body {
   height: auto;
   overflow-x: hidden;
   text-align: center;
+  background-color: #222;
 }
 
 body {
@@ -48,8 +49,8 @@ div {
 
 /* Navbar */
 nav {
-  background: #53bf9d;
-  /* background: #DF7861; */
+  /* background: #53bf9d; */
+  background: #222;
 }
 .navbar-brand {
   position: absolute;
@@ -58,8 +59,17 @@ nav {
 .nav-link {
   color: #fff;
 }
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: gray;
+}
+
+.nav-item :hover{
+  color: gray;
+}
+
 .switch {
-  color: black;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,9 +99,9 @@ nav {
 .callout-header {
   padding: 10px 45px;
   background-color: rgb(199, 199, 199);
-  opacity: 0.3;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  opacity: 0.3;
+  color: black;
 }
 
 /* Header Section */
@@ -103,7 +113,8 @@ nav {
   align-items: center;
   line-height: 1;
   /* background: #DF7861; */
-  background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
+  /* background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224)); */
+  background: #222;
   margin: auto;
 }
 
@@ -124,12 +135,13 @@ nav {
 .hey {
   font-size: 32px;
   font-family: "sacramento";
+  color: #fff;
 }
 .Name {
   position: relative;
   font-family: "sacramento";
   font-size: 450%;
-  color: #fff;
+  color: gray;
   font-weight: bolder;
   animation: fade 2s ease-in forwards;
   margin-bottom: 20px;
@@ -146,6 +158,7 @@ nav {
 
 .ShortIntro {
   font-size: 1rem;
+  color: #fff;
   font-family: monospace;
 }
 /* Quote section */
@@ -161,6 +174,10 @@ nav {
 
 /* About section */
 
+#About {
+  color: white;
+}
+
 .text_box {
   text-align: left;
   word-spacing: normal;
@@ -169,10 +186,12 @@ nav {
 }
 
 .text_box a {
-  display: inline;
+  text-decoration: none;
+  color: gray;
 }
 
 #About .heading {
+  color: gray;
   font-size: clamp(2rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -192,12 +211,12 @@ nav {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
-  -webkit-text-stroke: 1.5px #0000002f;
+  -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
+  /* -webkit-text-stroke: 1.5px #fff; */
   z-index: -1;
 }
 
-.btn-1 a{
+.btn-1 a {
   text-decoration: none;
   height: inherit;
   /* color: #fff; */
@@ -240,6 +259,10 @@ nav {
   transform: translate(12px, 12px);
 }
 
+.btn a {
+  color: white;
+}
+
 /* Skill section */
 
 .skill-div {
@@ -279,8 +302,10 @@ nav {
   word-spacing: normal;
   padding: 6rem 10rem;
   margin-left: 0%;
+  /* background-color: #222; */
 }
 #Projects .heading {
+  color: gray;
   font-size: clamp(2rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -300,8 +325,8 @@ nav {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
-  -webkit-text-stroke: 1.5px #0000002f;
+  -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
+  /* -webkit-text-stroke: 1.5px #0000002f; */
   z-index: -1;
 }
 
@@ -324,7 +349,9 @@ nav {
 #Projects .item .right {
   margin-left: -150px;
   flex: 1;
-  background-color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #333;
+  color: #fff;
   padding: 2rem 1rem;
   border-radius: 12px;
   box-shadow: 0px 0px 20px #00000028;
@@ -342,7 +369,7 @@ nav {
   overflow: hidden;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 0px 20px #4705fc33;
+  box-shadow: 0px 0px 20px #42414638;
   position: relative;
   z-index: -1;
 }
@@ -353,7 +380,7 @@ nav {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #5a24ed38;
+  background-color: #42414638;
 }
 #Projects .item .left .img img {
   object-fit: cover;
@@ -403,9 +430,6 @@ nav {
   #Projects .item {
     flex-direction: column;
   }
-  #Projects .item .left {
-    width: 100%;
-  }
   #Projects .item .right {
     margin-left: 0;
     width: 90%;
@@ -422,9 +446,9 @@ nav {
   #Projects .item .right .buttons {
     flex-direction: column;
   }
-  #Projects .item .right .buttons a {
-    width: 100%;
-    text-align: center;
+  #Projects .item .left .img img {
+    object-fit: fill;
+    transition: 0.3s ease transform;
   }
 }
 
@@ -434,7 +458,7 @@ nav {
   margin-top: 0%;
   /* height: 200px; */
   height: 70vh;
-  background: #df7861;
+  background: beige;
   text-align: left;
   padding: 3rem 10rem 6rem;
 }
@@ -475,15 +499,15 @@ nav {
 
 /* Contact Section */
 #Contact {
-  background: #94b49f;
+  background: #222;
   /* height: calc(100vh - 525px); */
 }
 #Contact .content {
-  height: calc(100vh - 7.5rem);
-  background: #94b49f;
+  height: calc(70vh - 7.5rem);
+  background: #222;
 }
 #Contact .innerdiv {
-  height: 7rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,7 +542,7 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: #000;
+  color: gray;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   transition: trnsform 0.5s ease-in;
@@ -543,8 +567,39 @@ nav {
 }
 #Contact .info {
   display: flex;
+  color: gray;
   justify-content: center;
 }
+
+/* Navigation Buttons for Android */
+.navigation-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  line-height: 1;
+}
+.navigation-buttons span {
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+}
+.navigation-buttons span.prev {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .navigation-buttons span .next {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 /* New Responsive settings */
 /* Desktop Responsive */
@@ -601,13 +656,7 @@ nav {
   /* Header Section */
   #Header {
     height: 100vh;
-    display: flex;
-    padding: 5%;
-    justify-content: center;
-    align-items: center;
     line-height: 1.5;
-    background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224));
-    margin: auto;
   }
   #Header .container-fluid {
     padding-top: 1.5rem;
@@ -630,6 +679,15 @@ nav {
     word-spacing: normal;
     padding: 6rem 2rem;
   }
+  /* Skill section */
+
+  .skill-div {
+    height: 20rem;
+    background-color: beige;
+    text-align: left;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+  }
 
   /* Project Section */
   #Projects {
@@ -641,7 +699,6 @@ nav {
   }
 
   #Hobbys {
-    background-color: #00ffe7;
     padding: 6rem 2rem;
   }
 
@@ -673,14 +730,6 @@ nav {
   .callout-header {
     padding: 5px 10px;
     font-size: 15px;
-  }
-  html body {
-    margin: 0%;
-    padding: 0%;
-    width: auto;
-    height: auto;
-    overflow-x: hidden;
-    text-align: center;
   }
 }
 
@@ -754,36 +803,6 @@ nav {
     color: #333;
   }
 }
-
-/* Navigation Buttons for Android */
-.navigation-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  line-height: 1;
-}
-.navigation-buttons span {
-  width: 30px;
-  height: 30px;
-  margin-top: 6px;
-  border-radius: 3px;
-  display: block;
-  cursor: pointer;
-}
-.navigation-buttons span.prev {
-  background: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .navigation-buttons span .next {
-  background: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 @media (max-width: 900px) {
   .autoheight {
