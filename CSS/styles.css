@@ -21,6 +21,11 @@ body {
   /* To hide the Horizontzl Scroll */
 }
 
+.color {
+  color: #ffdd7e;
+  margin-left: 4px;
+}
+
 /* Doted Horizontal Rule */
 .hr-1 {
   border-style: dotted none none;
@@ -163,13 +168,16 @@ nav {
 
 .ShortIntro {
   font-size: 1rem;
+  word-spacing: 5px;
   color: #fff;
   font-family: monospace;
+  /* font-family: "sacramento"; */
+  font-family: "Ubuntu", sans-serif;
 }
 /* Quote section */
 
 .firstQuote .container-fluid {
-  background-color: beige;
+  background-color: #ffdd7e;
   padding: 4rem;
   margin: 0px;
   color: #000;
@@ -278,7 +286,7 @@ nav {
 
 .skill-div {
   height: 20rem;
-  background-color: beige;
+  background-color: #ffdd7e;
   text-align: left;
   word-spacing: normal;
   padding: 3rem 10rem 6rem;
@@ -402,7 +410,6 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s ease transform;
-  /* transition: 0.3s ease transform; */
 }
 #Projects .item:hover .left .img img {
   /* transform: scale(1.1); */
@@ -461,13 +468,17 @@ nav {
 
   #Projects .item .left {
     width: 80%;
-    height: 50%;
+    height: 100%;
   }
 
   #Projects .item .left .img img {
-    object-fit: fill;
-    transition: 0.3s ease transform;
-  }
+  object-fit: cover;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease transform;
+}
 
   #Projects .item:nth-of-type(even) {
     flex-direction: column;
@@ -485,9 +496,6 @@ nav {
   }
 }
 @media only screen and (max-width: 450px) {
-  #Projects .item .right .buttons {
-    flex-direction: column;
-  }
   #Projects .item .left .img img {
     object-fit: fill;
     transition: 0.3s ease transform;
@@ -500,7 +508,7 @@ nav {
   margin-top: 0%;
   /* height: 200px; */
   height: 70vh;
-  background: beige;
+  background: #ffdd7e;
   text-align: left;
   padding: 3rem 10rem 6rem;
 }
@@ -584,7 +592,8 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  color: gray;
+  /* color: gray; */
+  color: #ffdd7e;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   transition: trnsform 0.5s ease-in;
@@ -609,7 +618,7 @@ nav {
 }
 #Contact .info {
   display: flex;
-  color: gray;
+  color: #ffdd7e;
   justify-content: center;
 }
 

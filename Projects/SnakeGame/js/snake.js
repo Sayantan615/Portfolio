@@ -1,4 +1,4 @@
-// make a button to stop music 
+// make a button to stop music
 let direction = { x: 0, y: 0 };
 const foodSound = new Audio("music/food.mp3");
 const gameOverSound = new Audio("music/gameover.mp3");
@@ -48,11 +48,15 @@ function gameEngine() {
   // part1 : Updating the snake Array & Food
   if (isCollide(snakeArr)) {
     gameOverSound.play();
-    musicSound.pause();
+    if (!musicSound.paused) {
+      musicSound.pause();
+    }
     direction = { x: 0, y: 0 };
     alert("Game Over. Pause any button to play again!");
     snakeArr = [{ x: 13, y: 15 }];
+
     musicSound.play();
+
     score = 0;
   }
 
@@ -108,7 +112,6 @@ function gameEngine() {
 
 //Logic
 //! The HIGH SCORE value assigning
-musicSound.play();
 let highScore = localStorage.getItem("highScore");
 if (highScore === null) {
   highScoreVal = 0;
@@ -148,3 +151,14 @@ window.addEventListener("keydown", (e) => {
 });
 
 //! GAME MODE's
+
+function togglePlay() {
+  if (musicSound.paused) {
+    return musicSound.play();
+    document.querySelector(".music").innerHTML =
+      "<i class='fa-solid fa-music-slash'></i>";
+  } else {
+    return musicSound.pause();
+  }
+  // return musicSound.paused ? musicSound.play() : musicSound.pause();
+}
