@@ -9,3 +9,5 @@
 add projects in code pen and add leetcode profile link in the bio
 make the notification apear at the top of the page ✅
 add animation to the shadow of the section headings
+CHANGE THE ICON TO SOMETHING DARK
+Use one pop color like blue or dark pink
