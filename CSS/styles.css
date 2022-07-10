@@ -54,7 +54,6 @@ nav {
 }
 .navbar-brand {
   position: absolute;
-  visibility: hidden;
 }
 .nav-link {
   color: #fff;
@@ -68,16 +67,21 @@ nav {
   color: gray;
 }
 
-.switch {
+.down {
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   height: 30px;
-  width: 30px;
+  width: 60px;
 }
-.switch :hover {
+
+.down a {
+  color: #fff;
+  text-decoration: none;
+}
+.down :hover {
   color: gray;
 }
 /* Full View port size */
@@ -141,7 +145,8 @@ nav {
   position: relative;
   font-family: "sacramento";
   font-size: 450%;
-  color: gray;
+  /* color: gray; */
+  color: #ffdd7e;
   font-weight: bolder;
   animation: fade 2s ease-in forwards;
   margin-bottom: 20px;
@@ -182,16 +187,21 @@ nav {
   text-align: left;
   word-spacing: normal;
   height: max-content;
-  padding: 2rem 20rem 6rem;
+  padding: 6rem 20rem;
 }
 
 .text_box a {
   text-decoration: none;
-  color: gray;
+  color: #ffdd7e;
+}
+
+.text_box h3 {
+  color: #ffdd7e;
 }
 
 #About .heading {
-  color: gray;
+  /* color: gray; */
+  color: #ffdd7e;
   font-size: clamp(2rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -223,8 +233,8 @@ nav {
 }
 .btn-1 {
   background-color: #000;
-  color: #fff;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .btn-1::after,
@@ -260,7 +270,8 @@ nav {
 }
 
 .btn a {
-  color: white;
+  /* color: white; */
+  color: #ffdd7e;
 }
 
 /* Skill section */
@@ -280,6 +291,7 @@ nav {
   text-align: left;
   position: relative;
   margin-bottom: 2rem;
+  color: #333;
 }
 #Skills .skill-div .heading::before {
   content: attr(data-outline);
@@ -305,7 +317,8 @@ nav {
   /* background-color: #222; */
 }
 #Projects .heading {
-  color: gray;
+  /* color: gray; */
+  color: #ffdd7e;
   font-size: clamp(2rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -384,14 +397,23 @@ nav {
 }
 #Projects .item .left .img img {
   object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: 0.3s ease transform;
+  /* transition: 0.3s ease transform; */
 }
 #Projects .item:hover .left .img img {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  transform: translate(-50%, -50%);
 }
 #Projects .item .right .project-title {
   font-size: 2.5rem;
+  font-weight: bolder;
   font-family: "Montserrat";
+  color: #ffdd7e;
+  text-shadow: 2px 2px 4px #222;
   margin-bottom: 1rem;
 }
 #Projects .item .right .project-sub-title {
@@ -416,14 +438,15 @@ nav {
 .buttons .btn {
   position: relative;
   border: 2px solid black;
-  background-color: rgb(89, 88, 88);
-  color: #fff;
+  background-color: #ffdd7e;
+  color: #222;
 }
 
 .buttons .btn:hover {
   transform: translate(2px, -2px);
   background-color: #000;
   color: white;
+  margin: 0px 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -452,6 +475,13 @@ nav {
 
   #Projects .item:nth-of-type(even) .left {
     margin-left: 0px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -640,7 +670,7 @@ nav {
     text-align: left;
     word-spacing: normal;
     height: max-content;
-    padding: 2rem 10rem 6rem;
+    padding: 6rem 10rem;
   }
 
   /* Project Section */
@@ -739,8 +769,7 @@ nav {
 /* Resposive Settings */
 
 @media screen and (max-width: 400px) {
-
- /* For Hidden Navbar */
+  /* For Hidden Navbar */
   .navbar {
     visibility: hidden;
     position: absolute;

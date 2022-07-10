@@ -1,7 +1,8 @@
-1.I have to add a custom alert messege with my styles
-2.add navigation button java script 
-3.complete informations 
-4.add download function in the CV download button
+1.I have to add a custom alert messege with my styles ✅
+2.add navigation button java script ✅ not done the wat I wanted
+3.Project section ✅
+About prety much done
+4.add download function in the CV download button ✅
 5.add bengali art as background
 6.Write media quries more sorted ways 
 7.100vh height for full viewport width ✅
@@ -9,5 +10,6 @@
 add projects in code pen and add leetcode profile link in the bio
 make the notification apear at the top of the page ✅
 add animation to the shadow of the section headings
-CHANGE THE ICON TO SOMETHING DARK
-Use one pop color like blue or dark pink
+Change icon to download CV button ✅
+Use one pop color #FFDD7E ✅
+Make the name responsive
