@@ -154,11 +154,12 @@ window.addEventListener("keydown", (e) => {
 
 function togglePlay() {
   if (musicSound.paused) {
-    return musicSound.play();
     document.querySelector(".music").innerHTML =
-      "<i class='fa-solid fa-music-slash'></i>";
-  } else {
+    '<i class="fa-solid fa-music-slash"></i>';
+    return musicSound.play();
+    } else {
     return musicSound.pause();
   }
   // return musicSound.paused ? musicSound.play() : musicSound.pause();
 }
+console.log(document.querySelector(".music"));

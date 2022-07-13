@@ -1,5 +1,11 @@
 /* CSS */
 /* body */
+
+:root {
+  --font-color: beige;
+  --pop-color: #ffdd7e;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,11 +25,6 @@ body {
   /* change font font-family */
   font-family: "Montserrat";
   /* To hide the Horizontzl Scroll */
-}
-
-.color {
-  color: #ffdd7e;
-  margin-left: 4px;
 }
 
 /* Doted Horizontal Rule */
@@ -66,6 +67,7 @@ nav {
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
   color: gray;
+  color: var(--pop-color);
 }
 
 .nav-item :hover {
@@ -83,7 +85,7 @@ nav {
 }
 
 .down a {
-  color: #fff;
+  color: var(--pop-color);
   text-decoration: none;
 }
 .down :hover {
@@ -197,7 +199,10 @@ nav {
   height: max-content;
   padding: 6rem 20rem;
 }
-
+.text_box strong{
+  color: var(--pop-color);
+  margin-left: 4px;
+}
 .text_box a {
   text-decoration: none;
   color: #ffdd7e;
@@ -424,7 +429,7 @@ nav {
   margin-bottom: 1rem;
 }
 #Projects .item .right .project-sub-title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 #Projects .item .right .project-desc {
@@ -453,6 +458,7 @@ nav {
   transform: translate(2px, -2px);
   background-color: #000;
   color: white;
+  color: var(--font-color);
   margin: 0px 10px;
 }
 
@@ -472,13 +478,13 @@ nav {
   }
 
   #Projects .item .left .img img {
-  object-fit: cover;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s ease transform;
-}
+    object-fit: cover;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease transform;
+  }
 
   #Projects .item:nth-of-type(even) {
     flex-direction: column;
@@ -600,7 +606,7 @@ nav {
 }
 #Contact ul li a:hover {
   transform: translateY(-10px);
-  color: beige;
+  color: var(--font-color);
 }
 #Contact ul li a::before {
   content: "";
