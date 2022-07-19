@@ -701,12 +701,15 @@ nav {
 
 /* Android Responsive */
 @media screen and (max-width: 768px) {
-  /* For Hidden Navbar */
+
   .navbar {
-    visibility: hidden;
-    position: absolute;
     width: 100%;
+    z-index: 2;
   }
+  .down{
+    margin: 0px auto 10px;
+  }
+  /* For hiding elemnts */
   .hid {
     visibility: hidden;
     position: absolute;
@@ -741,7 +744,6 @@ nav {
 
   .skill-div {
     height: 20rem;
-    background-color: beige;
     text-align: left;
     word-spacing: normal;
     padding: 6rem 2rem;
@@ -770,7 +772,7 @@ nav {
     /* display: none; */
     position: absolute;
     width: 100%;
-    top: 10px;
+    top: 40px;
   }
 
   .callout-header {
