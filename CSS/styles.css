@@ -626,6 +626,7 @@ nav {
   display: flex;
   color: #ffdd7e;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 /* Navigation Buttons for Android */
