@@ -75,7 +75,8 @@ nav {
 }
 
 .down {
-  color: #fff;
+  position: absolute;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,10 +110,14 @@ nav {
 
 .callout-header {
   padding: 10px 45px;
-  background-color: rgb(199, 199, 199);
+  background-color: rgba(199, 199, 199, 0.3);
   font-size: 20px;
-  opacity: 0.3;
   color: black;
+}
+
+.callout-header a{
+  text-decoration: none;
+  color: rgba(225, 221, 126, 0.7);
 }
 
 /* Header Section */
