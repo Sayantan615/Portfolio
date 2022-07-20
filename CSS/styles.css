@@ -343,7 +343,7 @@ nav {
   letter-spacing: 0.2rem;
   text-align: left;
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 #Projects .heading::before {
   content: attr(data-outline);
@@ -464,7 +464,27 @@ nav {
   background-color: #000;
   color: white;
   color: var(--font-color);
-  margin: 0px 10px;
+}
+
+.innerSection{
+  text-align: center;
+  color: var(--pop-color);
+  margin-bottom: 3rem;
+}
+.innerSection p{
+  color: #fff;
+}
+.innerSection .btn{
+  background-color: var(--pop-color);
+  border-color: black;
+  color: black;
+  font-weight: bolder;
+}
+.innerSection .btn:hover{
+  color: #fff;
+  background-color: black;
+  border: 2px solid var(--pop-color);
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -712,6 +732,7 @@ nav {
     z-index: 2;
   }
   .down{
+    position: static;
     margin: 0px auto 10px;
   }
   /* For hiding elemnts */
@@ -782,9 +803,8 @@ nav {
 
   .callout-header {
     padding: 5px 10px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgba(199, 199, 199, 0.3);
     font-size: 15px;
-    opacity: 0.3;
     color: rgb(0, 0, 0);
   }
 }
