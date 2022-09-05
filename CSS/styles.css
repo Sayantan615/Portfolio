@@ -115,9 +115,10 @@ nav {
   color: black;
 }
 
-.callout-header a{
+.callout-header a {
   text-decoration: none;
   color: rgba(225, 221, 126, 0.7);
+  font-weight: bolder;
 }
 
 /* Header Section */
@@ -196,6 +197,7 @@ nav {
 
 #About {
   color: white;
+  height: 100vh;
 }
 
 .text_box {
@@ -204,7 +206,7 @@ nav {
   height: max-content;
   padding: 6rem 20rem;
 }
-.text_box strong{
+.text_box strong {
   color: var(--pop-color);
   margin-left: 4px;
 }
@@ -327,7 +329,7 @@ nav {
 }
 /* Project Section */
 #Projects {
-  height: 100vh;
+  /* height: 100vh; */
   text-align: left;
   word-spacing: normal;
   padding: 6rem 10rem;
@@ -462,29 +464,77 @@ nav {
 .buttons .btn:hover {
   transform: translate(2px, -2px);
   background-color: #000;
-  color: white;
   color: var(--font-color);
 }
 
-.innerSection{
+.innerSection {
   text-align: center;
   color: var(--pop-color);
   margin-bottom: 3rem;
 }
-.innerSection p{
+.innerSection p {
   color: #fff;
 }
-.innerSection .btn{
+.innerSection .btn {
   background-color: var(--pop-color);
   border-color: black;
   color: black;
   font-weight: bolder;
 }
-.innerSection .btn:hover{
+.innerSection .btn:hover {
   color: #fff;
   background-color: black;
   border: 2px solid var(--pop-color);
   margin-bottom: 0px;
+}
+
+.Other_Section {
+  height: 20rem;
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.Other_Section .end-item {
+  height: 14rem;
+  width: 12rem;
+  background: url(/Images/PlayTheDrum.jpg);
+  background-repeat: no-repeat;
+  background-size: 12rem 14rem;
+  margin: 0px 10px 0px 10px;
+  border-radius: 5px;
+  border: 5px var(--pop-color) solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: visibility 10s ease-in;
+}
+
+.Other_Section .buttons {
+  visibility: hidden;
+}
+
+
+.Other_Section .end-item:hover .buttons{
+  cursor: pointer;
+  visibility:visible;
+}
+
+
+.Other_Section .buttons .btn {
+  width: 150px;
+  position: relative;
+  border: 2px solid black;
+  background-color: #ffdd7e;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.Other_Section .buttons .btn:hover {
+  transform: translate(-2px, 2px);
+  background-color: #000;
+  color: var(--font-color);
+  border: 2px var(--pop-color) solid;
 }
 
 @media only screen and (max-width: 768px) {
@@ -627,6 +677,7 @@ nav {
   color: #ffdd7e;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: trnsform 0.5s ease-in;
 }
 #Contact ul li a:hover {
@@ -726,12 +777,11 @@ nav {
 
 /* Android Responsive */
 @media screen and (max-width: 768px) {
-
   .navbar {
     width: 100%;
     z-index: 2;
   }
-  .down{
+  .down {
     position: static;
     margin: 0px auto 10px;
   }
