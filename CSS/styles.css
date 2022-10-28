@@ -54,12 +54,21 @@ div {
 }
 
 /* Navbar */
-nav {
+nav .navbar-nav {
   /* background: #53bf9d; */
   background: #222;
 }
-.navbar-brand {
-  position: absolute;
+.navbar{
+  padding-top: 0px;
+}
+a.navbar-brand {
+  margin-right: 0px;
+}
+
+.navbar-brand .resize {
+  height: 40px;
+  width: 40px;
+  margin: 0px;
 }
 .nav-link {
   color: #fff;
@@ -606,12 +615,19 @@ nav {
 }
 
 /* Contact Section */
-#Contact {
+#Contact .resize {
   /* background: #222; */
   /* height: calc(100vh - 525px); */
+  height: 220px;
+  width: 220px;
+  font-weight: bolder;
 }
+#Contact p{
+  color: var(--pop-color);
+}
+
 #Contact .content {
-  height: calc(70vh - 7.5rem);
+  height: max-content;
   background: #222;
 }
 #Contact .innerdiv {
@@ -723,6 +739,9 @@ nav {
 
 /* Tablet respostive */
 @media screen and (max-width: 1600px) and (max-height: 1200px) {
+   .callout-header {
+    margin-top: 10px;
+  }
   /* Header Section */
   #Header {
     height: 100vh;
@@ -764,7 +783,7 @@ nav {
   }
   /* For hiding elemnts */
   .hid {
-    visibility: hidden;
+    visibility: hidden; 
     position: absolute;
   }
   /* Header Section */
@@ -844,16 +863,15 @@ nav {
 }
 
 /* Resposive Settings */
-
 @media screen and (max-width: 400px) {
   /* For Hidden Navbar */
   .navbar {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
     width: 100%;
   }
   .hid {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
   }
 
@@ -862,6 +880,33 @@ nav {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CSS Special Styling */
 @media screen and (min-width: 1080px) {
