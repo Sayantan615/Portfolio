@@ -303,7 +303,7 @@ nav {
 /* Skill section */
 
 .skill-div {
-  height: max-content;
+  height: auto;
   background-color: #ffdd7e;
   text-align: left;
   word-spacing: normal;
@@ -488,13 +488,14 @@ nav {
 }
 
 .innerSection {
-  width: 40rem;
   text-align: left;
   color: var(--pop-color);
   margin-bottom: 3rem;
 }
 .innerSection p {
   color: #fff;
+  display: inline-block;
+  line-break: auto;
 }
 .innerSection .btn {
   background-color: var(--pop-color);
@@ -794,11 +795,18 @@ nav {
   }
   /* Skill section */
 
-  .skill-div {
-    height: 20rem;
-    text-align: left;
+  #Skills .skill-div {
+    height: fit-content;
+    text-align: center;
     word-spacing: normal;
     padding: 6rem 2rem;
+  }
+  #Skills .skill-div .heading {
+    text-align: center;
+    font-size: clamp(2rem, 15vw, 8rem);
+  }
+  #Skills .skill-div .heading::before {
+    text-align: center;
   }
 
   /* Project Section */
