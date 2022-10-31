@@ -31,11 +31,16 @@ body {
 .hr-1 {
   border-style: dotted none none;
   border-color: rgb(255, 255, 255);
-  border-width: 5px;
-  height: 0px;
+  border-width: 0.313rem;
+  height: 0rem;
   width: 5%;
   margin-left: auto;
   margin-right: auto;
+}
+.right .hr-1{
+  border-color: #000;
+  margin-left: 0px;
+  width: 70%;
 }
 .hr-2 {
   border-style: solid solid solid;
@@ -46,6 +51,8 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 h3 {
   font-weight: bolder;
 }
@@ -83,6 +90,10 @@ a.navbar-brand {
   color: gray;
 }
 
+.navbar-toggler {
+  color: var(--pop-color);
+}
+
 .down {
   position: absolute;
   right: 10px;
@@ -107,7 +118,7 @@ a.navbar-brand {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .autoheight {
     height: max-content;
   }
@@ -158,7 +169,7 @@ a.navbar-brand {
 .profile_pic {
   height: 12rem;
   border-radius: 100%;
-  border: 4px solid white;
+  border: 4px solid var(--pop-color);
 }
 .hey {
   font-size: 32px;
@@ -196,7 +207,7 @@ a.navbar-brand {
 /* Quote section */
 
 .firstQuote .container-fluid {
-  background-color: #ffdd7e;
+  background-color: var(--pop-color);
   padding: 4rem;
   margin: 0px;
   color: #000;
@@ -617,9 +628,13 @@ a.navbar-brand {
 }
 
 /* Contact Section */
+#Contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #Contact .resize {
-  /* background: #222; */
-  /* height: calc(100vh - 525px); */
   height: 220px;
   width: 220px;
   font-weight: bolder;
@@ -632,26 +647,74 @@ a.navbar-brand {
   height: max-content;
   background: #222;
 }
-#Contact .innerdiv {
-  height: 5rem;
+#contact_box {
+  width: 50rem;
+  height: calc(100vh - 4rem);
   display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  margin: 2rem 0rem;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
+  font-size: small;
+}
+#contact_box .left {
+  height: 18rem;
+  width: 20rem;
+  background-image: url(/Images/P-Pic-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  border-top-left-radius:  10px;
+  border-bottom-left-radius:  10px;
+  border: 2px solid white;
+}
+#contact_box .right {
+  height: 25rem;
+  width: 25rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: var(--pop-color);
+  color: black;
+  padding: 10px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+#contact_box .right a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+#contact_box .right p {
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+#contact_box .right p:nth-last-child(2){
+  margin-bottom: 2rem;
+}
+#Contact .innerdiv {
+  display: flex;
+  align-items: center;
+  padding-top: 0rem;
 }
 
 #Contact ul {
   position: relative;
   z-index: 1;
   display: flex;
-  align-self: flex-end;
+  align-self: flex-start;
   padding: 0%;
 }
 
 #Contact ul li {
   position: relative;
   list-style: none;
-  margin: 10px;
+  margin-right: 10px;
 }
 /* Make it more down and center */
 #Contact ul li a {
@@ -669,7 +732,6 @@ a.navbar-brand {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   /* color: gray; */
-  color: #ffdd7e;
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -677,7 +739,7 @@ a.navbar-brand {
 }
 #Contact ul li a:hover {
   transform: translateY(-10px);
-  color: var(--font-color);
+  color: red;
 }
 #Contact ul li a::before {
   content: "";
@@ -762,7 +824,7 @@ a.navbar-brand {
     height: max-content;
     padding: 6rem 10rem;
   }
-
+ 
   /* Project Section */
   #Projects {
     height: max-content;
@@ -812,7 +874,7 @@ a.navbar-brand {
   .text_box {
     text-align: left;
     word-spacing: normal;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
   }
   /* Skill section */
 
@@ -835,14 +897,86 @@ a.navbar-brand {
     height: max-content;
     text-align: left;
     word-spacing: normal;
-    padding: 6rem 2rem;
+    padding: 4rem 10px;
     margin-left: 0%;
   }
-
+  #Projects .heading {
+    padding-left: 1.001rem;
+  }
+  #Projects .heading::before {
+    padding-left: 1.001rem;
+  }
+  #Projects .innerSection h1,
+  p {
+    padding-left: 1.001rem;
+  }
+  /* Hobbys Section */
   #Hobbys {
     padding: 6rem 2rem;
   }
+  /* Contact Section */
+  .right .hr-1{
+  border-color: #000;
+  margin: 20px auto;
+  width: 40%;
+}
+  #Contact{
+    height: max-content;
+  }
+  #contact_box {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  margin: 1rem 0rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: smaller;
+}
+#contact_box .left {
+  height: 30vh;
+  width: 55vw;
+  background-image: url(/Images/P-Pic-2.png);
+  background-size: cover;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 0px;
+  /* change this for lower than 400px */
 
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  border: 2px solid white;
+}
+#contact_box .right {
+  height: 18rem;
+  width: 90vw;
+  border: 2px solid white;
+  background: var(--pop-color);
+  color: black;
+  padding: 10px;
+  display: flex;
+  /* text-align: left; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-left: 40px; */
+}
+
+#contact_box .right a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+#contact_box .right p {
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  padding-left: 0%;
+}
+#contact_box .right p:nth-last-child(2){
+  margin-bottom: 1rem;
+}
   /* Navigation Buttons */
   .navigation-buttons {
     display: none;
@@ -880,76 +1014,5 @@ a.navbar-brand {
   /* Message popup */
   .callout-header {
     display: none;
-  }
-}
-
-/* CSS Special Styling */
-@media screen and (min-width: 1080px) {
-  #CursorMeter {
-    position: fixed;
-    width: 200px;
-    height: 35px;
-    /* background: yellow; */
-    top: 0;
-    pointer-events: none;
-    z-index: 10000;
-  }
-  #scrollPath {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: #333;
-  }
-  #progressBar {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, #008aff, #00ffe7);
-    animation: animate 5s linear infinite;
-  }
-
-  #progressBar::before {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    /* width: 100%; */
-    height: 100%;
-    background: linear-gradient(to left, #008aff, #00ffe7);
-    filter: blur(10px);
-  }
-  #progressBar::after {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, #008aff, #00ffe7);
-    filter: blur(30px);
-  }
-  @keyframes animate {
-    0%,
-    100% {
-      filter: hue-rotate(0deg);
-    }
-    50% {
-      filter: hue-rotate(360deg);
-    }
-  }
-
-  #persent {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    color: #fff;
-    font-size: 0.5rem;
-    padding: 2px 5px;
-    background: #fff;
-    color: #333;
   }
 }
