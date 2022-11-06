@@ -43,3 +43,5 @@ if (buttonPrev) {
   });
 }
 
+// Insitializeing AOS for div animations
+AOS.init();
