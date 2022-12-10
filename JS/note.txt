@@ -15,7 +15,8 @@ Use one pop color #FFDD7E ✅
 Make the name responsive
 Use CSS variables and update them with js
 JS queryselectorall donest return a array
-I guess the navigation is not center
+I guess the navigation is not center ✅
+solve contect profile picture problem in gitHub
 
 Fonts Used:-
 font-family: 'Merriweather', serif;
