@@ -4,6 +4,8 @@
 :root {
   --font-color: beige;
   --pop-color: #ffdd7e;
+  --headingcolor: #ffdd7e;
+  --background-col: #222;
 }
 
 * {
@@ -17,7 +19,7 @@ html body {
   height: auto;
   overflow-x: hidden;
   text-align: center;
-  background-color: #222;
+  background-color: var(--background-col);
 }
 
 body {
@@ -59,7 +61,7 @@ div {
 /* Navbar */
 nav .navbar-nav {
   /* background: #53bf9d; */
-  background: #222;
+  background: var(--background-col);
 }
 .navbar {
   padding-top: 0px;
@@ -67,7 +69,6 @@ nav .navbar-nav {
 a.navbar-brand {
   margin-right: 0px;
 }
-
 .navbar-brand .resize {
   height: 40px;
   width: 40px;
@@ -81,15 +82,12 @@ a.navbar-brand {
   color: gray;
   color: var(--pop-color);
 }
-
 .nav-item :hover {
   color: gray;
 }
-
 .navbar-toggler {
   color: var(--pop-color);
 }
-
 .down {
   position: absolute;
   right: 10px;
@@ -100,7 +98,6 @@ a.navbar-brand {
   height: 30px;
   width: 60px;
 }
-
 .down a {
   color: var(--pop-color);
   text-decoration: none;
@@ -147,9 +144,7 @@ a.navbar-brand {
   justify-content: center;
   align-items: center;
   line-height: 1;
-  /* background: #DF7861; */
-  /* background: linear-gradient(to bottom, #53bf9d, rgb(226, 146, 224)); */
-  background: #222;
+  background: var(--background-col);
   margin: auto;
 }
 
@@ -185,7 +180,7 @@ a.navbar-brand {
 
 @keyframes fade {
   0% {
-    opacity: 0%;
+    opacity: 5%;
   }
   100% {
     opacity: 100%;
@@ -193,19 +188,16 @@ a.navbar-brand {
 }
 
 .ShortIntro {
-  font-size: 1rem;
+  font-size: 0.8rem;
   word-spacing: 5px;
-  /* letter-spacing: 2px; */
   color: #fff;
-  font-family: monospace;
-  /* font-family: "sacramento"; */
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", "sacramento", monospace, sans-serif;
 }
 
 /* Quote section */
 .firstQuote .container-fluid {
   background-color: var(--pop-color);
-  padding: 4rem;
+  padding: 5rem 10rem;
   margin: 0px;
   color: #000;
   text-align: center;
@@ -214,19 +206,21 @@ a.navbar-brand {
   font-weight: normal;
   font-family: "Lobster", sans-serif;
 }
+blockquote cite {
+  letter-spacing: 5px;
+  font-size: 1.4rem;
+}
 
 /* About section */
 
 #About {
   color: white;
 }
-
 @media only screen and (min-width: 1600px) {
   #About {
     height: 100vh;
   }
 }
-
 .text_box {
   text-align: left;
   word-spacing: normal;
@@ -241,18 +235,19 @@ a.navbar-brand {
   text-decoration: none;
   color: #ffdd7e;
 }
-
-.text_box h3 {
+.text_box .subheading {
+  font-size: 6rem;
   color: #ffdd7e;
 }
 
 #About .heading {
   /* color: gray; */
-  color: #ffdd7e;
-  font-size: clamp(2rem, 5vw, 8rem);
+  color: var(--headingcolor);
+  /* font-size: clamp(10rem, 5vw, 8rem); */
+  font-size: 10rem;
   text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
   text-align: left;
   position: relative;
   margin-bottom: 2rem;
@@ -264,6 +259,7 @@ a.navbar-brand {
   top: -20%;
   width: 100%;
   text-align: left;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -272,7 +268,6 @@ a.navbar-brand {
   /* -webkit-text-stroke: 1.5px #fff; */
   z-index: -1;
 }
-
 .btn-1 a {
   text-decoration: none;
   height: inherit;
@@ -282,8 +277,8 @@ a.navbar-brand {
   background-color: #000;
   transition: transform 0.3s ease;
   position: relative;
+  color: #ffdd7e;
 }
-
 .btn-1::after,
 .btn-1::before {
   content: "";
@@ -298,27 +293,18 @@ a.navbar-brand {
   z-index: -1;
   transition: transform 0.3s ease;
 }
-
 .btn:hover {
   color: #fff;
   background-color: #000;
 }
-
 .btn-1:hover {
   transform: translate(-6px, -6px);
 }
-
 .btn-1:hover::after {
   transform: translate(6px, 6px);
 }
-
 .btn-1:hover::before {
   transform: translate(12px, 12px);
-}
-
-.btn a {
-  /* color: white; */
-  color: #ffdd7e;
 }
 
 /* Skill section */
@@ -331,10 +317,10 @@ a.navbar-brand {
   padding: 3rem 10rem 6rem;
 }
 #Skills .skill-div .heading {
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(10rem, 5vw, 8rem);
   text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
   text-align: left;
   position: relative;
   margin-bottom: 2rem;
@@ -345,8 +331,8 @@ a.navbar-brand {
   position: absolute;
   left: 2%;
   top: -20%;
-  width: 100%;
   text-align: left;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -360,30 +346,31 @@ a.navbar-brand {
   height: 3rem;
   width: 15rem;
   color: var(--pop-color);
-  background-color: #222;
-  border: 2px solid #222;
+  background-color: var(--background-col);
+  border: 2px solid var(--background-col);
   border-radius: 26px;
   text-align: center;
   margin: 0px 0px 10px;
   padding: 5px;
+  cursor: grab;
 }
 
 /* Project Section */
 #Projects {
-  /* height: 100vh; */
+  height: max-content;
   text-align: left;
   word-spacing: normal;
   padding: 6rem 10rem;
   margin-left: 0%;
-  /* background-color: #222; */
+  /* background-color: var(--background-col); */
 }
 #Projects .heading {
   /* color: gray; */
   color: #ffdd7e;
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(10rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   text-align: left;
   position: relative;
   margin-bottom: 4rem;
@@ -397,7 +384,7 @@ a.navbar-brand {
   text-align: left;
   text-transform: uppercase;
   font-family: "Montserrat";
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
   /* -webkit-text-stroke: 1.5px #0000002f; */
@@ -473,9 +460,10 @@ a.navbar-brand {
   font-weight: bolder;
   font-family: "Montserrat";
   color: #ffdd7e;
-  text-shadow: 2px 2px 4px #222;
+  text-shadow: 2px 2px 4px var(--background-col);
   margin-bottom: 1rem;
 }
+
 #Projects .item .right .project-sub-title {
   font-size: 1.2rem;
   margin-bottom: 2rem;
@@ -499,11 +487,12 @@ a.navbar-brand {
   position: relative;
   border: 2px solid black;
   background-color: #ffdd7e;
-  color: #222;
+  color: var(--background-col);
+  margin-right: 5px;
 }
 
 .buttons .btn:hover {
-  transform: translate(2px, -2px);
+  transform: translate(2px, -4px);
   background-color: #000;
   color: var(--font-color);
 }
@@ -586,22 +575,28 @@ a.navbar-brand {
   /* background-color: rgb(226, 146, 224); */
   margin-top: 0%;
   /* height: 200px; */
-  height: 70vh;
+  height: 90vh;
   background: #ffdd7e;
   text-align: left;
   padding: 3rem 10rem 6rem;
 }
 
 #Hobbys .heading {
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(10rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   text-align: left;
   position: relative;
-  margin-bottom: 2rem;
   z-index: 3;
   color: rgba(0, 0, 0, 0.827);
+  margin-bottom: 2rem;
+}
+#Hobbys .con {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #Hobbys .heading::before {
   content: attr(data-outline);
@@ -619,11 +614,21 @@ a.navbar-brand {
   z-index: 1;
 }
 
-#Hobbys ul {
-  list-style: none;
-}
-#Hobbys ul li {
-  text-decoration: none;
+#Hobbys .hobby {
+  display: inline-block;
+  height: 10rem;
+  width: 20rem;
+  color: var(--pop-color);
+  background-color: var(--background-col);
+  border: 5px solid rgb(7, 4, 4);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0px 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Contact Section */
@@ -644,7 +649,7 @@ a.navbar-brand {
 
 #Contact .content {
   height: max-content;
-  background: #222;
+  background: var(--background-col);
 }
 #contact_box {
   width: 50rem;
@@ -657,34 +662,19 @@ a.navbar-brand {
   align-items: center;
   font-size: small;
 }
-#contact_box .left {
-  height: 18rem;
-  width: 20rem;
-  /* Add the image into the HTML file */
-  /* Solve the GFG not image not rendering problem */
-  background-image: url(/Images/P-Pic-2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border: 2px solid white;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
+
 #contact_box .right {
   height: 25rem;
-  width: 25rem;
+  width: 45rem;
   color: black;
   border-radius: 10px;
   border: 2px solid white;
   background: var(--pop-color);
   padding: 10px;
   display: flex;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
-  padding-left: 40px;
 }
 
 #contact_box .right h1,
@@ -720,24 +710,27 @@ strong {
 #Contact .innerdiv {
   display: flex;
   align-items: center;
-  padding-top: 0rem;
 }
 
 #Contact ul {
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
-  align-self: flex-start;
-  padding: 0%;
+  align-self: center;
+  padding: 0 16rem;
 }
 
 #Contact ul li {
   position: relative;
   list-style: none;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 #Contact ul li a {
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   /* background-color: rgba(1, 1, 1, 0.5); */
   position: relative;
   width: 40px;
@@ -775,6 +768,15 @@ strong {
 #Contact ul li a:hover::before {
   transform: skewX(45deg) translateX(-150px);
 }
+#Contact hr{
+  border-style: dotted none none;
+  border-color: var(--background-col);
+  border-width: 0.313rem;
+  height: 0rem;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #Contact .info {
   display: flex;
@@ -809,7 +811,7 @@ strong {
 }
 
 /* .navigation-buttons span .next {
-  background: #222;
+  background: var(--background-col);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -892,7 +894,7 @@ strong {
     padding: 2rem 2rem;
     font-size: 1rem;
   }
-
+  
   /* About section */
   .text_box {
     text-align: left;
@@ -900,7 +902,7 @@ strong {
     padding: 4rem 2rem;
   }
   /* Skill section */
-
+  
   #Skills .skill-div {
     height: fit-content;
     text-align: center;
@@ -914,7 +916,7 @@ strong {
   #Skills .skill-div .heading::before {
     text-align: center;
   }
-
+  
   /* Project Section */
   #Projects {
     height: max-content;
@@ -924,7 +926,7 @@ strong {
     margin-left: 0%;
   }
   #Projects .heading {
-    padding-left: 1.001rem;
+    font-size: 1rem;
   }
   #Projects .heading::before {
     padding-left: 1.001rem;
@@ -957,23 +959,8 @@ strong {
     align-items: center;
     font-size: smaller;
   }
-  #contact_box .left {
-    height: 30vh;
-    width: 55vw;
-    background-image: url(/Images/P-Pic-2.png);
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 0px;
-    /* change this for lower than 400px */
-
-    background-repeat: no-repeat;
-    background-position-x: 50%;
-    border: 2px solid white;
-  }
   #contact_box .right {
     height: 18rem;
-    width: 90vw;
     border: 2px solid white;
     background: var(--pop-color);
     color: black;
@@ -985,26 +972,12 @@ strong {
     flex-direction: column;
     /* padding-left: 40px; */
   }
-
-  #contact_box .right a {
-    color: #000;
-    text-decoration: none;
-    margin-bottom: 5px;
-  }
-  #contact_box .right p {
-    color: #000;
-    font-weight: bolder;
-    margin-bottom: 5px;
-    padding-left: 0%;
-  }
-  #contact_box .right p:nth-last-child(2) {
-    margin-bottom: 1rem;
-  }
+  
   /* Navigation Buttons */
   .navigation-buttons {
     display: none;
   }
-
+  
   /* Message popup */
   .callout {
     /* display: none; */
@@ -1012,13 +985,37 @@ strong {
     width: 100%;
     top: 40px;
   }
-
+  
   .callout-header {
     padding: 5px 10px;
     background-color: rgba(199, 199, 199, 0.3);
     font-size: 15px;
     color: rgb(0, 0, 0);
   }
+  #About .heading{
+    font-size: 4rem;
+  }
+  #Projects .heading{
+    font-size: 3rem;
+  }
+  #Hobbys .heading{
+    font-size: 3rem;
+  }
+
+  #Hobbys {
+    height: max-content;
+  }
+  #Hobbys .con {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#Hobbys .hobby {
+    margin-bottom: 2rem;
+  }
+  .text_box .subheading {
+  font-size: 2rem;
+  color: #ffdd7e;
+}
 }
 
 /* Resposive Settings */

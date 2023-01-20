@@ -1,31 +1,3 @@
-//* Cursor Progress bar Script
-//Document Object Model(DOM)
-// let CursorMeter = document.getElementById("CursorMeter");
-// document.addEventListener("mousemove", function (e) {
-//   CursorMeter.style.top = e.clientY + "px";
-//   CursorMeter.style.left = e.clientX + "px";
-// });
-
-// let persent = document.getElementById("persent");
-// let progressBar = document.getElementById("progressBar");
-
-// let totalHeight = document.body.scrollHeight - window.innerHeight;
-// //** windows.scroll */
-// window.onscroll = function () {
-//   let progress = (window.pageYOffset / totalHeight) * 100;
-//   progressBar.style.width = progress + "%";
-//   persent.innerHTML = "Page Scrolled " + Math.round(progress) + "%";
-// };
-
-// ? Script for hiding the message
-// function initialSetup() {
-//   document.getElementById("hide").style.visibility = "visible";
-//   setTimeout(function () {
-//     document.getElementById("hide").style.visibility = "hidden";
-//   }, 8000);
-// }
-// initialSetup();
-
 // ! The bellow code for the Navigation buttons
 
 const buttonPrev = document.querySelector(".prev");
@@ -45,3 +17,28 @@ if (buttonPrev) {
 
 // Insitializeing AOS for div animations
 AOS.init();
+
+// Random Quate Section
+document.addEventListener("DOMContentLoaded", () => {
+  // DOM elements
+  // const button = document.querySelector("button");
+  const quote = document.querySelector("blockquote p");
+  const cite = document.querySelector("blockquote cite");
+
+  async function updateQuote() {
+    // Fetch a random quote from the Quotable API
+    const response = await fetch("https://api.quotable.io/random");
+    const data = await response.json();
+    if (response.ok) {
+      // Update DOM elements
+      quote.textContent = `" ${data.content} "`;
+      cite.textContent = `- ${data.author}`;
+    } else {
+      quote.textContent = "An error occured";
+      console.log(data);
+    }
+  }
+  // call updateQuote once when page loads
+  updateQuote();
+});
+
