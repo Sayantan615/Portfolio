@@ -60,7 +60,6 @@ div {
 
 /* Navbar */
 nav .navbar-nav {
-  /* background: #53bf9d; */
   background: var(--background-col);
 }
 .navbar {
@@ -84,6 +83,7 @@ a.navbar-brand {
 }
 .nav-item :hover {
   color: gray;
+  text-decoration:underline;
 }
 .navbar-toggler {
   color: var(--pop-color);
@@ -316,22 +316,23 @@ blockquote cite {
   word-spacing: normal;
   padding: 3rem 10rem 6rem;
 }
-#Skills .skill-div .heading {
+#Skills .heading {
   font-size: clamp(10rem, 5vw, 8rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
-  text-align: left;
+  text-align: right;
   position: relative;
   margin-bottom: 2rem;
   color: #333;
 }
-#Skills .skill-div .heading::before {
+#Skills .heading::before {
   content: attr(data-outline);
   position: absolute;
+  width: 100%;
   left: 2%;
   top: -20%;
-  text-align: left;
+  text-align: right;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -352,7 +353,7 @@ blockquote cite {
   text-align: center;
   margin: 0px 0px 10px;
   padding: 5px;
-  cursor: grab;
+  cursor: pointer;
 }
 
 /* Project Section */
@@ -398,7 +399,6 @@ blockquote cite {
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 6rem;
-  /* gap: 2rem; */
 }
 #Projects .item:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -415,7 +415,7 @@ blockquote cite {
   color: #fff;
   padding: 2rem 1rem;
   border-radius: 12px;
-  box-shadow: 0px 0px 20px #00000028;
+  box-shadow: 0px 0px 20px #f8f6f668;
 }
 #Projects .item:nth-of-type(even) .right {
   margin-left: 0;
@@ -500,9 +500,10 @@ blockquote cite {
 .innerSection {
   text-align: left;
   color: var(--pop-color);
-  margin-bottom: 3rem;
+  margin: 0rem;
 }
 .innerSection p {
+  padding: 1rem 4rem;
   color: #fff;
   display: inline-block;
   line-break: auto;
@@ -522,6 +523,10 @@ blockquote cite {
 
 .innerSection .item {
   text-align: left;
+}
+
+#Projects p{
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -572,9 +577,8 @@ blockquote cite {
 
 /* Hobby Section */
 #Hobbys {
-  /* background-color: rgb(226, 146, 224); */
+  overflow: hidden;
   margin-top: 0%;
-  /* height: 200px; */
   height: 90vh;
   background: #ffdd7e;
   text-align: left;
@@ -586,24 +590,19 @@ blockquote cite {
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
-  text-align: left;
+  text-align: right;
   position: relative;
   z-index: 3;
   color: rgba(0, 0, 0, 0.827);
   margin-bottom: 2rem;
 }
-#Hobbys .con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #Hobbys .heading::before {
   content: attr(data-outline);
+  width: 100%;
   position: absolute;
   left: 2%;
   top: -20%;
-  width: 100%;
-  text-align: left;
+  text-align: right;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -611,6 +610,11 @@ blockquote cite {
   /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
   -webkit-text-stroke: 1.5px #0000002f;
   z-index: 1;
+}
+#Hobbys .con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #Hobbys .hobby {
@@ -629,6 +633,7 @@ blockquote cite {
   justify-content: center;
   align-items: center;
 }
+
 
 /* Contact Section */
 #Contact {
@@ -818,62 +823,22 @@ strong {
 
 /* New Responsive settings */
 /* Desktop Responsive */
-@media screen and (min-width: 1080px) {
-  /* Last div appper in the center */
-  /* .column:last-child:nth-child(3n-2) {
-    grid-column-end: 3;
-  } */
-}
-
-/* Tablet respostive */
-@media screen and (max-width: 1600px) and (max-height: 1200px) {
-  .callout-header {
-    margin-top: 10px;
-  }
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    text-align: center;
-    line-height: 1;
-    margin: auto;
-  }
-  /* About section */
-  .text_box {
-    text-align: left;
-    word-spacing: normal;
-    height: max-content;
-    padding: 6rem 10rem;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: left;
-    word-spacing: normal;
-    padding: 6rem 10rem;
-    margin-left: 0%;
-  }
-}
-
-/* Android Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
+  /* For Hidden Navbar */
   .navbar {
+    /* visibility: hidden; */
     width: 100%;
-    z-index: 2;
   }
-  .down {
-    position: static;
-    margin: 0px auto 10px;
-  }
-  /* For hiding elemnts */
   .hid {
-    visibility: hidden;
+    /* visibility: hidden; */
     position: absolute;
   }
+
+  /* Message popup */
+  .callout-header {
+    display: none;
+  }
+
   /* Header Section */
   #Header {
     height: 100vh;
@@ -886,63 +851,13 @@ strong {
     font-size: 450%;
   }
   .ShortIntro {
+    padding: 0px;
     font-size: 0.7rem;
   }
   /* Quote Section */
   .firstQuote .container-fluid {
     padding: 2rem 2rem;
     font-size: 1rem;
-  }
-
-  /* About section */
-  .text_box {
-    text-align: left;
-    word-spacing: normal;
-    padding: 4rem 2rem;
-  }
-  /* Skill section */
-
-  #Skills .skill-div {
-    height: fit-content;
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 2rem;
-  }
-  #Skills .skill-div .heading {
-    text-align: center;
-    font-size: clamp(2rem, 15vw, 8rem);
-  }
-  #Skills .skill-div .heading::before {
-    text-align: center;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: left;
-    word-spacing: normal;
-    padding: 4rem 10px;
-    margin-left: 0%;
-  }
-  #Projects .heading {
-    font-size: 1rem;
-  }
-  #Projects .heading::before {
-    padding-left: 1.001rem;
-  }
-  #Projects .innerSection h1,
-  p {
-    padding-left: 1.001rem;
-  }
-  /* Hobbys Section */
-  #Hobbys {
-    padding: 6rem 2rem;
-  }
-  /* Contact Section */
-
-  /* Navigation Buttons */
-  .navigation-buttons {
-    display: none;
   }
 
   /* Message popup */
@@ -959,14 +874,69 @@ strong {
     font-size: 15px;
     color: rgb(0, 0, 0);
   }
+  /* About section */
+  .text_box {
+    /* text-align: left; */
+    word-spacing: normal;
+    padding: 4rem 1rem;
+  }
   #About .heading {
-    font-size: 4rem;
+    color: var(--headingcolor);
+    font-size: 600%;
+    text-align: center;
+  }
+  #About .heading::before {
+    text-align: center;
+  }
+
+  /* Skill section */
+
+  #Skills .skill-div {
+    text-align: center;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+  }
+  #Skills .heading {
+    text-align: center;
+    font-size: 600%;
+  }
+  #Skills .heading::before {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 4rem 10px;
+    margin-left: 0%;
   }
   #Projects .heading {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 600%;
+  }
+  #Projects .heading::before {
+    padding-left: 1.001rem;
+    text-align: center;
+  }
+  #Projects .innerSection h1,
+  p {
+    padding-left: 1.001rem;
+  }
+  /* Hobbys Section */
+  #Hobbys {
+    padding: 6rem 2rem;
   }
   #Hobbys .heading {
-    font-size: 3rem;
+    font-size: 600%;
+    text-align: center;
+  }
+  #Hobbys .heading::before {
+    left: 5%;
+    width: 100%;
+    text-align: center;
   }
 
   #Hobbys {
@@ -979,6 +949,13 @@ strong {
   #Hobbys .hobby {
     margin-bottom: 2rem;
   }
+  /* Contact Section */
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: none;
+  }
+
   .text_box .subheading {
     font-size: 2rem;
     color: #ffdd7e;
@@ -1008,7 +985,232 @@ strong {
     align-items: center;
     justify-content: center;
   }
-  
+
+  #Contact .container-fluid {
+    width: 100vw;
+  }
+
+  #Contact ul {
+    width: auto;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  #Contact ul li {
+    /* position: relative; */
+    list-style: none;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #Contact ul li a:hover {
+    transform: translateY(-10px);
+  }
+  #Contact ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: transform 0.5s ease-in;
+  }
+  #Contact ul li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+  }
+  #Contact hr {
+    border-style: dotted none none;
+    border-color: var(--background-col);
+    border-width: 0.313rem;
+    height: 0rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Contact .info {
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+/* Android Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    z-index: 2;
+    background-color: var(--background-col);
+  }
+  .down {
+    position: static;
+    margin: 0px auto 10px;
+  }
+  /* For hiding elemnts */
+  .hid {
+    visibility: hidden;
+    position: absolute;
+  }
+  /* Header Section */
+  #Header {
+    height: 100vh;
+    line-height: 1.5;
+  }
+  #Header .container-fluid {
+    padding-top: 1.5rem;
+  }
+  .Name {
+    font-size: 450%;
+  }
+  .ShortIntro {
+    padding: 0px;
+    font-size: 0.7rem;
+  }
+  /* Quote Section */
+  .firstQuote .container-fluid {
+    padding: 2rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Message popup */
+  .callout {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    top: 40px;
+  }
+
+  .callout-header {
+    padding: 5px 10px;
+    background-color: rgba(199, 199, 199, 0.3);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  /* About section */
+  .text_box {
+    /* text-align: left; */
+    word-spacing: normal;
+    padding: 4rem 1rem;
+  }
+  #About .heading {
+    color: var(--headingcolor);
+    font-size: clamp(4rem, 5vw, 8rem);
+    text-align: center;
+  }
+  #About .heading::before {
+    text-align: center;
+  }
+
+  /* Skill section */
+
+  #Skills .skill-div {
+    text-align: center;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+  }
+  #Skills .heading {
+    text-align: center;
+    font-size: clamp(5rem, 5vw, 8rem);
+  }
+  #Skills .heading::before {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Project Section */
+  #Projects {
+    overflow: hidden;
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 4rem 10px;
+    margin-left: 0%;
+  }
+  #Projects .heading {
+    text-align: center;
+    font-size: clamp(4rem, 5vw, 8rem);
+    letter-spacing: normal;
+  }
+  #Projects .heading::before {
+    text-align: center;
+    letter-spacing: normal;
+  }
+  #Projects .innerSection p{
+    padding-right: 0rem ;
+    padding-left: 2rem;
+
+  }
+  #Projects .innerSection h1,
+  p {
+    padding-left: 1.001rem;
+  }
+  /* Hobbys Section */
+  #Hobbys {
+    padding: 6rem 2rem;
+  }
+  #Hobbys .heading {
+    font-size: clamp(5rem, 5vw, 8rem);
+    text-align: center;
+  }
+  #Hobbys .heading::before {
+    left: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #Hobbys {
+    height: max-content;
+  }
+  #Hobbys .con {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #Hobbys .hobby {
+    margin-bottom: 2rem;
+  }
+  /* Contact Section */
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: none;
+  }
+
+  .text_box .subheading {
+    font-size: 2rem;
+    color: #ffdd7e;
+  }
+  /* Contact Section */
+
+  #Contact .content {
+    height: max-content;
+    width: 100%;
+    background: var(--background-col);
+    /* background: red; */
+  }
+  #contact_box {
+    width: 100vw;
+  }
+
+  #contact_box .right {
+    width: 30rem;
+  }
+
+  #contact_box .right strong {
+    color: red;
+    font-size: larger;
+  }
+  #Contact .innerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #Contact .container-fluid {
     width: 100vw;
   }
@@ -1070,7 +1272,6 @@ strong {
   /* For Hidden Navbar */
   .navbar {
     /* visibility: hidden; */
-    position: absolute;
     width: 100%;
   }
   .hid {
@@ -1082,4 +1283,239 @@ strong {
   .callout-header {
     display: none;
   }
+
+  /* Header Section */
+  #Header {
+    height: 100vh;
+    line-height: 1.5;
+  }
+  #Header .container-fluid {
+    padding-top: 1.5rem;
+  }
+  .Name {
+    font-size: 450%;
+  }
+  .ShortIntro {
+    padding: 0px;
+    font-size: 0.7rem;
+  }
+  /* Quote Section */
+  .firstQuote .container-fluid {
+    padding: 2rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Message popup */
+  .callout {
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    top: 40px;
+  }
+
+  .callout-header {
+    padding: 5px 10px;
+    background-color: rgba(199, 199, 199, 0.3);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  /* About section */
+  .text_box {
+    /* text-align: left; */
+    word-spacing: normal;
+    padding: 4rem 1rem;
+  }
+  #About .heading {
+    color: var(--headingcolor);
+    font-size: ;
+    text-align: center;
+  }
+  #About .heading::before {
+    text-align: center;
+  }
+
+  /* Skill section */
+
+  #Skills .skill-div {
+    text-align: center;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+  }
+  #Skills .heading {
+    text-align: center;
+    font-size: 400%;
+  }
+  #Skills .heading::before {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 4rem 10px;
+    margin-left: 0%;
+  }
+  #Projects .heading {
+    text-align: center;
+    font-size: 300%;
+  }
+  #Projects .heading::before {
+    padding-left: 1.001rem;
+    text-align: center;
+  }
+  #Projects .innerSection h1,
+  p {
+    padding-left: 1.001rem;
+  }
+  /* Hobbys Section */
+  #Hobbys {
+    padding: 6rem 2rem;
+  }
+  #Hobbys .heading {
+    font-size: 400%;
+    text-align: center;
+  }
+  #Hobbys .heading::before {
+    left: 5%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #Hobbys {
+    height: max-content;
+  }
+  #Hobbys .con {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #Hobbys .hobby {
+    margin-bottom: 2rem;
+  }
+  /* Contact Section */
+
+  /* Navigation Buttons */
+  .navigation-buttons {
+    display: none;
+  }
+
+  .text_box .subheading {
+    font-size: 2rem;
+    color: #ffdd7e;
+  }
+  /* Contact Section */
+
+  #Contact .content {
+    height: max-content;
+    width: 100%;
+    background: var(--background-col);
+    /* background: red; */
+  }
+  #contact_box {
+    width: 100vw;
+  }
+
+  #contact_box .right {
+    width: 30rem;
+  }
+
+  #contact_box .right strong {
+    color: red;
+    font-size: larger;
+  }
+  #Contact .innerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #Contact .container-fluid {
+    width: 100vw;
+  }
+
+  #Contact ul {
+    width: auto;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  #Contact ul li {
+    /* position: relative; */
+    list-style: none;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #Contact ul li a:hover {
+    transform: translateY(-10px);
+  }
+  #Contact ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: transform 0.5s ease-in;
+  }
+  #Contact ul li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+  }
+  #Contact hr {
+    border-style: dotted none none;
+    border-color: var(--background-col);
+    border-width: 0.313rem;
+    height: 0rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Contact .info {
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
 }
+/* Big Screen respostive */
+@media screen and (max-width: 1600px) and (max-height: 1200px) {
+  .callout-header {
+    margin-top: 10px;
+  }
+  /* Header Section */
+  #Header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    line-height: 1;
+    margin: auto;
+  }
+  /* About section */
+  .text_box {
+    text-align: left;
+    word-spacing: normal;
+    height: max-content;
+    padding: 6rem 4rem;
+  }
+
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: center;
+    word-spacing: normal;
+    padding: 6rem 2rem;
+    margin-left: 0%;
+  }
+}
+

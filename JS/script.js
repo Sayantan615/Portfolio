@@ -1,3 +1,4 @@
+
 // ! The bellow code for the Navigation buttons
 
 const buttonPrev = document.querySelector(".prev");
@@ -41,4 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // call updateQuote once when page loads
   updateQuote();
 });
+
+// Can also be included with a regular script tag
 
