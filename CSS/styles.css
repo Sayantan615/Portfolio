@@ -593,7 +593,6 @@ blockquote cite {
   margin-bottom: 2rem;
 }
 #Hobbys .con {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -768,7 +767,7 @@ strong {
 #Contact ul li a:hover::before {
   transform: skewX(45deg) translateX(-150px);
 }
-#Contact hr{
+#Contact hr {
   border-style: dotted none none;
   border-color: var(--background-col);
   border-width: 0.313rem;
@@ -894,7 +893,7 @@ strong {
     padding: 2rem 2rem;
     font-size: 1rem;
   }
-  
+
   /* About section */
   .text_box {
     text-align: left;
@@ -902,7 +901,7 @@ strong {
     padding: 4rem 2rem;
   }
   /* Skill section */
-  
+
   #Skills .skill-div {
     height: fit-content;
     text-align: center;
@@ -916,7 +915,7 @@ strong {
   #Skills .skill-div .heading::before {
     text-align: center;
   }
-  
+
   /* Project Section */
   #Projects {
     height: max-content;
@@ -940,44 +939,12 @@ strong {
     padding: 6rem 2rem;
   }
   /* Contact Section */
-  .right .hr-1 {
-    border-color: #000;
-    margin: 20px auto;
-    width: 40%;
-  }
-  #Contact {
-    height: max-content;
-  }
-  #contact_box {
-    width: 100vw;
-    height: calc(100vh - 4rem);
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
-    margin: 1rem 0rem 0.5rem;
-    justify-content: center;
-    align-items: center;
-    font-size: smaller;
-  }
-  #contact_box .right {
-    height: 18rem;
-    border: 2px solid white;
-    background: var(--pop-color);
-    color: black;
-    padding: 10px;
-    display: flex;
-    /* text-align: left; */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* padding-left: 40px; */
-  }
-  
+
   /* Navigation Buttons */
   .navigation-buttons {
     display: none;
   }
-  
+
   /* Message popup */
   .callout {
     /* display: none; */
@@ -985,20 +952,20 @@ strong {
     width: 100%;
     top: 40px;
   }
-  
+
   .callout-header {
     padding: 5px 10px;
     background-color: rgba(199, 199, 199, 0.3);
     font-size: 15px;
     color: rgb(0, 0, 0);
   }
-  #About .heading{
+  #About .heading {
     font-size: 4rem;
   }
-  #Projects .heading{
+  #Projects .heading {
     font-size: 3rem;
   }
-  #Hobbys .heading{
+  #Hobbys .heading {
     font-size: 3rem;
   }
 
@@ -1006,16 +973,96 @@ strong {
     height: max-content;
   }
   #Hobbys .con {
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-#Hobbys .hobby {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #Hobbys .hobby {
     margin-bottom: 2rem;
   }
   .text_box .subheading {
-  font-size: 2rem;
-  color: #ffdd7e;
-}
+    font-size: 2rem;
+    color: #ffdd7e;
+  }
+  /* Contact Section */
+
+  #Contact .content {
+    height: max-content;
+    width: 100%;
+    background: var(--background-col);
+    /* background: red; */
+  }
+  #contact_box {
+    width: 100vw;
+  }
+
+  #contact_box .right {
+    width: 30rem;
+  }
+
+  #contact_box .right strong {
+    color: red;
+    font-size: larger;
+  }
+  #Contact .innerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #Contact .container-fluid {
+    width: 100vw;
+  }
+
+  #Contact ul {
+    width: auto;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    left: 0px;
+    right: 0px;
+  }
+  #Contact ul li {
+    /* position: relative; */
+    list-style: none;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  #Contact ul li a:hover {
+    transform: translateY(-10px);
+  }
+  #Contact ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: transform 0.5s ease-in;
+  }
+  #Contact ul li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+  }
+  #Contact hr {
+    border-style: dotted none none;
+    border-color: var(--background-col);
+    border-width: 0.313rem;
+    height: 0rem;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #Contact .info {
+    display: flex;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+    color: #ffdd7e;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
 }
 
 /* Resposive Settings */
