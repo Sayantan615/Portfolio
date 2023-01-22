@@ -2,6 +2,7 @@
 /* body */
 
 :root {
+  overflow-x: hidden;
   --font-color: beige;
   --pop-color: #ffdd7e;
   --headingcolor: #ffdd7e;
@@ -15,7 +16,7 @@
 html body {
   margin: 0%;
   padding: 0%;
-  width: auto;
+  width: 100%;
   height: auto;
   overflow-x: hidden;
   text-align: center;
@@ -579,10 +580,14 @@ blockquote cite {
 #Hobbys {
   overflow: hidden;
   margin-top: 0%;
-  height: 90vh;
+  height: 100%;
   background: #ffdd7e;
   text-align: left;
   padding: 3rem 10rem 6rem;
+}
+
+#Hobbys .container-fluid{
+  background-color: var(--pop-color);
 }
 
 #Hobbys .heading {
@@ -918,12 +923,12 @@ strong {
     font-size: 600%;
   }
   #Projects .heading::before {
-    padding-left: 1.001rem;
+    padding-left: 0rem;
     text-align: center;
   }
   #Projects .innerSection h1,
   p {
-    padding-left: 1.001rem;
+    padding-left: 0rem;
   }
   /* Hobbys Section */
   #Hobbys {
@@ -1143,12 +1148,12 @@ strong {
   }
   #Projects .innerSection p{
     padding-right: 0rem ;
-    padding-left: 2rem;
+    padding-left: 0rem;
 
   }
   #Projects .innerSection h1,
   p {
-    padding-left: 1.001rem;
+    padding-left: 0rem;
   }
   /* Hobbys Section */
   #Hobbys {
@@ -1363,12 +1368,12 @@ strong {
     font-size: 300%;
   }
   #Projects .heading::before {
-    padding-left: 1.001rem;
+    padding-left: 0rem;
     text-align: center;
   }
   #Projects .innerSection h1,
   p {
-    padding-left: 1.001rem;
+    padding-left: 0rem;
   }
   /* Hobbys Section */
   #Hobbys {
@@ -1506,7 +1511,7 @@ strong {
     text-align: left;
     word-spacing: normal;
     height: max-content;
-    padding: 6rem 4rem;
+    padding: 6rem 2rem;
   }
 
   /* Project Section */

@@ -44,4 +44,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Can also be included with a regular script tag
-
