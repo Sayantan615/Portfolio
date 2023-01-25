@@ -2,49 +2,45 @@
 /* body */
 
 :root {
-  overflow-x: hidden;
   --font-color: beige;
   --pop-color: #ffdd7e;
   --headingcolor: #ffdd7e;
   --background-col: #222;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 * {
   box-sizing: border-box;
 }
-
-html body {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  height: auto;
-  overflow-x: hidden;
-  text-align: center;
-  background-color: var(--background-col);
+div {
+  display: block;
 }
 
+html,
 body {
-  background-color: #fff;
-  /* change font font-family */
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: var(--background-col);
+  text-align: center;
   font-family: "Montserrat";
-  /* To hide the Horizontzl Scroll */
 }
 
 /* Doted Horizontal Rule */
 .hr-1 {
   border-style: dotted none none;
-  border-color: rgb(255, 255, 255);
   border-width: 0.313rem;
   height: 0rem;
   width: 5%;
   margin-left: auto;
   margin-right: auto;
+  border-color: var(--pop-color);
 }
-.right .hr-1 {
-  border-color: #000;
-  margin-left: 0px;
-  width: 60%;
-}
+
 .hr-2 {
   border-style: solid none repeat;
   border-color: var(--pop-color);
@@ -60,7 +56,7 @@ div {
 }
 
 /* Navbar */
-nav .navbar-nav {
+nav {
   background: var(--background-col);
 }
 .navbar {
@@ -84,7 +80,7 @@ a.navbar-brand {
 }
 .nav-item :hover {
   color: gray;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 .navbar-toggler {
   color: var(--pop-color);
@@ -119,12 +115,12 @@ a.navbar-brand {
 }
 /* Message popup */
 .callout {
-  position: absolute;
   width: 100%;
-  top: 50px;
 }
 
 .callout-header {
+  position: relative;
+  top: 50px;
   padding: 10px 45px;
   background-color: rgba(199, 199, 199, 0.3);
   font-size: 20px;
@@ -139,12 +135,14 @@ a.navbar-brand {
 
 /* Header Section */
 #Header {
-  height: inherit;
+  overflow-x: hidden;
+  height: 100%;
   display: flex;
   padding: 5%;
   justify-content: center;
   align-items: center;
   line-height: 1;
+  text-align: center;
   background: var(--background-col);
   margin: auto;
 }
@@ -226,7 +224,7 @@ blockquote cite {
   text-align: left;
   word-spacing: normal;
   height: max-content;
-  padding: 6rem 20rem;
+  padding: 6rem 10rem;
 }
 .text_box strong {
   color: var(--pop-color);
@@ -246,6 +244,7 @@ blockquote cite {
   color: var(--headingcolor);
   /* font-size: clamp(10rem, 5vw, 8rem); */
   font-size: 10rem;
+  /* Resposive font size  */
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
@@ -267,7 +266,7 @@ blockquote cite {
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
   /* -webkit-text-stroke: 1.5px #fff; */
-  z-index: -1;
+  z-index: 0;
 }
 .btn-1 a {
   text-decoration: none;
@@ -315,7 +314,7 @@ blockquote cite {
   background-color: #ffdd7e;
   text-align: center;
   word-spacing: normal;
-  padding: 3rem 10rem 6rem;
+  padding: 6rem 10rem;
 }
 #Skills .heading {
   font-size: clamp(10rem, 5vw, 8rem);
@@ -362,7 +361,7 @@ blockquote cite {
   height: max-content;
   text-align: left;
   word-spacing: normal;
-  padding: 6rem 10rem;
+  padding: 6rem 6rem;
   margin-left: 0%;
   /* background-color: var(--background-col); */
 }
@@ -390,7 +389,7 @@ blockquote cite {
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
   /* -webkit-text-stroke: 1.5px #0000002f; */
-  z-index: -1;
+  z-index: index 0;
 }
 
 #Projects .item {
@@ -526,7 +525,7 @@ blockquote cite {
   text-align: left;
 }
 
-#Projects p{
+#Projects p {
   color: white;
 }
 
@@ -580,13 +579,12 @@ blockquote cite {
 #Hobbys {
   overflow: hidden;
   margin-top: 0%;
-  height: 100%;
   background: #ffdd7e;
   text-align: left;
   padding: 3rem 10rem 6rem;
 }
 
-#Hobbys .container-fluid{
+#Hobbys .container-fluid {
   background-color: var(--pop-color);
 }
 
@@ -639,7 +637,6 @@ blockquote cite {
   align-items: center;
 }
 
-
 /* Contact Section */
 #Contact {
   height: 100vh;
@@ -674,7 +671,7 @@ blockquote cite {
 
 #contact_box .right {
   height: 25rem;
-  width: 45rem;
+  width: 35rem;
   color: black;
   border-radius: 10px;
   border: 2px solid white;
@@ -727,7 +724,7 @@ strong {
   z-index: 1;
   display: flex;
   align-self: center;
-  padding: 0 16rem;
+  justify-content: center;
 }
 
 #Contact ul li {
@@ -828,7 +825,7 @@ strong {
 
 /* New Responsive settings */
 /* Desktop Responsive */
-@media screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
   /* For Hidden Navbar */
   .navbar {
     /* visibility: hidden; */
@@ -883,7 +880,7 @@ strong {
   .text_box {
     /* text-align: left; */
     word-spacing: normal;
-    padding: 4rem 1rem;
+    padding: 4rem 6rem;
   }
   #About .heading {
     color: var(--headingcolor);
@@ -1047,7 +1044,7 @@ strong {
 }
 
 /* Android Responsive */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar {
     width: 100%;
     z-index: 2;
@@ -1101,7 +1098,7 @@ strong {
   .text_box {
     /* text-align: left; */
     word-spacing: normal;
-    padding: 4rem 1rem;
+    padding: 4rem 4rem;
   }
   #About .heading {
     color: var(--headingcolor);
@@ -1132,7 +1129,7 @@ strong {
   #Projects {
     overflow: hidden;
     height: max-content;
-    text-align: left;
+    text-align: center;
     word-spacing: normal;
     padding: 4rem 10px;
     margin-left: 0%;
@@ -1146,10 +1143,9 @@ strong {
     text-align: center;
     letter-spacing: normal;
   }
-  #Projects .innerSection p{
-    padding-right: 0rem ;
+  #Projects .innerSection p {
+    padding-right: 0rem;
     padding-left: 0rem;
-
   }
   #Projects .innerSection h1,
   p {
@@ -1203,7 +1199,7 @@ strong {
   }
 
   #contact_box .right {
-    width: 30rem;
+    width: 25rem;
   }
 
   #contact_box .right strong {
@@ -1273,7 +1269,7 @@ strong {
 }
 
 /* Resposive Settings */
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   /* For Hidden Navbar */
   .navbar {
     /* visibility: hidden; */
@@ -1420,10 +1416,12 @@ strong {
   }
   #contact_box {
     width: 100vw;
+    margin-bottom: 0rem;
   }
 
   #contact_box .right {
-    width: 30rem;
+    width: 20rem;
+    height: 21rem;
   }
 
   #contact_box .right strong {
@@ -1490,8 +1488,8 @@ strong {
     padding-bottom: 20px;
   }
 }
-/* Big Screen respostive */
-@media screen and (max-width: 1600px) and (max-height: 1200px) {
+/* Big only screen respostive */
+@media only screen and (max-width: 1600px) and (min-width: 1080px) {
   .callout-header {
     margin-top: 10px;
   }
@@ -1511,7 +1509,7 @@ strong {
     text-align: left;
     word-spacing: normal;
     height: max-content;
-    padding: 6rem 2rem;
+    padding: 6rem 8rem;
   }
 
   /* Project Section */
@@ -1519,8 +1517,7 @@ strong {
     height: max-content;
     text-align: center;
     word-spacing: normal;
-    padding: 6rem 2rem;
+    padding: 6rem 8rem;
     margin-left: 0%;
   }
 }
-

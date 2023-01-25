@@ -1,23 +1,5 @@
-
-// ! The bellow code for the Navigation buttons
-
-const buttonPrev = document.querySelector(".prev");
-
-if (buttonPrev) {
-  window.addEventListener("scroll", () => {
-    if (pageYOffset > window.innerHeight * 1.2) {
-      buttonPrev.style.display = "flex";
-    } else {
-      buttonPrev.style.display = "none";
-    }
-  });
-  buttonPrev.addEventListener("click", () => {
-    window.scrollTo(0, 0);
-  });
-}
-
 // Insitializeing AOS for div animations
-AOS.init();
+// AOS.init();
 
 // Random Quate Section
 document.addEventListener("DOMContentLoaded", () => {
@@ -44,3 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Can also be included with a regular script tag
+let destroyBoxes = document.querySelectorAll("#destroy-box");
+let isOn = true;
+document
+  .querySelector("#destroy-button")
+  .addEventListener("click", function () {
+    if (isOn)
+      destroyBoxes.forEach(function (ele) {
+        ele.vanillaTilt.destroy();
+        isOn = false;
+      });
+    else {
+      destroyBoxes.forEach(function (ele) {
+        VanillaTilt.init(ele);
+        isOn = true;
+      });
+    }
+  });

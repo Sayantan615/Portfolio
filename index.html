@@ -31,15 +31,12 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0508ea428d.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0508ea428d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
     <!-- Navigation Bar start -->
-    <nav class="navbar navbar-expand-md pb-0 mb-0">
+    <nav class="navbar fixed-top navbar-expand-md pb-0 mb-0">
       <div class="container-fluid">
         <a
           class="navbar-brand fw-bold fst-italic"
@@ -61,9 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Header"
-                >Home</a
-              >
+              <a class="nav-link active" href="#Header">Home</a>
             </li>
             <li class="nav-item">
               <!-- give a rdg gllow effect when hover and effect when active -->
@@ -126,8 +121,10 @@
     </div>
     <!-- Header Section end -->
     <!-- Quote Section -->
-    <div class="firstQuote" data-aos="zoom-out-left">
-      <div class="container-fluid">
+    <!-- AOS dosn't work  -->
+    <!-- data-aos="zoom-out-left" -->
+    <div class="firstQuote">
+      <div class="container-fluid" >
         <div class="auto">
           <blockquote>
             <p>
@@ -141,7 +138,7 @@
     </div>
     <!-- Quote Section end -->
     <!-- About Section -->
-    <section id="About">
+    <section id="About" >
       <div class="text_box">
         <h3 class="heading" data-outline="About">About</h3>
         <h5>Let me tell you about myself</h5>
@@ -199,8 +196,10 @@
     <!-- Exprience Section-->
     <!-- Exprience Section end -->
     <!-- Skills Section -->
+    <!-- AOS dosn't work  -->
+    <!-- data-aos="zoom-out-left" -->
     <section id="Skills">
-      <div class="skill-div" data-aos="zoom-out-left">
+      <div class="skill-div">
         <h3 class="heading" data-outline="Skills">Skills</h3>
         <div class="content">
           <!-- Start working On skills -->
@@ -255,13 +254,19 @@
           </p>
         </div>
         <div class="all-items">
-          <div class="item" data-tilt="" data-tilt-reset="false">
-            <div class="left" data-aos="fade-up-left">
+          <div
+            class="item"
+            data-tilt=""
+            ,
+            data-tilt-reset="false"
+            id="destroy-box"
+          >
+            <div class="left">
               <div class="img">
                 <img src="Images/SnakeGame1.jpg" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-up-right">
+            <div class="right" >
               <h2 class="project-title">Snake Game</h2>
               <h3 class="project-sub-title">
                 A reminder to the good old days.
@@ -277,16 +282,17 @@
                 <a href="Projects/SnakeGame/index.html" class="btn">
                   <i class="fa-solid fa-up-right-from-square"></i> Open
                 </a>
+                <a class="btn" id="destroy-button"><i class="fa fa-light fa-toggle-off"></i>Toggle</a>
               </div>
             </div>
           </div>
-          <div class="item" data-tilt="" data-tilt-reset="false">
-            <div class="left" data-aos="fade-up-right">
+          <div id="destroy-box" class="item" data-tilt="" data-tilt-reset="false">
+            <div class="left" >
               <div class="img">
                 <img src="Images/PlayTheDrum.jpg" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-up-left">
+            <div class="right">
               <h2 class="project-title">Play The Drum</h2>
               <h3 class="project-sub-title">Do you love music ?</h3>
               <p class="project-desc">
@@ -308,13 +314,13 @@
             </div>
           </div>
 
-          <div class="item" data-tilt="" data-tilt-reset="false">
-            <div class="left" data-aos="fade-up-left">
+          <div id="destroy-box" class="item" data-tilt="" data-tilt-reset="false">
+            <div class="left">
               <div class="img">
                 <img src="Images/SaimonGame.png" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-up-right">
+            <div class="right" >
               <h2 class="project-title">Simon Game</h2>
               <h3 class="project-sub-title">
                 Do you remember the previous color ?
@@ -334,14 +340,14 @@
             </div>
           </div>
 
-          <div class="item" data-tilt="" data-tilt-reset="false">
-            <div class="left" data-aos="fade-up-left">
+          <div id="destroy-box" class="item" data-tilt="" data-tilt-reset="false">
+            <div class="left">
               <div class="img">
                 <img src="Images/PortfolioWebsite.jpg" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-up-right">
-              <h2 class="project-title">Portfolio Website</h2>
+            <div class="right" >
+              <h2 class="project-title">Portfolio</h2>
               <h3 class="project-sub-title">I love it. 😁</h3>
               <p class="project-desc">
                 In this project I gave my all to showcase all of my skills and
@@ -360,13 +366,13 @@
             </div>
           </div>
 
-          <div class="item" data-tilt="" data-tilt-reset="false">
-            <div class="left" data-aos="fade-up-left">
+          <div id="destroy-box" class="item" data-tilt="" data-tilt-reset="false">
+            <div class="left">
               <div class="img">
                 <img src="Images/Newsletter1.png" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-up-right">
+            <div class="right" >
               <h2 class="project-title">Newsletter</h2>
               <h3 class="project-sub-title">
                 Subscribe to my newsletter to get exciting news everyday. :)
@@ -387,15 +393,44 @@
             </div>
           </div>
 
-          <p>Visit my github for more :)</p>
+          <div id="destroy-box" class="item" data-tilt="" data-tilt-reset="false">
+            <div class="left">
+              <div class="img">
+                <img src="Images/sblog.png" alt="" />
+              </div>
+            </div>
+            <div class="right" >
+              <h2 class="project-title">Sblog</h2>
+              <h3 class="project-sub-title">I love it. 😁</h3>
+              <p class="project-desc">
+                A Blog website made with EJS, Node Js, Express Js and MongoDB.
+                It is up and running using RENDER hosting services.
+              </p>
+              <div class="buttons">
+                <a href="https://github.com/Sayantan615/sblog.git" class="btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://sblog.onrender.com" class="btn">
+                  <i class="fa-solid fa-up-right-from-square"></i> Open
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <p>Visit <a href="https://github.com/Sayantan615"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+            GitHub for more :)</p>
         </div>
       </div>
     </section>
     <!-- Project Section end -->
 
     <!-- Hobbys Section start -->
+    <!-- AOS dosn't work  -->
+    <!-- data-aos="zoom-out-left" -->
     <section id="Hobbys">
-      <div class="container-fluid" data-aos="zoom-out-left">
+      <div class="container-fluid">
         <h3 class="heading" data-outline="Hobbys">Hobbys</h3>
         <div class="con">
           <div class="hobby" data-tilt data-tilt-reset="false">
@@ -418,11 +453,8 @@
           <div
             id="contact_box"
             data-tilt
-            data-tilt-startX="-5"
-            data-tilt-startY="5"
-            data-tilt-reset-to-start="true"
           >
-            <div class="right" data-aos="fade-right">
+            <div class="right">
               <h1>Thank you :)</h1>
               <h4>I am Sayantan Chowdhury.</h4>
               <h6>Programmer && Devloper</h6>
@@ -470,13 +502,12 @@
     <!-- Contect Section end-->
 
     <div class="navigation-buttons fixed-div">
-      <span class="prev">
+      <a href="#Header" class="prev btn btn-dark">
         <img src="Images/buttonPrev.png" alt="" />
-      </span>
+      </a>
       <!-- <span class="next"> <img src="Images/buttonNext.png" alt="" /> </span> -->
     </div>
-
-    <!-- Script -->
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="JS/script.js"></script>
