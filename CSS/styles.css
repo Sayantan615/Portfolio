@@ -497,7 +497,7 @@ blockquote cite {
 .innerSection {
   text-align: center;
   color: var(--pop-color);
-  margin: 4rem;
+  margin: 8rem;
   margin-bottom: 10rem;
 }
 .innerSection li {
@@ -1530,6 +1530,6 @@ strong {
     margin-left: 0%;
   }
   .innerSection {
-    margin: 4rem;
+    margin: 8rem;
   }
 }
