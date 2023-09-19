@@ -124,6 +124,15 @@
     <!-- Quote Section -->
     <!-- AOS dosn't work  -->
     <!-- data-aos="zoom-out-left" -->
+    <div style="position: relative">
+      <img
+        class="q1"
+        src="/Images/q1.png"
+        alt=""
+        data-tilt=""
+        data-tilt-scale="1.5"
+      />
+    </div>
     <div class="firstQuote">
       <div class="container-fluid">
         <div class="auto">
@@ -134,8 +143,24 @@
             </p>
             <cite> - Oscar Wilde </cite>
           </blockquote>
+          <button
+            class="btn btn-outline-dark RandomQ"
+            data-tilt=""
+            data-tilt-scale="1.5"
+          >
+            Random Quote
+          </button>
         </div>
       </div>
+    </div>
+    <div style="position: relative">
+      <img
+        class="q2"
+        src="/Images/q2.png"
+        alt=""
+        data-tilt=""
+        data-tilt-scale="1.5"
+      />
     </div>
     <!-- Quote Section end -->
     <!-- About Section -->
@@ -153,7 +178,7 @@
           to contribute effectively. If my qualifications align with your
           requirements,
           <a href="#Contact">please do not hesitate to reach out to me</a>.
-          Thank you for your consideration. Best regards, Sayantan Chowdhury.
+          Thank you for your consideration.
         </p>
         <h4>Birth Date:</h4>
         <p>25th March 2002</p>
@@ -161,9 +186,13 @@
         <a href="mailto:sayantanchowdhury615@gmail.com?"
           >sayantanchowdhury615@gmail.com</a
         >
-        <hr class="hr-2" />
-        <h3 class="subheading">Achievements</h3>
-        <h4><strong>Codding Exprience :</strong></h4>
+      </div>
+    </section>
+    <!-- Achievements -->
+    <section id="Achievements">
+      <div class="text_box">
+        <h3 class="heading" data-outline="Achievements">Achievements</h3>
+        <h4><strong>Codding :</strong></h4>
         <p>
           I have solved problem on daily basis on renouned sites like
           <a href="https://leetcode.com/sayantanchowdhury615/">LeetCode</a>
@@ -173,7 +202,7 @@
             >GeeksforGeeks</a
           >.
         </p>
-        <h4><strong>Web Development Exprience :</strong></h4>
+        <h4><strong>Web Development :</strong></h4>
         <p>
           Worked on many personal projects like
           <a href="#Projects">Snake Game</a>,
@@ -192,15 +221,13 @@
         <button class="btn btn-1" download>
           <a href="Resume.pdf" download="">Download Resume</a>
         </button>
-        <!-- Add download function -->
       </div>
     </section>
+    <!-- Achievements -->
     <!-- About Section end -->
     <!-- Exprience Section-->
     <!-- Exprience Section end -->
     <!-- Skills Section -->
-    <!-- AOS dosn't work  -->
-    <!-- data-aos="zoom-out-left" -->
     <section id="Skills">
       <div class="skill-div">
         <h3 class="heading" data-outline="Skills">Skills</h3>
@@ -210,37 +237,40 @@
             <h3>HTML5</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
+            <h3>React JS</h3>
+          </div>
+          <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>JavaScript</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>Python</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
-            <h3>SQL & NOSQL</h3>
+            <h3>SQL, NOSQL</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
-            <h3>Node Js</h3>
+            <h3>Node JS</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>Express Js</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
-            <h3>OOPS</h3>
-          </div>
-          <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>C, C++</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
-            <h3>OS</h3>
+            <h3>Operating Systems</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
-            <h3>DBMS</h3>
+            <h3>Database Management System</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>React JS</h3>
           </div>
           <div class="skill" data-tilt="" data-tilt-scale="1.5">
             <h3>MongoDB</h3>
+          </div>
+          <div class="skill" data-tilt="" data-tilt-scale="1.5">
+            <h3>Object Oriented Programming</h3>
           </div>
         </div>
       </div>
@@ -253,37 +283,41 @@
         <!-- Add a icon to link to github for per project -->
         <div class="innerSection">
           <h1>Personal Projects</h1>
-          <ul>
-            <li>
-              I have dedicated a significant portion of my personal time to
-              working on web development-related projects, showcasing my
-              proficiency in a range of technologies. My front-end projects
-              primarily leverage HTML5, CSS, JavaScript, and ReactJS, while my
-              back-end projects are built using NodeJS, ExpressJS, and MongoDB.
-            </li>
-            <li>
-              Throughout these projects, I have gained valuable insights and
-              practical experience in various facets of web development. This
-              journey has expanded my knowledge in diverse areas, including data
-              structures and algorithms (DSA), where I've applied these concepts
-              to solve complex problems effectively. Additionally, I have delved
-              into more advanced topics such as password hashing, API
-              management, and CSS techniques.
-            </li>
-            <li>
-              Furthermore, I have honed my skills in crafting RESTful APIs, a
-              critical component in modern web development. Working with MongoDB
-              databases has proven both challenging and rewarding. Tackling
-              intricate query problems has been both intellectually stimulating
-              and enjoyable. These experiences have further deepened my
-              understanding of database management and optimization.
-            </li>
-            <li>
-              I am committed to continuously enhancing my expertise in web
-              development and am eager to apply my skills in a professional
-              capacity.
-            </li>
-          </ul>
+          <div class="project-section-details">
+            <ul>
+              <li>
+                I have dedicated a significant portion of my personal time to
+                working on web development-related projects, showcasing my
+                proficiency in a range of technologies. My front-end projects
+                primarily leverage HTML5, CSS, JavaScript, and ReactJS, while my
+                back-end projects are built using NodeJS, ExpressJS, and
+                MongoDB.
+              </li>
+              <li>
+                Throughout these projects, I have gained valuable insights and
+                practical experience in various facets of web development. This
+                journey has expanded my knowledge in diverse areas, including
+                data structures and algorithms (DSA), where I've applied these
+                concepts to solve complex problems effectively. Additionally, I
+                have delved into more advanced topics such as password hashing,
+                API management, and CSS techniques.
+              </li>
+              <li>
+                Furthermore, I have honed my skills in crafting RESTful APIs, a
+                critical component in modern web development. Working with
+                MongoDB databases has proven both challenging and rewarding.
+                Tackling intricate query problems has been both intellectually
+                stimulating and enjoyable. These experiences have further
+                deepened my understanding of database management and
+                optimization.
+              </li>
+              <li>
+                I am committed to continuously enhancing my expertise in web
+                development and am eager to apply my skills in a professional
+                capacity.
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="all-items">
           <div
@@ -493,15 +527,9 @@
     <!-- data-aos="zoom-out-left" -->
     <section id="Hobbys">
       <div class="container-fluid">
-        <h3 class="heading" data-outline="Something">
-          Something
-        </h3>
-        <h3 class="heading" data-outline="about">
-          about
-        </h3>
-        <h3 class="heading" data-outline="Myself">
-          Myself
-        </h3>
+        <h3 class="heading" data-outline="Something">Something</h3>
+        <h3 class="heading" data-outline="about">about</h3>
+        <h3 class="heading" data-outline="Myself">Myself</h3>
         <div class="inner-text">
           <div class="sub-texts">Hello,</div>
           <div class="sub-texts">
@@ -528,22 +556,31 @@
           <div class="sub-texts">
             How do you describe yourself? In terms of personality, I identify as
             an INFP-T (<a
+              style="color: black"
               href="https://www.16personalities.com/infp-personality"
               >for those unfamiliar with it, you can click here</a
             >). People often describe me as reserved, and I tend to agree. I'm
             selective about opening up to others.
           </div>
           <div class="sub-texts">
-            Is there anything I dislike? Well, I have an aversion to bugs and
+            Is there anything you dislike? Well, I have an aversion to bugs and
             worms.
           </div>
           Thank you for taking the time to get to know me.
         </div>
         <div class="con">
-          <div class="hobby" data-tilt data-tilt-reset="false">Books</div>
-          <div class="hobby" data-tilt data-tilt-reset="false">Movies</div>
-          <div class="hobby" data-tilt data-tilt-reset="false">Languages</div>
-          <div class="hobby" data-tilt data-tilt-reset="false">Chess</div>
+          <div class="hobby" data-tilt="" data-tilt-scale="1.5">
+            <i class="fa fa-solid fa-book"></i>
+          </div>
+          <div class="hobby" data-tilt="" data-tilt-scale="1.5">
+            <i class="fa fa-solid fa-film"></i>
+          </div>
+          <div class="hobby" data-tilt="" data-tilt-scale="1.5">
+            <i class="fa fa-solid fa-music"></i>
+          </div>
+          <div class="hobby" data-tilt="" data-tilt-scale="1.5">
+            <i class="fa fa-solid fa-chess"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -551,19 +588,15 @@
     <section id="Contact">
       <div class="continer-fluid">
         <div class="content">
-          <div id="contact_box" data-tilt>
-            <div class="right">
+          <div id="contact_box">
+            <div class="right" data-tilt>
               <h1>Thank you for visiting :)</h1>
-              <h4>Sayantan Chowdhury</h4>
-              <h6>Programmer && Developer</h6>
-              <hr />
               <p>
-                <strong> Email : </strong>
-                <a href="mailto:sayantanchowdhury615@gmail.com?"
-                  >sayantanchowdhury615@gamil.com</a
-                >
+                I hope you enjoyed exploring my work and learning a bit about
+                me. If you have any questions, opportunities, or just want to
+                say hello, please don't hesitate to get in touch. Wishing you a
+                fantastic day ahead!
               </p>
-
               <div class="innerdiv">
                 <ul>
                   <li>
@@ -585,6 +618,11 @@
                   <li>
                     <a href="https://github.com/Sayantan615"
                       ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="mailto:sayantanchowdhury615@gmail.com?"
+                      ><i class="fa-regular fa-envelope"></i
                     ></a>
                   </li>
                 </ul>
