@@ -92,8 +92,12 @@ a.navbar-brand {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  height: 30px;
-  width: 60px;
+  height: 40px;
+  width: 45px;
+  font-size: 1.5rem !important;
+  border: 2px solid var(--pop-color);
+  border-radius: 30px;
+  padding: 10px;
 }
 .down a {
   color: var(--pop-color);
@@ -187,7 +191,7 @@ a.navbar-brand {
 }
 
 .ShortIntro {
-  font-size: 0.8rem;
+  font-size: clamp(1.2rem, 1.5rem, 2rem);
   word-spacing: 5px;
   color: #fff;
   font-family: "Ubuntu", "sacramento", monospace, sans-serif;
@@ -215,11 +219,7 @@ blockquote cite {
 #About {
   color: white;
 }
-@media only screen and (min-width: 1600px) {
-  #About {
-    height: 100vh;
-  }
-}
+
 .text_box {
   text-align: left;
   word-spacing: normal;
@@ -242,7 +242,6 @@ blockquote cite {
 #About .heading {
   /* color: gray; */
   color: var(--headingcolor);
-  /* font-size: clamp(10rem, 5vw, 8rem); */
   font-size: 10rem;
   /* Resposive font size  */
   text-transform: uppercase;
@@ -359,14 +358,12 @@ blockquote cite {
 /* Project Section */
 #Projects {
   height: max-content;
-  text-align: left;
+  text-align: center;
   word-spacing: normal;
   padding: 6rem 6rem;
   margin-left: 0%;
-  /* background-color: var(--background-col); */
 }
 #Projects .heading {
-  /* color: gray; */
   color: #ffdd7e;
   font-size: clamp(10rem, 5vw, 8rem);
   text-transform: uppercase;
@@ -498,15 +495,18 @@ blockquote cite {
 }
 
 .innerSection {
-  text-align: left;
+  text-align: center;
   color: var(--pop-color);
-  margin: 0rem;
+  margin: 4rem;
+  margin-bottom: 10rem;
 }
-.innerSection p {
-  padding: 1rem 4rem;
+.innerSection li {
+  padding: 1rem 0.2rem;
   color: #fff;
-  display: inline-block;
-  line-break: auto;
+  text-align: left;
+}
+.innerSection ul li {
+  list-style: circle;
 }
 .innerSection .btn {
   background-color: var(--pop-color);
@@ -589,7 +589,7 @@ blockquote cite {
 }
 
 #Hobbys .heading {
-  font-size: clamp(10rem, 5vw, 8rem);
+  font-size: clamp(8rem, 5vw, 3rem);
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -597,14 +597,13 @@ blockquote cite {
   position: relative;
   z-index: 3;
   color: rgba(0, 0, 0, 0.827);
-  margin-bottom: 2rem;
 }
 #Hobbys .heading::before {
   content: attr(data-outline);
   width: 100%;
   position: absolute;
   left: 2%;
-  top: -20%;
+  top: -10%;
   text-align: right;
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -613,6 +612,9 @@ blockquote cite {
   /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
   -webkit-text-stroke: 1.5px #0000002f;
   z-index: 1;
+}
+#Hobbys .heading :last-child {
+  margin-bottom: 4rem;
 }
 #Hobbys .con {
   display: flex;
@@ -623,7 +625,7 @@ blockquote cite {
 #Hobbys .hobby {
   display: inline-block;
   height: 10rem;
-  width: 20rem;
+  width: 15rem;
   color: var(--pop-color);
   background-color: var(--background-col);
   border: 5px solid rgb(7, 4, 4);
@@ -631,10 +633,19 @@ blockquote cite {
   text-align: center;
   margin: 0px 10px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.inner-text {
+  font-size: 1.4rem;
+  padding: 8rem;
+}
+
+.sub-texts {
+  margin-bottom: 1rem;
 }
 
 /* Contact Section */
@@ -1267,7 +1278,6 @@ strong {
     padding-bottom: 20px;
   }
 }
-
 /* Resposive Settings */
 @media only screen and (max-width: 400px) {
   /* For Hidden Navbar */
@@ -1328,7 +1338,6 @@ strong {
   }
   #About .heading {
     color: var(--headingcolor);
-    font-size: ;
     text-align: center;
   }
   #About .heading::before {
@@ -1519,5 +1528,8 @@ strong {
     word-spacing: normal;
     padding: 6rem 8rem;
     margin-left: 0%;
+  }
+  .innerSection {
+    margin: 4rem;
   }
 }
