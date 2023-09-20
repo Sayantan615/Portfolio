@@ -118,10 +118,13 @@ a.navbar-brand {
     height: max-content;
   }
 }
+
+/* Navbar section end */
 /* Message popup */
 .callout {
   width: 100%;
   position: relative;
+  margin: 1% 0% 3% 0%;
 }
 
 .callout-header {
@@ -139,7 +142,7 @@ a.navbar-brand {
   color: rgba(225, 221, 126, 0.7);
   font-weight: bolder;
 }
-
+/* Message Popout end */
 /* Header Section */
 
 #Header .container-fluid {
@@ -197,47 +200,45 @@ a.navbar-brand {
   font-family: "Ubuntu", "sacramento", monospace, sans-serif;
 }
 
+/* Hader section end */
+
 /* Quote section */
 .firstQuote .container-fluid {
   background-color: var(--pop-color);
-  padding: 5rem clamp(20rem, 20vw, 30rem);
+  padding: 8rem clamp(20rem, 20vw, 30rem);
   margin: 0px;
   background: url(https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
   color: black;
   background-position: 0;
   text-align: center;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
+  font-size: clamp(2rem, 1.4vw, 5rem);
+  letter-spacing: 0.5px;
   font-weight: normal;
   font-family: "Lobster", sans-serif;
   height: clamp(min-content, 40vh, 50vh);
 }
-blockquote cite {
-  font-size: 1.4rem;
+.firstQuote cite {
+  font-size: clamp(2rem, 2vw, 5rem);
 }
 
 .q1 {
   position: absolute;
-  left: 65px;
-  top: -4rem;
-  height: 200px;
+  left: 5%;
+  top: -5vw;
+  height: 13vw;
 }
 .q2 {
   position: absolute;
-  right: 65px;
-  top: -9rem;
-  height: 200px;
+  right: 5%;
+  bottom: -5vw;
+  height: 13vw;
 }
+
+/* Quote section end */
 
 /* About section */
 
-.text_box {
-  text-align: left;
-  word-spacing: normal;
-  height: max-content;
-  padding: 6rem 10rem;
-  font-size: 1.3rem;
-}
+
 #About .text_box {
   height: 100vh;
   display: flex;
@@ -245,6 +246,9 @@ blockquote cite {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  word-spacing: normal;
+  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
+  font-size: clamp(0.8rem, 1.1vw, 4rem);
 }
 
 .text_box strong {
@@ -327,7 +331,7 @@ blockquote cite {
   transform: translate(12px, 12px);
 }
 
-/* Achievements */
+/* Achievements section start */
 
 #Achievements .heading {
   color: var(--headingcolor);
@@ -356,15 +360,24 @@ blockquote cite {
   z-index: 0;
 }
 
+#Achievements .text_box {
+  text-align: left;
+  word-spacing: normal;
+  height: 100vh;
+  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
+  font-size: clamp(0.8rem, 1.1vw, 4rem);
+}
+
+/* Achievement section end */
 /* Skill section */
 
 .skill-div {
-  height: auto;
+  height: max-content;
   background-color: #ffdd7e;
   color: black;
   text-align: left;
   word-spacing: normal;
-  padding: 6rem 10rem;
+  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
 }
 #Skills .heading {
   font-size: clamp(5rem, 10vw, 10rem);
@@ -398,19 +411,23 @@ blockquote cite {
 }
 
 #Skills .content {
-  padding-right: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #Skills .content .skill {
   display: inline-block;
+  width: 40%;
   border: 2px solid var(--background-col);
   border-radius: 26px;
-  text-align: left;
+  text-align: center;
   margin: 0px 0px 10px;
-  padding: 40px;
+  padding: 2%;
   cursor: pointer;
-  font-size: 50%;
-  border: 5px solid black;
+  font-size: clamp(10px, 80%, 2rem);
+  border: 0.4vw solid black;
 }
 
 /* Project Section */
@@ -418,7 +435,7 @@ blockquote cite {
   height: max-content;
   text-align: center;
   word-spacing: normal;
-  padding: 6rem 6rem;
+  padding: clamp(8rem, 5vw, 20rem) clamp(2rem, 10vw, 10rem);
   margin-left: 0%;
 }
 #Projects .heading {
@@ -429,7 +446,7 @@ blockquote cite {
   letter-spacing: 0.3rem;
   text-align: center;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem auto 4rem;
 }
 #Projects .heading::before {
   content: attr(data-outline);
@@ -560,8 +577,7 @@ blockquote cite {
 .innerSection {
   text-align: center;
   color: var(--pop-color);
-  margin: 8rem;
-  margin-bottom: 10rem;
+  margin: 6rem 0rem 10rem;
 }
 .innerSection li {
   padding: 1rem 0.2rem;
@@ -656,7 +672,7 @@ blockquote cite {
 }
 
 #Hobbys .heading {
-  font-size: clamp(8rem, 5vw, 3rem);
+  font-size: clamp(2rem, 6vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -706,7 +722,7 @@ blockquote cite {
 
 .inner-text {
   font-size: 1.4rem;
-  padding: 8rem;
+  padding: clamp(2rem, 4vw ,8rem);
   font-weight: bolder;
 }
 
@@ -910,7 +926,7 @@ blockquote cite {
 }
 
 /* Tablet Responsive */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 770px) {
   /* Header Section */
   #Header {
     height: 100vh;
@@ -927,20 +943,11 @@ blockquote cite {
     font-size: clamp(1rem, 3vw, 3rem);
   }
   /* Quote Section */
-  .q1 {
-    height: 150px;
-    top: -50px;
-    left: 10px;
-  }
+
   .firstQuote .container-fluid {
-    padding: 8rem clamp(8rem, 20vw, 30rem);
-    font-size: 2rem;
+    padding: 4rem clamp(8rem, 20vw, 30rem);
   }
-  .q2 {
-    height: 150px;
-    top: -100px;
-    right: 10px;
-  }
+
 
   /* About section */
   .text_box {
@@ -1009,11 +1016,16 @@ blockquote cite {
     font-size: 1.2rem;
     margin-bottom: 0px;
   }
-
 }
 
 /* Small Screen Responsive */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 450px) {
+  .down {
+    right: 30%;
+    height: 40px;
+    width: 40%;
+    background-color: var(--background-col);
+  }
   /* Message popup */
   .callout-header {
     display: none;
@@ -1038,20 +1050,10 @@ blockquote cite {
   }
 
   /* Quote Section */
-  .q1 {
-    height: 70px;
-    top: -20px;
-    left: 10px;
-  }
   .firstQuote .container-fluid {
     height: max-content;
     padding: 4rem 2rem;
     font-size: 1rem;
-  }
-  .q2 {
-    height: 70px;
-    top: -50px;
-    right: 10px;
   }
 
   /* About section */
@@ -1071,9 +1073,7 @@ blockquote cite {
   }
 
   /* Skill section */
-  #Skills .skill-div {
-    padding: 40px 0px;
-  }
+
   #Skills .content .skill {
     padding: 5px;
     border-radius: 10px;
