@@ -367,7 +367,7 @@ blockquote cite {
   padding: 6rem 10rem;
 }
 #Skills .heading {
-  font-size: clamp(10rem, 5vw, 8rem);
+  font-size: clamp(5rem, 10vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
@@ -698,7 +698,7 @@ blockquote cite {
   text-align: center;
   margin: 0px 10px;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -867,470 +867,9 @@ blockquote cite {
 
 /* New Responsive settings */
 /* Desktop Responsive */
-@media only screen and (max-width: 1080px) {
-  /* For Hidden Navbar */
-  .navbar {
-    /* visibility: hidden; */
-    width: 100%;
-  }
-  .hid {
-    /* visibility: hidden; */
-    position: absolute;
-  }
 
-  /* Message popup */
-  .callout-header {
-    display: none;
-  }
-
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    line-height: 1.5;
-  }
-  #Header .container-fluid {
-    padding-top: 1.5rem;
-  }
-  .Name {
-    font-size: 450%;
-  }
-  .ShortIntro {
-    padding: 0px;
-    font-size: 0.7rem;
-  }
-  /* Quote Section */
-  .firstQuote .container-fluid {
-    padding: 20rem 4rem;
-    font-size: 2rem;
-    height: 80vh;
-  }
-  .q1 {
-    height: 150px;
-    top: -3rem;
-  }
-  .q2 {
-    height: 150px;
-    top: -6rem;
-  }
-  /* Message popup */
-  .callout {
-    /* display: none; */
-    position: absolute;
-    width: 100%;
-    top: 40px;
-  }
-
-  .callout-header {
-    padding: 5px 10px;
-    background-color: rgba(199, 199, 199, 0.3);
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-  }
-  /* About section */
-  .text_box {
-    /* text-align: left; */
-    word-spacing: normal;
-    padding: 4rem 6rem;
-  }
-  #About .heading {
-    color: var(--headingcolor);
-    font-size: 600%;
-    text-align: center;
-  }
-  #About .heading::before {
-    text-align: center;
-  }
-  #Achievements .heading::before {
-    text-align: center;
-  }
-
-  /* Skill section */
-  #Skills .content {
-    padding-right: 0rem;
-  }
-  #Skills .skill-div {
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 2rem;
-  }
-  #Skills .heading {
-    text-align: center;
-    font-size: 600%;
-  }
-  #Skills .heading::before {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: left;
-    word-spacing: normal;
-    padding: 4rem 10px;
-    margin-left: 0%;
-  }
-  #Projects .heading {
-    text-align: center;
-    font-size: 600%;
-  }
-  #Projects .heading::before {
-    padding-left: 0rem;
-    text-align: center;
-  }
-  #Projects .innerSection h1,
-  p {
-    padding-left: 0rem;
-  }
-  /* Hobbys Section */
-  #Hobbys {
-    padding: 6rem 2rem;
-  }
-  #Hobbys .heading {
-    font-size: 600%;
-    text-align: center;
-  }
-  #Hobbys .heading::before {
-    left: 5%;
-    width: 100%;
-    text-align: center;
-  }
-
-  #Hobbys {
-    height: max-content;
-  }
-  /* Contact Section */
-
-  /* Navigation Buttons */
-  .navigation-buttons {
-    display: none;
-  }
-
-  .text_box .subheading {
-    font-size: 2rem;
-    color: #ffdd7e;
-  }
-}
-
-/* Android Responsive */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    width: 100%;
-    z-index: 2;
-    background-color: var(--background-col);
-  }
-  .down {
-    position: static;
-    margin: 0px auto 10px;
-  }
-  /* For hiding elemnts */
-  .hid {
-    visibility: hidden;
-    position: absolute;
-  }
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    line-height: 1.5;
-  }
-  #Header .container-fluid {
-    padding-top: 1.5rem;
-  }
-  .Name {
-    font-size: 450%;
-  }
-  .ShortIntro {
-    padding: 0px;
-    font-size: clamp(1rem, 3vw, 3rem);
-  }
-  /* Quote Section */
-  .firstQuote .container-fluid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    height: 80vh;
-  }
-
-  /* Message popup */
-  .callout {
-    /* display: none; */
-    position: absolute;
-    width: 100%;
-    top: 40px;
-  }
-
-  .callout-header {
-    padding: 5px 10px;
-    background-color: rgba(199, 199, 199, 0.3);
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-  }
-  /* About section */
-  .text_box {
-    /* text-align: left; */
-    word-spacing: normal;
-    padding: 4rem 4rem;
-  }
-  #About .heading {
-    color: var(--headingcolor);
-    text-align: center;
-  }
-  #About .heading::before {
-    text-align: center;
-  }
-
-  /* Skill section */
-
-  #Skills .skill-div {
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 2rem;
-  }
-
-  #Skills .heading {
-    text-align: center;
-    font-size: clamp(5rem, 5vw, 8rem);
-  }
-  #Skills .heading::before {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Project Section */
-  #Projects {
-    overflow: hidden;
-    height: max-content;
-    text-align: center;
-    word-spacing: normal;
-    padding: 4rem 10px;
-    margin-left: 0%;
-  }
-  #Projects .heading {
-    text-align: center;
-    font-size: clamp(4rem, 5vw, 8rem);
-    letter-spacing: normal;
-  }
-  #Projects .heading::before {
-    text-align: center;
-    letter-spacing: normal;
-  }
-  #Projects .innerSection p {
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
-  #Projects .innerSection h1,
-  p {
-    padding-left: 0rem;
-  }
-  /* Hobbys Section */
-  #Hobbys {
-    padding: 6rem 2rem;
-  }
-  #Hobbys .heading {
-    font-size: clamp(5rem, 5vw, 8rem);
-    text-align: center;
-  }
-  #Hobbys .heading::before {
-    left: 5%;
-    width: 100%;
-    text-align: center;
-  }
-
-  #Hobbys {
-    height: max-content;
-  }
-
-  #Hobbys .hobby {
-    margin-bottom: 2rem;
-  }
-  /* Contact Section */
-
-  /* Navigation Buttons */
-  .navigation-buttons {
-    display: none;
-  }
-
-  .text_box .subheading {
-    font-size: 2rem;
-    color: #ffdd7e;
-  }
-  /* Contact Section */
-
-  #Contact .content {
-    height: max-content;
-    width: 100%;
-    /* background: red; */
-  }
-  #contact_box {
-    width: 100vw;
-  }
-
-  #contact_box .right {
-    width: 30rem;
-  }
-}
-/* Resposive Settings */
-@media only screen and (max-width: 400px) {
-  /* For Hidden Navbar */
-  .navbar {
-    /* visibility: hidden; */
-    width: 100%;
-  }
-  .hid {
-    /* visibility: hidden; */
-    position: absolute;
-  }
-
-  /* Message popup */
-  .callout-header {
-    display: none;
-  }
-
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    line-height: 1.5;
-  }
-  #Header .container-fluid {
-    padding-top: 1.5rem;
-  }
-  .Name {
-    font-size: 450%;
-  }
-  .ShortIntro {
-    padding: 0px;
-    font-size: 0.7rem;
-  }
-  /* Quote Section */
-  .firstQuote .container-fluid {
-    padding: 2rem 2rem;
-    font-size: 1rem;
-  }
-
-  /* Message popup */
-  .callout {
-    /* display: none; */
-    position: absolute;
-    width: 100%;
-    top: 40px;
-  }
-
-  .callout-header {
-    padding: 5px 10px;
-    background-color: rgba(199, 199, 199, 0.3);
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-  }
-  /* About section */
-  .text_box {
-    /* text-align: left; */
-    word-spacing: normal;
-    padding: 4rem 1rem;
-  }
-  #About .heading {
-    color: var(--headingcolor);
-    text-align: center;
-  }
-  #About .heading::before {
-    text-align: center;
-  }
-
-  /* Skill section */
-
-  #Skills .skill-div {
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 2rem;
-  }
-  #Skills .heading {
-    text-align: center;
-    font-size: 400%;
-  }
-  #Skills .heading::before {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: left;
-    word-spacing: normal;
-    padding: 4rem 10px;
-    margin-left: 0%;
-  }
-  #Projects .heading {
-    text-align: center;
-    font-size: 300%;
-  }
-  #Projects .heading::before {
-    padding-left: 0rem;
-    text-align: center;
-  }
-  #Projects .innerSection h1,
-  p {
-    padding-left: 0rem;
-  }
-  /* Hobbys Section */
-  #Hobbys {
-    padding: 6rem 2rem;
-  }
-  #Hobbys .heading {
-    font-size: 400%;
-    text-align: center;
-  }
-  #Hobbys .heading::before {
-    left: 5%;
-    width: 100%;
-    text-align: center;
-  }
-
-  #Hobbys {
-    height: max-content;
-  }
-
-  #Hobbys .hobby {
-    margin-bottom: 2rem;
-  }
-  /* Contact Section */
-
-  /* Navigation Buttons */
-  .navigation-buttons {
-    display: none;
-  }
-
-  .text_box .subheading {
-    font-size: 2rem;
-    color: #ffdd7e;
-  }
-  /* Contact Section */
-
-  #Contact .content {
-    height: max-content;
-  }
-  #contact_box {
-    width: 100vw;
-    margin-bottom: 0rem;
-  }
-
-  /* #contact_box .right {
-    width: 20rem;
-    height: 21rem;
-  } */
-
-  #Contact .innerdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #Contact .container-fluid {
-    /* width: 100vw; */
-  }
-}
-/* Big only screen respostive */
-@media only screen and (max-width: 1600px) and (min-width: 1080px) {
+/* Bigscreen respostive */
+@media only screen and (max-width: 1600px) and (min-width: 1081px) {
   .callout-header {
     margin-top: 10px;
   }
@@ -1368,4 +907,280 @@ blockquote cite {
   .innerSection {
     margin: 8rem;
   }
+}
+
+/* Tablet Responsive */
+@media only screen and (max-width: 800px) {
+  /* Header Section */
+  #Header {
+    height: 100vh;
+    line-height: 1.5;
+  }
+  #Header .container-fluid {
+    padding-top: 1.5rem;
+  }
+  .Name {
+    font-size: 450%;
+  }
+  .ShortIntro {
+    padding: 0px;
+    font-size: clamp(1rem, 3vw, 3rem);
+  }
+  /* Quote Section */
+  .q1 {
+    height: 150px;
+    top: -50px;
+    left: 10px;
+  }
+  .firstQuote .container-fluid {
+    padding: 8rem clamp(8rem, 20vw, 30rem);
+    font-size: 2rem;
+  }
+  .q2 {
+    height: 150px;
+    top: -100px;
+    right: 10px;
+  }
+
+  /* About section */
+  .text_box {
+    word-spacing: normal;
+    padding: 4rem 4rem;
+  }
+
+  /* Skill section */
+  #Skills .heading {
+    text-align: center;
+  }
+  #Skills .heading::before {
+    text-align: center;
+  }
+  #Skills .skill-div {
+    text-align: center;
+    word-spacing: normal;
+    padding: 2rem 1.5rem;
+  }
+
+  #Skills .content {
+    padding-right: 0px;
+  }
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: center;
+    word-spacing: normal;
+    padding: 6rem 4rem;
+    margin-left: 0%;
+  }
+  .project-section-details {
+    border-radius: 5px;
+  }
+  .innerSection {
+    margin: 0px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  .innerSection ul {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .innerSection ul li {
+    list-style: none;
+    padding-bottom: 0px;
+  }
+  /* Hobbys Section */
+  #Hobbys {
+    padding: 5rem 10px;
+  }
+  #Hobbys .heading {
+    z-index: 0;
+    text-align: left;
+    font-size: 4rem !important;
+  }
+  #Hobbys .inner-text {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+  }
+  #Hobbys .heading::before {
+    text-align: left;
+  }
+  #Hobbys .hobby {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+
+}
+
+/* Small Screen Responsive */
+@media only screen and (max-width: 430px) {
+  /* Message popup */
+  .callout-header {
+    display: none;
+  }
+
+  /* Header Section */
+  #Header {
+    height: 100vh;
+    line-height: 1.5;
+  }
+  #Header .container-fluid {
+    padding-top: 1.5rem;
+  }
+  .hey {
+    font-size: 150%;
+  }
+  .Name {
+    font-size: 350%;
+  }
+  #Header .container-fluid {
+    padding: 0%;
+  }
+
+  /* Quote Section */
+  .q1 {
+    height: 70px;
+    top: -20px;
+    left: 10px;
+  }
+  .firstQuote .container-fluid {
+    height: max-content;
+    padding: 4rem 2rem;
+    font-size: 1rem;
+  }
+  .q2 {
+    height: 70px;
+    top: -50px;
+    right: 10px;
+  }
+
+  /* About section */
+  .text_box {
+    height: ;
+    word-spacing: normal;
+    padding: 4rem 1rem;
+    font-size: 0.8rem;
+  }
+  /* About section */
+  .heading {
+    font-size: 3rem !important;
+  }
+
+  #Achievements .heading {
+    font-size: 1.7rem !important;
+  }
+
+  /* Skill section */
+  #Skills .skill-div {
+    padding: 40px 0px;
+  }
+  #Skills .content .skill {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  /* Project Section */
+  #Projects {
+    height: max-content;
+    text-align: left;
+    word-spacing: normal;
+    padding: 4rem 10px;
+    margin-left: 0%;
+  }
+  .project-section-details {
+    border-radius: 5px;
+  }
+  .innerSection {
+    margin: 0px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  .innerSection ul {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .innerSection ul li {
+    list-style: none;
+    padding-bottom: 0px;
+  }
+
+  /* !Hide Project item images in mobile view*/
+
+  /* Hobbys Section */
+
+  #Hobbys {
+    padding: 5rem 10px;
+  }
+  #Hobbys .heading {
+    z-index: 0;
+    text-align: left;
+    font-size: 2rem !important;
+  }
+  #Hobbys .inner-text {
+    padding: 20px 0px;
+    font-size: 0.8rem;
+  }
+  #Hobbys .heading::before {
+    text-align: left;
+  }
+  #Hobbys .hobby {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+  }
+
+  /* Contact Section */
+
+  #Contact .content {
+    height: max-content;
+  }
+  #contact_box {
+    /* width: 100vw; */
+    margin-bottom: 0rem;
+  }
+
+  #contact_box .right {
+    width: 80vw;
+    height: max-content;
+    padding: 15px;
+    font-size: 10px;
+  }
+  #Contact .innerdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact_box .right h1 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  #Contact ul li a {
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    border-radius: 50px;
+  }
+
+  #Contact .info {
+    font-size: 10px;
+  }
+
+  /* !Don't Know if need */
+  /* .callout-header {
+    padding: 5px 10px;
+    background-color: rgba(199, 199, 199, 0.3);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  } */
+
+  /* Contact Section */
+
+  /* Navigation Buttons */
+  /*.navigation-buttons {
+    display: none;
+  }
+
+  .text_box .subheading {
+    font-size: 2rem;
+    color: #ffdd7e;
+  } */
 }
