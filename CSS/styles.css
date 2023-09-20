@@ -363,7 +363,7 @@ a.navbar-brand {
 #Achievements .text_box {
   text-align: left;
   word-spacing: normal;
-  height: 100vh;
+  height: 90vh;
   padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
   font-size: clamp(0.8rem, 1.1vw, 4rem);
 }
