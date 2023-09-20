@@ -61,7 +61,7 @@ nav {
   background: var(--background-col);
 }
 .navbar {
-  padding-top: 0px;
+  padding: 5px;
 }
 a.navbar-brand {
   margin-right: 0px;
@@ -121,12 +121,14 @@ a.navbar-brand {
 /* Message popup */
 .callout {
   width: 100%;
+  position: relative;
 }
 
 .callout-header {
-  position: relative;
+  width: 100%;
+  position: absolute;
   top: 50px;
-  padding: 10px 45px;
+  padding: 10px 50px;
   background-color: rgba(199, 199, 199, 0.3);
   font-size: 20px;
   color: black;
@@ -139,22 +141,19 @@ a.navbar-brand {
 }
 
 /* Header Section */
-#Header {
-  overflow-x: hidden;
-  height: 100%;
-  display: flex;
-  padding: 5%;
-  justify-content: center;
-  align-items: center;
-  line-height: 1;
-  text-align: center;
-  background: var(--background-col);
-  margin: auto;
-}
 
 #Header .container-fluid {
+  height: 100vh;
+  background: var(--background-col);
   display: inline-block;
   padding-top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+  line-height: 1;
+  flex-direction: column;
 }
 
 .img-1 {
@@ -237,7 +236,17 @@ blockquote cite {
   word-spacing: normal;
   height: max-content;
   padding: 6rem 10rem;
+  font-size: 1.3rem;
 }
+#About .text_box {
+  height: 100vh;
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .text_box strong {
   color: var(--pop-color);
   margin-left: 4px;
@@ -254,7 +263,7 @@ blockquote cite {
 #About .heading {
   /* color: gray; */
   color: var(--headingcolor);
-  font-size: 10rem;
+  font-size: clamp(5rem, 10vw, 10rem);
   /* Resposive font size  */
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -322,11 +331,11 @@ blockquote cite {
 
 #Achievements .heading {
   color: var(--headingcolor);
-  font-size: 10rem;
+  font-size: clamp(2rem, 8vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
-  text-align: left;
+  text-align: center;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -336,7 +345,7 @@ blockquote cite {
   left: 2%;
   top: -20%;
   width: 100%;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -388,6 +397,10 @@ blockquote cite {
   z-index: 10;
 }
 
+#Skills .content {
+  padding-right: 12rem;
+}
+
 #Skills .content .skill {
   display: inline-block;
   border: 2px solid var(--background-col);
@@ -410,11 +423,11 @@ blockquote cite {
 }
 #Projects .heading {
   color: #ffdd7e;
-  font-size: clamp(10rem, 5vw, 8rem);
+  font-size: clamp(4rem, 8vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.3rem;
-  text-align: left;
+  text-align: center;
   position: relative;
   margin-bottom: 4rem;
 }
@@ -424,7 +437,7 @@ blockquote cite {
   left: 2%;
   top: -20%;
   width: 100%;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.4rem;
@@ -580,6 +593,9 @@ blockquote cite {
 }
 
 @media only screen and (max-width: 768px) {
+  #Skills .content {
+    padding-right: 0rem;
+  }
   #Projects .item {
     flex-direction: column;
   }
@@ -924,17 +940,14 @@ blockquote cite {
   #About .heading::before {
     text-align: center;
   }
-  #Achievements .heading {
-    color: var(--headingcolor);
-    font-size: 250%;
-    text-align: center;
-  }
   #Achievements .heading::before {
     text-align: center;
   }
 
   /* Skill section */
-
+  #Skills .content {
+    padding-right: 0rem;
+  }
   #Skills .skill-div {
     text-align: center;
     word-spacing: normal;
@@ -986,10 +999,6 @@ blockquote cite {
   #Hobbys {
     height: max-content;
   }
-
-  #Hobbys .hobby {
-    margin-bottom: 2rem;
-  }
   /* Contact Section */
 
   /* Navigation Buttons */
@@ -1000,85 +1009,6 @@ blockquote cite {
   .text_box .subheading {
     font-size: 2rem;
     color: #ffdd7e;
-  }
-  /* Contact Section */
-
-  #Contact .content {
-    height: max-content;
-    width: 100%;
-    background: var(--background-col);
-    /* background: red; */
-  }
-  #contact_box {
-    width: 100vw;
-  }
-
-  #contact_box .right {
-    width: 30rem;
-  }
-
-  #contact_box .right strong {
-    color: red;
-    font-size: larger;
-  }
-  #Contact .innerdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #Contact .container-fluid {
-    width: 100vw;
-  }
-
-  #Contact ul {
-    width: auto;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    left: 0px;
-    right: 0px;
-  }
-  #Contact ul li {
-    /* position: relative; */
-    list-style: none;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  #Contact ul li a:hover {
-    transform: translateY(-10px);
-  }
-  #Contact ul li a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(45deg) translateX(150px);
-    transition: transform 0.5s ease-in;
-  }
-  #Contact ul li a:hover::before {
-    transform: skewX(45deg) translateX(-150px);
-  }
-  #Contact hr {
-    border-style: dotted none none;
-    border-color: var(--background-col);
-    border-width: 0.313rem;
-    height: 0rem;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #Contact .info {
-    display: flex;
-    font-family: "Lobster", sans-serif;
-    font-weight: lighter;
-    justify-content: center;
-    padding-bottom: 20px;
   }
 }
 
@@ -1144,7 +1074,6 @@ blockquote cite {
   }
   #About .heading {
     color: var(--headingcolor);
-    font-size: clamp(4rem, 5vw, 8rem);
     text-align: center;
   }
   #About .heading::before {
@@ -1158,6 +1087,7 @@ blockquote cite {
     word-spacing: normal;
     padding: 6rem 2rem;
   }
+
   #Skills .heading {
     text-align: center;
     font-size: clamp(5rem, 5vw, 8rem);
@@ -1230,7 +1160,6 @@ blockquote cite {
   #Contact .content {
     height: max-content;
     width: 100%;
-    background: var(--background-col);
     /* background: red; */
   }
   #contact_box {
@@ -1238,72 +1167,7 @@ blockquote cite {
   }
 
   #contact_box .right {
-    width: 25rem;
-  }
-
-  #contact_box .right strong {
-    color: red;
-    font-size: larger;
-  }
-  #Contact .innerdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #Contact .container-fluid {
-    width: 100vw;
-  }
-
-  #Contact ul {
-    width: auto;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    left: 0px;
-    right: 0px;
-  }
-  #Contact ul li {
-    /* position: relative; */
-    list-style: none;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  #Contact ul li a:hover {
-    transform: translateY(-10px);
-  }
-  #Contact ul li a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(45deg) translateX(150px);
-    transition: transform 0.5s ease-in;
-  }
-  #Contact ul li a:hover::before {
-    transform: skewX(45deg) translateX(-150px);
-  }
-  #Contact hr {
-    border-style: dotted none none;
-    border-color: var(--background-col);
-    border-width: 0.313rem;
-    height: 0rem;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #Contact .info {
-    display: flex;
-    font-family: "Lobster", sans-serif;
-    font-weight: lighter;
-    color: #ffdd7e;
-    justify-content: center;
-    padding-bottom: 20px;
+    width: 30rem;
   }
 }
 /* Resposive Settings */
@@ -1444,24 +1308,17 @@ blockquote cite {
 
   #Contact .content {
     height: max-content;
-    width: 100%;
-    background: var(--background-col);
-    /* background: red; */
   }
   #contact_box {
     width: 100vw;
     margin-bottom: 0rem;
   }
 
-  #contact_box .right {
+  /* #contact_box .right {
     width: 20rem;
     height: 21rem;
-  }
+  } */
 
-  #contact_box .right strong {
-    color: red;
-    font-size: larger;
-  }
   #Contact .innerdiv {
     display: flex;
     align-items: center;
@@ -1469,57 +1326,7 @@ blockquote cite {
   }
 
   #Contact .container-fluid {
-    width: 100vw;
-  }
-
-  #Contact ul {
-    width: auto;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    left: 0px;
-    right: 0px;
-  }
-  #Contact ul li {
-    /* position: relative; */
-    list-style: none;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  #Contact ul li a:hover {
-    transform: translateY(-10px);
-  }
-  #Contact ul li a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.5);
-    transform: skewX(45deg) translateX(150px);
-    transition: transform 0.5s ease-in;
-  }
-  #Contact ul li a:hover::before {
-    transform: skewX(45deg) translateX(-150px);
-  }
-  #Contact hr {
-    border-style: dotted none none;
-    border-color: var(--background-col);
-    border-width: 0.313rem;
-    height: 0rem;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #Contact .info {
-    display: flex;
-    font-family: "Lobster", sans-serif;
-    font-weight: lighter;
-    justify-content: center;
-    padding-bottom: 20px;
+    /* width: 100vw; */
   }
 }
 /* Big only screen respostive */
