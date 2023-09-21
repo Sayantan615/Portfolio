@@ -1054,7 +1054,7 @@ a.navbar-brand {
   .text_box {
     height: ;
     word-spacing: normal;
-    padding: 4rem 1rem;
+    padding: 4rem 1rem !important;
     font-size: 0.8rem;
   }
   /* About section */
