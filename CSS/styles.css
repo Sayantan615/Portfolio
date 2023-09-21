@@ -90,7 +90,7 @@ a.navbar-brand {
   color: var(--pop-color);
   background-color: var(--background-col);
 }
-.down {
+.download_btn {
   right: 10px;
   display: flex;
   justify-content: center;
@@ -105,11 +105,11 @@ a.navbar-brand {
   padding: 10px;
   margin-right: 0%;
 }
-.down a {
+.download_btn a {
   color: var(--pop-color);
   text-decoration: none;
 }
-.down :hover {
+.download_btn :hover {
   color: gray;
 }
 
@@ -1015,7 +1015,7 @@ a.navbar-brand {
 
 /* Small Screen Responsive */
 @media only screen and (max-width: 450px) {
-  .down {
+  .download_btn {
     right: 30%;
     height: 40px;
     width: 40%;
