@@ -31,6 +31,7 @@ randomQ.addEventListener("click", () => {
 // Can also be included with a regular script tag
 let destroyBoxes = document.querySelectorAll("#destroy-box");
 let isOn = true;
+
 document
   .querySelector("#destroy-button")
   .addEventListener("click", function () {
@@ -51,3 +52,17 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: "#navbarNav",
 });
 
+// Check if the user is on an Android device
+var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+
+// Disable the script on Android devices
+if (isAndroid) {
+  // Optionally, you can add a message or perform other actions here.
+  document.querySelectorAll("[data-tilt]").forEach((element) => {
+    element.vanillaTilt.destroy();
+  });
+  console.log("Script disabled on Android devices.");
+} else {
+  // The script will run on non-Android devices
+  // Place your script code here
+}
