@@ -2,10 +2,19 @@
 /* body */
 
 :root {
-  --font-color: beige;
-  --pop-color: #ffdd7e;
-  --headingcolor: #ffdd7e;
-  --background-col: #222;
+  /* Light Mode Colors */
+  --font-color: black;
+  --pop-color: #b8b838;
+  --headingcolor: #000000;
+  --background-color: #9f9090;
+  --shadow-color: rgba(14, 13, 13, 0.203);
+
+  /* Dark Mode colors */
+  --dark-font-color: white;
+  --dark-pop-color: #000000;
+  --dark-headingcolor: #000000;
+  --dark-background-color: #000;
+  --dark-shadow-color: rgba(255, 255, 255, 0.203);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -25,9 +34,9 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  background-color: var(--background-col);
+  background-color: var(--background-color);
   text-align: center;
-  color: white;
+  color: var(--font-color);
   font-family: "Montserrat";
   position: relative;
 }
@@ -59,7 +68,7 @@ div {
 
 /* Navbar */
 nav {
-  /* background: var(--background-col); */
+  /* background: var(--background-color); */
 }
 .navbar {
   background-color: rgba(16, 16, 16, 0.3);
@@ -87,7 +96,7 @@ a.navbar-brand {
 }
 .navbar-toggler {
   color: var(--pop-color);
-  background-color: var(--background-col);
+  background-color: var(--background-color);
 }
 .download_btn {
   right: 10px;
@@ -99,7 +108,7 @@ a.navbar-brand {
   width: 45px;
   font-size: 1.5rem !important;
   border: 2px solid var(--pop-color);
-  background-color: var(--background-col);
+  background-color: var(--background-color);
   border-radius: 30px;
   padding: 10px;
   margin-right: 0%;
@@ -110,12 +119,6 @@ a.navbar-brand {
 }
 .download_btn :hover {
   color: gray;
-}
-
-@media only screen and (max-width: 768px) {
-  .autoheight {
-    height: max-content;
-  }
 }
 
 /* Navbar section end */
@@ -146,7 +149,7 @@ a.navbar-brand {
 
 #Header .container-fluid {
   height: 100vh;
-  background: var(--background-col);
+  background: var(--background-color);
   display: inline-block;
   padding-top: 0rem;
   display: flex;
@@ -177,7 +180,7 @@ a.navbar-brand {
   font-family: "sacramento", sans-serif;
   font-size: 550%;
   /* color: gray; */
-  color: #ffdd7e;
+  color: var(--pop-color);
   font-weight: bold;
   animation: fade 2s ease-in forwards;
   margin-bottom: 20px;
@@ -195,7 +198,7 @@ a.navbar-brand {
 .ShortIntro {
   font-size: clamp(1.2rem, 1.5rem, 2rem);
   word-spacing: 5px;
-  color: #fff;
+  color: var(--font-color);
   font-family: "Ubuntu", "sacramento", monospace, sans-serif;
 }
 
@@ -255,11 +258,11 @@ a.navbar-brand {
 }
 .text_box a {
   text-decoration: none;
-  color: #ffdd7e;
+  color: var(--pop-color);
 }
 .text_box .subheading {
   font-size: 6rem;
-  color: #ffdd7e;
+  color: var(--pop-color);
 }
 
 #About .heading {
@@ -286,7 +289,8 @@ a.navbar-brand {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
+  -webkit-text-stroke: 1.5px var(--shadow-color);
+
   /* -webkit-text-stroke: 1.5px #fff; */
   z-index: 0;
 }
@@ -353,7 +357,7 @@ a.navbar-brand {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
+  -webkit-text-stroke: 1.5px var(--shadow-color);
   /* -webkit-text-stroke: 1.5px #fff; */
   z-index: 0;
 }
@@ -403,7 +407,7 @@ a.navbar-brand {
   z-index: 0;
 }
 #Skills .skill:hover {
-  background-color: var(--background-col);
+  background-color: var(--background-color);
   color: var(--pop-color);
   z-index: -1;
 }
@@ -411,7 +415,7 @@ a.navbar-brand {
 #Skills .content .skill {
   display: inline-block;
   width: max-content;
-  border: 2px solid var(--background-col);
+  border: 2px solid var(--background-color);
   border-radius: 50px;
   text-align: center;
   margin: 0px 0px 10px;
@@ -430,7 +434,7 @@ a.navbar-brand {
   margin-left: 0%;
 }
 #Projects .heading {
-  color: #ffdd7e;
+  color: var(--headingcolor);
   font-size: clamp(4rem, 8vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -450,7 +454,7 @@ a.navbar-brand {
   font-family: "Montserrat";
   letter-spacing: 0.4rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(233, 223, 223, 0.103);
+  -webkit-text-stroke: 1.5px var(--shadow-color);
   /* -webkit-text-stroke: 1.5px #0000002f; */
   z-index: index 0;
 }
@@ -528,7 +532,7 @@ a.navbar-brand {
   font-weight: bolder;
   font-family: "Montserrat";
   color: #ffdd7e;
-  text-shadow: 2px 2px 4px var(--background-col);
+  text-shadow: 2px 2px 4px var(--background-color);
   margin-bottom: 1rem;
 }
 
@@ -563,7 +567,7 @@ a.navbar-brand {
   position: relative;
   border: 2px solid black;
   background-color: #ffdd7e;
-  color: var(--background-col);
+  color: var(--background-color);
   margin-right: 5px;
 }
 
@@ -580,7 +584,7 @@ a.navbar-brand {
 }
 .innerSection li {
   padding: 1rem 0.2rem;
-  color: #fff;
+  color: var(--font-color);
   text-align: left;
 }
 .innerSection ul li {
@@ -604,7 +608,7 @@ a.navbar-brand {
 }
 
 #Projects p {
-  color: white;
+  color: var(--font-color);
 }
 
 @media only screen and (max-width: 768px) {
@@ -707,7 +711,7 @@ a.navbar-brand {
 #Hobbys .hobby {
   display: inline-block;
   color: var(--pop-color);
-  background-color: var(--background-col);
+  background-color: var(--background-color);
   border: 5px solid rgb(7, 4, 4);
   border-radius: 50px;
   text-align: center;
@@ -756,10 +760,10 @@ a.navbar-brand {
 #contact_box .right {
   height: clamp(25rem, 40vh, 30rem);
   width: clamp(20rem, 70vw, 35rem);
-  color: white;
+  color: var(--font-color);
   border-radius: 10px;
-  border: 2px solid white;
-  background: var(--background-col);
+  border: 2px solid var(--font-color);
+  background: var(--background-color);
   padding: 60px;
   display: flex;
   text-align: justify;
@@ -812,7 +816,7 @@ a.navbar-brand {
   position: relative;
   width: clamp(10px, 10vw, 50px);
   height: clamp(10px, 10vw, 50px);
-  color: white;
+  color: var(--font-color);
   display: inline-block;
   border-radius: 5px;
   justify-content: center;
@@ -849,7 +853,7 @@ a.navbar-brand {
 }
 
 #Contact .info {
-  color: white;
+  color: var(--font-color);
 }
 /* Buttons */
 .fixed-button {
@@ -874,7 +878,7 @@ a.navbar-brand {
 }
 
 /* .navigation-buttons span .next {
-  background: var(--background-col);
+  background: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,7 +937,7 @@ a.navbar-brand {
     right: 30%;
     height: 40px;
     width: 40%;
-    background-color: var(--background-col);
+    background-color: var(--background-color);
   }
   .download_btn::before {
     backdrop-filter: blur(5px);
@@ -1040,7 +1044,7 @@ a.navbar-brand {
     right: 30%;
     height: 40px;
     width: 40%;
-    background-color: var(--background-col);
+    background-color: var(--background-color);
   }
   /* Message popup */
   .callout-header {
