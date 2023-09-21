@@ -91,7 +91,6 @@ a.navbar-brand {
   background-color: var(--background-col);
 }
 .down {
-  position: absolute;
   right: 10px;
   display: flex;
   justify-content: center;
@@ -104,6 +103,7 @@ a.navbar-brand {
   background-color: var(--background-col);
   border-radius: 30px;
   padding: 10px;
+  margin-right: 0%;
 }
 .down a {
   color: var(--pop-color);
