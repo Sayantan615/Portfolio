@@ -84,7 +84,6 @@ a.navbar-brand {
 }
 .nav-item :hover {
   color: var(--pop-color);
-  text-decoration: underline;
 }
 .navbar-toggler {
   color: var(--pop-color);
@@ -242,7 +241,7 @@ a.navbar-brand {
   height: 100vh;
   display: flex;
   text-align: justify;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
   justify-content: center;
   word-spacing: normal;
@@ -271,7 +270,7 @@ a.navbar-brand {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
-  text-align: left;
+  text-align: center;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -281,7 +280,7 @@ a.navbar-brand {
   left: 2%;
   top: -20%;
   width: 100%;
-  text-align: left;
+  text-align: center;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -755,8 +754,8 @@ a.navbar-brand {
 }
 
 #contact_box .right {
-  height: 25rem;
-  width: 35rem;
+  height: clamp(25rem, 40vh, 30rem);
+  width: clamp(20rem, 70vw, 35rem);
   color: white;
   border-radius: 10px;
   border: 2px solid white;
@@ -858,9 +857,9 @@ a.navbar-brand {
   z-index: 999;
   padding: 10px 15px !important;
   font-size: 1.2rem;
-  background: tan transparent;
+  background: transparent;
   color: var(--pop-color);
-  bottom: 20px;
+  bottom: 5px;
 }
 
 /* Toggle Button */
@@ -964,6 +963,7 @@ a.navbar-brand {
   .text_box {
     word-spacing: normal;
     padding: 4rem 4rem;
+    text-align: left;
   }
 
   /* Skill section */
@@ -1152,8 +1152,6 @@ a.navbar-brand {
   }
 
   #contact_box .right {
-    width: 70vw;
-    height: max-content;
     padding: 20px;
     font-size: 12px;
   }
