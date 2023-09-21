@@ -920,6 +920,19 @@ a.navbar-brand {
 
 /* Tablet Responsive */
 @media only screen and (max-width: 770px) {
+  /* Navbar */
+  .download_btn {
+    position: absolute;
+    top : 92vh;
+    right: 30%;
+    height: 40px;
+    width: 40%;
+    background-color: var(--background-col);
+
+  }
+  .download_btn::before{
+    backdrop-filter: blur(5px);
+  }
   /* Header Section */
   #Header {
     height: 100vh;
@@ -1016,6 +1029,8 @@ a.navbar-brand {
 /* Small Screen Responsive */
 @media only screen and (max-width: 450px) {
   .download_btn {
+    position: absolute;
+    top : 92vh;
     right: 30%;
     height: 40px;
     width: 40%;
