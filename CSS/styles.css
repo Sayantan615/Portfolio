@@ -7,17 +7,17 @@
   --heading-color: #ffdd7e;
   --background-color: #222;
   --shadow-color: rgba(255, 255, 255, 0.103);
-  --inverse-heading-color: rgba(0, 0, 0, 0.827);
+  --inverse-heading-color: rgba(0, 0, 0, 0.127);
   --inverse-shadow-color: #0000002f;
 
   /* Dark Mode colors */
   --dark-font-color: rgb(0, 0, 0);
   --dark-pop-color: #bc1010;
-  --dark-heading-color: #000000;
+  --dark-heading-color: #0000f1;
   --dark-background-color: #ffffff;
-  --dark-shadow-color: rgba(235, 224, 224, 0.203);
-  --dark-inverse-heading-color: rgba(255, 255, 255, 0.827);
-  --dark-inverse-shadow-color: #0000002f;
+  --dark-shadow-color: rgb(21 ,20, 20 , 0.5);
+  --dark-inverse-heading-color: rgba(86, 189, 226, 0.827);
+  --dark-inverse-shadow-color: #0505052f;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -88,7 +88,7 @@ a.navbar-brand {
 }
 .nav-link {
   color: #fff;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
@@ -144,7 +144,7 @@ a.navbar-brand {
 
 .callout-header a {
   text-decoration: none;
-  color: rgba(225, 221, 126, 0.7);
+  color: var(--pop-color);
   font-weight: bolder;
 }
 /* Message Popout end */
@@ -378,7 +378,7 @@ a.navbar-brand {
 
 .skill-div {
   height: 100vh;
-  background-color: #ffdd7e;
+  background-color: var(--pop-color);
   color: black;
   text-align: left;
   word-spacing: normal;

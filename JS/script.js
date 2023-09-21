@@ -79,6 +79,7 @@ let customeColorPropartys = [
   ["font", "dark-font"],
   ["heading", "dark-heading"],
   ["pop", "dark-pop"],
+  ["shadow", "dark-shadow"],
   ["background", "dark-background"],
   ["inverse-heading", "dark-inverse-heading"],
   ["inverse-shadow", "dark-inverse-shadow"],
@@ -99,6 +100,5 @@ const changeMode = () => {
   });
 };
 
-
-
+changeMode();
 // changeMode();
