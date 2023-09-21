@@ -74,3 +74,31 @@ if (isAndroid) {
   // The script will run on non-Android devices
   // Place your script code here
 }
+
+let customeColorPropartys = [
+  ["font", "dark-font"],
+  ["heading", "dark-heading"],
+  ["pop", "dark-pop"],
+  ["background", "dark-background"],
+  ["inverse-heading", "dark-inverse-heading"],
+  ["inverse-shadow", "dark-inverse-shadow"],
+];
+const changeMode = () => {
+  const customVals = document.documentElement;
+  customeColorPropartys.forEach((colors) => {
+    let colorSelector1 = getComputedStyle(customVals).getPropertyValue(
+      `--${colors[0]}-color`
+    );
+    let colorSelector2 = getComputedStyle(customVals).getPropertyValue(
+      `--${colors[1]}-color`
+    );
+    console.log(colorSelector1, colorSelector2);
+    customVals.style.setProperty(`--${colors[0]}-color`, colorSelector2);
+    customVals.style.setProperty(`--${colors[1]}-color`, colorSelector1);
+
+  });
+};
+
+
+
+// changeMode();

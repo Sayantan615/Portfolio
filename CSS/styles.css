@@ -1,20 +1,23 @@
 /* CSS */
-/* body */
 
 :root {
   /* Light Mode Colors */
-  --font-color: black;
-  --pop-color: #b8b838;
-  --headingcolor: #000000;
-  --background-color: #9f9090;
-  --shadow-color: rgba(14, 13, 13, 0.203);
+  --font-color: rgb(255, 255, 255);
+  --pop-color: #ffdd7e;
+  --heading-color: #ffdd7e;
+  --background-color: #222;
+  --shadow-color: rgba(255, 255, 255, 0.103);
+  --inverse-heading-color: rgba(0, 0, 0, 0.827);
+  --inverse-shadow-color: #0000002f;
 
   /* Dark Mode colors */
-  --dark-font-color: white;
-  --dark-pop-color: #000000;
-  --dark-headingcolor: #000000;
-  --dark-background-color: #000;
-  --dark-shadow-color: rgba(255, 255, 255, 0.203);
+  --dark-font-color: rgb(0, 0, 0);
+  --dark-pop-color: #bc1010;
+  --dark-heading-color: #000000;
+  --dark-background-color: #ffffff;
+  --dark-shadow-color: rgba(235, 224, 224, 0.203);
+  --dark-inverse-heading-color: rgba(255, 255, 255, 0.827);
+  --dark-inverse-shadow-color: #0000002f;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -267,7 +270,7 @@ a.navbar-brand {
 
 #About .heading {
   /* color: gray; */
-  color: var(--headingcolor);
+  color: var(--heading-color);
   font-size: clamp(5rem, 10vw, 10rem);
   /* Resposive font size  */
   text-transform: uppercase;
@@ -336,7 +339,7 @@ a.navbar-brand {
 /* Achievements section start */
 
 #Achievements .heading {
-  color: var(--headingcolor);
+  color: var(--heading-color);
   font-size: clamp(2rem, 8vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -389,7 +392,7 @@ a.navbar-brand {
   text-align: right;
   position: relative;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--inverse-heading-color);
 }
 #Skills .heading::before {
   content: attr(data-outline);
@@ -403,7 +406,7 @@ a.navbar-brand {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px #0000002f;
+  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
   z-index: 0;
 }
 #Skills .skill:hover {
@@ -434,7 +437,7 @@ a.navbar-brand {
   margin-left: 0%;
 }
 #Projects .heading {
-  color: var(--headingcolor);
+  color: var(--heading-color);
   font-size: clamp(4rem, 8vw, 10rem);
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -664,7 +667,7 @@ a.navbar-brand {
 #Hobbys {
   overflow: hidden;
   margin-top: 0%;
-  background: #ffdd7e;
+  background: var(--pop-color);
   text-align: left;
   padding: 3rem 10rem 6rem;
   color: black;
@@ -682,7 +685,7 @@ a.navbar-brand {
   text-align: right;
   position: relative;
   z-index: 3;
-  color: rgba(0, 0, 0, 0.827);
+  color: var(--inverse-heading-color);
 }
 #Hobbys .heading::before {
   content: attr(data-outline);
@@ -696,7 +699,7 @@ a.navbar-brand {
   letter-spacing: 0.2rem;
   color: transparent;
   /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
-  -webkit-text-stroke: 1.5px #0000002f;
+  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
   z-index: 1;
 }
 #Hobbys .heading :last-child {
