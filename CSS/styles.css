@@ -29,6 +29,7 @@ body {
   text-align: center;
   color: white;
   font-family: "Montserrat";
+  position: relative;
 }
 
 /* Doted Horizontal Rule */
@@ -370,12 +371,12 @@ a.navbar-brand {
 /* Skill section */
 
 .skill-div {
-  height: max-content;
+  height: 100vh;
   background-color: #ffdd7e;
   color: black;
   text-align: left;
   word-spacing: normal;
-  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
+  padding: clamp(10rem, 8vw, 12rem) clamp(2rem, 14vw, 10rem);
 }
 #Skills .heading {
   font-size: clamp(5rem, 10vw, 10rem);
@@ -947,6 +948,9 @@ a.navbar-brand {
   }
 
   /* Skill section */
+  .skill-div {
+    height: max-content;
+  }
   #Skills .heading {
     text-align: center;
   }
