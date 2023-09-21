@@ -28,26 +28,6 @@ randomQ.addEventListener("click", () => {
   updateQuote();
 });
 
-// Can also be included with a regular script tag
-let destroyBoxes = document.querySelectorAll("#destroy-box");
-let isOn = true;
-
-document
-  .querySelector("#destroy-button")
-  .addEventListener("click", function () {
-    if (isOn)
-      destroyBoxes.forEach(function (ele) {
-        ele.vanillaTilt.destroy();
-        isOn = false;
-      });
-    else {
-      destroyBoxes.forEach(function (ele) {
-        VanillaTilt.init(ele);
-        isOn = true;
-      });
-    }
-  });
-
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: "#navbarNav",
 });
@@ -55,12 +35,40 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 // Check if the user is on an Android device
 var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
 
-// Disable the script on Android devices
-if (isAndroid) {
-  // Optionally, you can add a message or perform other actions here.
+let destroy = () => {
   document.querySelectorAll("[data-tilt]").forEach((element) => {
     element.vanillaTilt.destroy();
   });
+};
+
+let restore = () => {
+  document.querySelectorAll("[data-tilt]").forEach((element) => {
+    VanillaTilt.init(element);
+  });
+};
+
+let isOn = true;
+
+document
+  .querySelector("#destroy-button")
+  .addEventListener("click", function () {
+    if (isOn) {
+      destroy();
+      document.querySelector("#destroy-button").innerHTML =
+        '<i class="fa fa-light fa-toggle-off">';
+      isOn = false;
+    } else {
+      document.querySelector("#destroy-button").innerHTML =
+        '<i class="fa fa-light fa-toggle-on">';
+      restore();
+      isOn = true;
+    }
+  });
+
+// Disable the script on Android devices
+if (isAndroid) {
+  // Optionally, you can add a message or perform other actions here.
+  destroy();
   console.log("Script disabled on Android devices.");
 } else {
   // The script will run on non-Android devices

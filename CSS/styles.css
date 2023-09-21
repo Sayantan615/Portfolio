@@ -469,29 +469,34 @@ a.navbar-brand {
 }
 #Projects .item .left {
   position: relative;
-  flex: 1;
+  flex: 2;
 }
 #Projects .item .right {
-  margin-left: -150px;
+  margin-left: -200px;
+  margin-top: 40%;
   flex: 1;
   font-family: "Ubuntu", sans-serif;
   background-color: #333;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   border-radius: 12px;
+  text-align: left;
   box-shadow: 0px 0px 20px #f8f6f668;
 }
 #Projects .item:nth-of-type(even) .right {
   margin-left: 0;
+  text-align: right;
 }
 #Projects .item:nth-of-type(even) .left {
   position: relative;
   z-index: -1;
   margin-left: -150px;
 }
+/* !Working */
 #Projects .item .left .img {
-  height: 500px;
+  height: 28rem;
   overflow: hidden;
+  border: 4px solid var(--pop-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 0px 20px #42414638;
@@ -531,10 +536,13 @@ a.navbar-brand {
 #Projects .item .right .project-sub-title {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  text-align: left;
+  display: none;
 }
 #Projects .item .right .project-desc {
   color: var(--secondary-gray);
   margin-bottom: 3rem;
+  text-align: left;
 }
 #Projects .item .right .external-link {
   display: flex;
@@ -763,7 +771,8 @@ a.navbar-brand {
 #contact_box .right h1 {
   letter-spacing: 1px;
   font-weight: lighter;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #contact_box .right h1 {
   margin-bottom: 0.5rem;
@@ -843,28 +852,26 @@ a.navbar-brand {
 #Contact .info {
   color: white;
 }
-
-/* Navigation Buttons for Android */
-.navigation-buttons {
+/* Buttons */
+.fixed-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
   z-index: 999;
-  line-height: 1;
+  padding: 10px 15px !important;
+  font-size: 1.2rem;
+  background: tan transparent;
+  color: var(--pop-color);
+  bottom: 20px;
 }
-.navigation-buttons span {
-  width: 30px;
-  height: 30px;
-  margin-top: 6px;
-  border-radius: 3px;
-  display: block;
-  cursor: pointer;
+
+/* Toggle Button */
+
+.destroy-button {
+  left: 20px;
 }
-.navigation-buttons span.prev {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Navigation Buttons */
+.navigation-buttons {
+  right: 20px;
 }
 
 /* .navigation-buttons span .next {
@@ -923,14 +930,13 @@ a.navbar-brand {
   /* Navbar */
   .download_btn {
     position: absolute;
-    top : 92vh;
+    top: 92vh;
     right: 30%;
     height: 40px;
     width: 40%;
     background-color: var(--background-col);
-
   }
-  .download_btn::before{
+  .download_btn::before {
     backdrop-filter: blur(5px);
   }
   /* Header Section */
@@ -1030,7 +1036,7 @@ a.navbar-brand {
 @media only screen and (max-width: 450px) {
   .download_btn {
     position: absolute;
-    top : 92vh;
+    top: 92vh;
     right: 30%;
     height: 40px;
     width: 40%;
