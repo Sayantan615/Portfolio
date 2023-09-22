@@ -18,8 +18,8 @@
   --dark-heading-color: #EBEF95;
   --dark-inverse-heading-color: #ee046c;
   --dark-background-color: #E25E3E;
-  --dark-shadow-color: rgb(21, 20, 20, 0.5);
-  --dark-inverse-shadow-color: #0505052f;
+  --dark-shadow-color: rgba(255, 255, 255, 0.1);
+  --dark-inverse-shadow-color: rgba(0,0,0,0.1);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -116,7 +116,7 @@ a.navbar-brand {
   cursor: pointer;
   height: 40px;
   width: 45px;
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
   border: 2px solid var(--pop-color);
   background-color: var(--background-color);
   border-radius: 30px;
@@ -128,7 +128,7 @@ a.navbar-brand {
   text-decoration: none;
 }
 .download_btn :hover {
-  color: gray;
+  color: var(--font-color);
 }
 
 /* Navbar section end */
@@ -219,8 +219,8 @@ a.navbar-brand {
   background-color: var(--pop-color);
   padding: 8rem clamp(10rem, 20vw, 30rem);
   margin: 0px;
-  background: url(https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
-  color: black;
+  /* background: url(https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80); */
+  color: var(--inverse-font-color);
   background-position: 0;
   text-align: center;
   font-size: clamp(1.2rem, 1.4vw, 5rem);
@@ -236,14 +236,18 @@ a.navbar-brand {
 .q1 {
   position: absolute;
   left: 5%;
-  top: -3vw;
+  top: -4vw;
   height: 12.5vw;
+  font-size: 12.5vw;
+  color: var(--inverse-font-color);
 }
 .q2 {
   position: absolute;
   right: 5%;
-  bottom: -3vw;
+  bottom: -4vw;
   height: 12.5vw;
+  font-size: 12.5vw;
+  color: var(--inverse-font-color);
 }
 
 .RandomQ:focus {
@@ -875,7 +879,7 @@ a.navbar-brand {
   transform: skewX(45deg) translateX(-150px);
 }
 
-#Contact .info {
+#Contact .bottom_text {
   color: white;
 }
 
@@ -1200,7 +1204,7 @@ a.navbar-brand {
     border-radius: 50px;
   }
 
-  #Contact .info {
+  #Contact .bottom_text {
     font-size: 10px;
   }
 
