@@ -1063,6 +1063,9 @@ a.navbar-brand {
     list-style: none;
     padding-bottom: 0px;
   }
+  #Projects .container-fluid .all-items .item .right .buttons strong {
+    display: none;
+  }
   /* Hobbys Section */
   #Hobbys {
     padding: 5rem 10px;
