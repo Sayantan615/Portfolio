@@ -47,24 +47,6 @@ let restore = () => {
   });
 };
 
-let isOn = true;
-
-document
-  .querySelector("#destroy-button")
-  .addEventListener("click", function () {
-    if (isOn) {
-      destroy();
-      document.querySelector("#destroy-button").innerHTML =
-        '<i class="fa fa-light fa-toggle-off">';
-      isOn = false;
-    } else {
-      document.querySelector("#destroy-button").innerHTML =
-        '<i class="fa fa-light fa-toggle-on">';
-      restore();
-      isOn = true;
-    }
-  });
-
 // Disable the script on Android devices
 if (isAndroid) {
   // Optionally, you can add a message or perform other actions here.
@@ -83,6 +65,7 @@ let customeColorPropartys = [
   ["background", "dark-background"],
   ["inverse-heading", "dark-inverse-heading"],
   ["inverse-shadow", "dark-inverse-shadow"],
+  ["inverse-font", "dark-inverse-font"],
 ];
 const changeMode = () => {
   const customVals = document.documentElement;
@@ -96,9 +79,23 @@ const changeMode = () => {
     console.log(colorSelector1, colorSelector2);
     customVals.style.setProperty(`--${colors[0]}-color`, colorSelector2);
     customVals.style.setProperty(`--${colors[1]}-color`, colorSelector1);
-
   });
 };
 
-changeMode();
-// changeMode();
+let isOn = true;
+
+document
+  .querySelector("#destroy-button")
+  .addEventListener("click", function () {
+    if (isOn) {
+      document.querySelector("#destroy-button").innerHTML =
+        '<i class="fa fa-light fa-toggle-off">';
+      isOn = false;
+      changeMode();
+    } else {
+      document.querySelector("#destroy-button").innerHTML =
+        '<i class="fa fa-light fa-toggle-on">';
+      isOn = true;
+      changeMode();
+    }
+  });
