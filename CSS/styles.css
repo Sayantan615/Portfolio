@@ -53,6 +53,10 @@ a:hover{
   color: var(--font-color);
 }
 
+.relative {
+  position: relative;
+}
+
 /* Doted Horizontal Rule */
 .hr-1 {
   border-style: dotted none none;
@@ -84,8 +88,8 @@ div {
 
 .navbar {
   background-color: rgba(16, 16, 16, 0.3);
-  backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px) !important;
 }
 a.navbar-brand {
   margin-right: 0px;
@@ -872,8 +876,8 @@ a.navbar-brand {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(-10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(-10px);
   transition: trnsform 0.5s ease-in;
 }
 
@@ -989,6 +993,7 @@ a.navbar-brand {
     background-color: var(--background-color);
   }
   .download_btn::before {
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
   /* Header Section */
@@ -1131,7 +1136,6 @@ a.navbar-brand {
 
   /* About section */
   .text_box {
-    height: ;
     word-spacing: normal;
     padding: 4rem 1rem !important;
     font-size: 0.8rem;
