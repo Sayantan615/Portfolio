@@ -46,6 +46,13 @@ body {
   position: relative;
 }
 
+a{
+  color: var(--font-color);
+}
+a:hover{
+  color: var(--font-color);
+}
+
 /* Doted Horizontal Rule */
 .hr-1 {
   border-style: dotted none none;
@@ -251,6 +258,10 @@ a.navbar-brand {
 .RandomQ:focus {
   box-shadow: none;
 }
+.RandomQ:hover {
+  color: #fff;
+  background-color: #000;
+}
 /* Quote section end */
 
 /* About section */
@@ -264,7 +275,7 @@ a.navbar-brand {
   justify-content: center;
   word-spacing: normal;
   padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
-  font-size: clamp(0.6rem, 1vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.4vw, 1.4rem);
 }
 
 .text_box strong {
@@ -273,7 +284,7 @@ a.navbar-brand {
 }
 .text_box a {
   text-decoration: none;
-  color: var(--pop-color);
+  /* color: var(--pop-color); */
 }
 .text_box .subheading {
   font-size: 6rem;
@@ -305,26 +316,24 @@ a.navbar-brand {
   letter-spacing: 0.2rem;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--shadow-color);
-
-  /* -webkit-text-stroke: 1.5px #fff; */
   z-index: 0;
 }
-.btn-1 a {
+
+/* Achivement Download Button Effect */
+.download_button_p {
+  background-color: var(--pop-color);
+  margin: 10px auto;
   text-decoration: none;
-  height: inherit;
-  /* color: #fff; */
-}
-.btn-1 {
-  background-color: #000;
+  color: var(--background-color);
   transition: transform 0.3s ease;
   position: relative;
-  color: #ffdd7e;
 }
-.btn-1::after,
-.btn-1::before {
+
+.download_button_p::after,
+.download_button_p::before {
   content: "";
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.1;
   background-color: #000;
   border-radius: inherit;
   height: 100%;
@@ -334,20 +343,21 @@ a.navbar-brand {
   z-index: -1;
   transition: transform 0.3s ease;
 }
-.RandomQ:hover {
-  color: #fff;
-  background-color: #000;
-}
-.btn-1:hover {
+
+.download_button_p:hover {
   transform: translate(-6px, -6px);
+  color: var(--font-color);
 }
-.btn-1:hover::after {
+.download_button_p:hover::after {
   transform: translate(6px, 6px);
+  z-index: -1;
 }
-.btn-1:hover::before {
+.download_button_p:hover::before {
   transform: translate(12px, 12px);
+  z-index: -1;
 }
 
+/* Achivement Download Button Effect */
 /* Achievements section start */
 
 #Achievements .heading {
@@ -382,7 +392,14 @@ a.navbar-brand {
   word-spacing: normal;
   height: 100vh;
   padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
-  font-size: clamp(0.6rem, 1vw, 1.2rem);
+  font-size: clamp(0.9rem, 2.4vw, 1.4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Achievements .text_box p {
+  padding-left: 2rem;
 }
 
 /* Achievement section end */
@@ -898,8 +915,6 @@ a.navbar-brand {
   background: transparent !important;
   border: none !important;
 }
-
-
 
 /* Toggle Button */
 .destroy-button {
