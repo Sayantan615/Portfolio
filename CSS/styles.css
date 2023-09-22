@@ -46,10 +46,10 @@ body {
   position: relative;
 }
 
-a{
+a {
   color: var(--font-color);
 }
-a:hover{
+a:hover {
   color: var(--font-color);
 }
 
@@ -410,7 +410,7 @@ a.navbar-brand {
 /* Skill section */
 
 .skill-div {
-  height: 100vh;
+  height: max-content;
   background-color: var(--pop-color);
   color: var(--inverse-font-color);
   text-align: left;
@@ -451,15 +451,43 @@ a.navbar-brand {
 
 #Skills .content .skill {
   display: inline-block;
-  width: max-content;
+  width: 80px;
+  height: 80px;
   border: 2px solid var(--background-color);
   border-radius: 50px;
   text-align: center;
-  margin: 0px 0px 10px;
-  padding: 2%;
+  margin: 0px 0px 1rem 1rem;
+  text-shadow: 2px 2px var(--inverse-heading-color);
   cursor: pointer;
-  font-size: clamp(1.5rem, 80%, 4rem);
+  font-size: clamp(3.5rem, 40%, 4rem);
   border: 0.2vw solid black;
+}
+
+#Skills .content .sub-skill-heading {
+  font-size: clamp(2rem, 3vw, 5rem);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
+  text-align: left;
+  position: relative;
+  margin-bottom: 1rem;
+  color: var(--inverse-heading-color);
+}
+
+#Skills .content .sub-skill-heading::before {
+  content: attr(data-outline);
+  position: absolute;
+  width: 100%;
+  left: 1%;
+  top: -15%;
+  text-align: left;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 0.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
+  z-index: 0;
 }
 
 #Skills .content .skill p {
