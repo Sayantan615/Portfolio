@@ -14,12 +14,12 @@
   /* Dark Mode colors */
   --dark-font-color: white;
   --dark-inverse-font-color: black;
-  --dark-pop-color: #EBEF95;
-  --dark-heading-color: #EBEF95;
+  --dark-pop-color: #ebef95;
+  --dark-heading-color: #ebef95;
   --dark-inverse-heading-color: #ee046c;
-  --dark-background-color: #E25E3E;
+  --dark-background-color: #e25e3e;
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
-  --dark-inverse-shadow-color: rgba(0,0,0,0.1);
+  --dark-inverse-shadow-color: rgba(0, 0, 0, 0.1);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -72,7 +72,6 @@ div {
 }
 
 /* Global Classes */
-
 
 /* Navbar */
 
@@ -335,7 +334,7 @@ a.navbar-brand {
   z-index: -1;
   transition: transform 0.3s ease;
 }
-.btn:hover {
+.RandomQ:hover {
   color: #fff;
   background-color: #000;
 }
@@ -426,6 +425,7 @@ a.navbar-brand {
   background-color: var(--background-color);
   color: var(--pop-color);
   z-index: 1;
+  /* box-shadow: -10px 5px 5px black; */
 }
 
 #Skills .content .skill {
@@ -891,7 +891,15 @@ a.navbar-brand {
   background: transparent;
   color: var(--pop-color);
   bottom: 5px;
+  text-shadow: -1px 1px 5px var(--inverse-font-color);
 }
+
+.fixed-button:hover {
+  background: transparent !important;
+  border: none !important;
+}
+
+
 
 /* Toggle Button */
 .destroy-button {
@@ -976,6 +984,7 @@ a.navbar-brand {
   #Header .container-fluid {
     padding-top: 1.5rem;
   }
+  /* Change Font_size */
   .Name {
     font-size: 450%;
   }
@@ -1062,7 +1071,7 @@ a.navbar-brand {
   }
 }
 
-/* Small Screen Responsive */
+/* *Android - Small Screen Responsive* */
 @media only screen and (max-width: 450px) {
   .download_btn {
     position: absolute;
@@ -1071,6 +1080,7 @@ a.navbar-brand {
     height: 40px;
     width: 40%;
     background-color: var(--background-color);
+    box-shadow: 1px 1px 5px black;
   }
   /* Message popup */
   .callout-header {
