@@ -189,7 +189,7 @@ a.navbar-brand {
 .hey {
   font-size: 32px;
   font-family: "sacramento";
-  color: var(--font-color);
+  color: var(--pop-color);
 }
 .Name {
   position: relative;
