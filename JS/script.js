@@ -55,7 +55,6 @@ if (isAndroid) {
   // The script will run on non-Android devices
   // Place your script code here
   restore();
-  AOS.init();
 }
 
 let customeColorPropartys = [
