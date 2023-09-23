@@ -38,8 +38,6 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* !Causing Problem with AOS Animations */
-  /* overflow-x: hidden;  */
   background-color: var(--background-color);
   text-align: center;
   color: var(--font-color);
@@ -823,7 +821,7 @@ a.navbar-brand {
   height: max-content;
 }
 #contact_box {
-  width: 50rem;
+  width: auto;
   height: calc(100vh - 4rem);
   display: flex;
   flex-direction: row;
@@ -1013,11 +1011,6 @@ a.navbar-brand {
 /* Tablet Responsive */
 @media only screen and (max-width: 770px) {
   /* Navbar */
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
   .download_btn {
     position: absolute;
     top: 92vh;
@@ -1143,10 +1136,6 @@ a.navbar-brand {
 
 /* *Android - Small Screen Responsive* */
 @media only screen and (max-width: 450px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
 
   .download_btn {
     position: absolute;
