@@ -35,13 +35,13 @@ var scrollSpy = new bootstrap.ScrollSpy(document.body, {
 var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
 
 let destroy = () => {
-  document.querySelectorAll("[data-tilt]").forEach((element) => {
+  document.querySelectorAll("[data-animation-off]").forEach((element) => {
     element.vanillaTilt.destroy();
   });
 };
 
 let restore = () => {
-  document.querySelectorAll("[data-tilt]").forEach((element) => {
+  document.querySelectorAll("[data-animation-off]").forEach((element) => {
     VanillaTilt.init(element);
   });
 };
