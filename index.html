@@ -388,12 +388,12 @@
         <div class="all-items">
           <!-- Portfolio -->
           <div class="item">
-            <div class="left" data-aos="fade-right">
+            <div class="left" data-aos="zoom-in">
               <div class="img">
                 <img src="Images/PortfolioWebsite.jpg" alt="" />
               </div>
             </div>
-            <div class="right" data-aos="fade-left">
+            <div class="right" data-aos="zoom-in">
               <h2 class="project-title">Portfolio</h2>
               <h3 class="project-sub-title">I love it. 😁</h3>
               <p class="project-desc">
@@ -523,7 +523,10 @@
                 <a href="https://github.com/Sayantan615/Newsletter" class="btn">
                   <i class="fa-brands fa-github"></i><strong> GitHub </strong>
                 </a>
-                <a href="https://newsletter-git-main-sayantan615.vercel.app/" class="btn">
+                <a
+                  href="https://newsletter-git-main-sayantan615.vercel.app/"
+                  class="btn"
+                >
                   <i class="fa-solid fa-up-right-from-square"></i
                   ><strong> Open </strong>
                 </a>
@@ -581,7 +584,9 @@
         <h3 class="heading" data-outline="about">about</h3>
         <h3 class="heading" data-outline="Myself">Myself</h3>
         <div class="inner-text">
-          <div class="sub-texts" data-aos="fade" data-aos-once="false">Hello,</div>
+          <div class="sub-texts" data-aos="fade" data-aos-once="false">
+            Hello,
+          </div>
           <div class="sub-texts">
             If you are reading this, you've had a glimpse of what makes me tick.
             Let me share a bit about my interests and lifestyle.
@@ -706,8 +711,11 @@
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="JS/script.js"></script>
     <script>
-      AOS.init();
-      window.addEventListener("load", AOS.refresh);
+      AOS.init({
+        // disable: tablet,
+        // mobile,
+        // phone,
+      });
     </script>
   </body>
 </html>
