@@ -450,14 +450,16 @@ a.navbar-brand {
 }
 
 #Skills .content .skill {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   border: 2px solid var(--background-color);
   border-radius: 50px;
   text-align: center;
-  margin: 0px 0px 1rem 1rem;
-  text-shadow: 2px 2px var(--inverse-heading-color);
+  margin: 1rem;
+  text-shadow: 1px 1px var(--inverse-heading-color);
   cursor: pointer;
   font-size: clamp(3.5rem, 40%, 4rem);
   border: 0.2vw solid black;
@@ -1180,7 +1182,12 @@ a.navbar-brand {
   /* Skill section */
 
   #Skills .content .skill {
-    padding: 10px;
+    margin: 5px;
+    width: 12vw;
+    height: 12vw;
+    font-size: 1.6rem;
+    justify-content: center;
+    overflow: hidden;
   }
   /* Project Section */
   #Projects {
