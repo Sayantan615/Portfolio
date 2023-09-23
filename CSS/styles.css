@@ -557,6 +557,7 @@ a.navbar-brand {
   border-radius: 12px;
   text-align: left;
   box-shadow: 0px 0px 20px var(--pop-color);
+  z-index: 100;
 }
 #Projects .item:nth-of-type(even) .right {
   margin-left: 0;
@@ -564,7 +565,6 @@ a.navbar-brand {
 }
 #Projects .item:nth-of-type(even) .left {
   position: relative;
-  z-index: -1;
   margin-left: -150px;
 }
 /* !Working */
@@ -576,7 +576,6 @@ a.navbar-brand {
   overflow: hidden;
   box-shadow: 0px 0px 20px #42414638;
   position: relative;
-  z-index: -1;
 }
 #Projects .item .left .img::before {
   content: "";

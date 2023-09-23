@@ -1,5 +1,6 @@
 // Insitializeing AOS for div animations
-// AOS.init();
+AOS.init();
+console.log("AOS initialization");
 
 async function updateQuote() {
   const quote = document.querySelector("blockquote p");
@@ -55,6 +56,7 @@ if (isAndroid) {
 } else {
   // The script will run on non-Android devices
   // Place your script code here
+  restore();
 }
 
 let customeColorPropartys = [
