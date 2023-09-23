@@ -38,7 +38,8 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
+  /* !Causing Problem with AOS Animations */
+  /* overflow-x: hidden;  */
   background-color: var(--background-color);
   text-align: center;
   color: var(--font-color);
@@ -1012,6 +1013,11 @@ a.navbar-brand {
 /* Tablet Responsive */
 @media only screen and (max-width: 770px) {
   /* Navbar */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .download_btn {
     position: absolute;
     top: 92vh;
@@ -1068,9 +1074,22 @@ a.navbar-brand {
     word-spacing: normal;
     padding: 2rem 1.5rem;
   }
-
+  #Skills .content:nth-child(3) div {
+    display: grid !important;
+    grid-template-columns: max-content max-content max-content max-content;
+    margin: 1rem !important;
+    justify-items: center;
+    align-content: center;
+  }
+  #Skills .content:nth-child(3) .skill {
+    text-align: center;
+    display: flex !important;
+  }
   #Skills .content {
     padding-right: 0px;
+  }
+  #Skills .content .d-flex {
+    justify-content: center;
   }
   /* Project Section */
   #Projects {
@@ -1124,6 +1143,11 @@ a.navbar-brand {
 
 /* *Android - Small Screen Responsive* */
 @media only screen and (max-width: 450px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .download_btn {
     position: absolute;
     top: 92vh;
@@ -1194,6 +1218,11 @@ a.navbar-brand {
   #Skills .content .sub-skill-heading::before {
     text-align: center;
     letter-spacing: 0px;
+  }
+  #Skills .content:nth-child(3) div {
+    display: flex !important;
+    margin: 2px !important;
+    margin-bottom: 1rem !important;
   }
   /* Project Section */
   #Projects {

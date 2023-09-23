@@ -1,6 +1,4 @@
 // Insitializeing AOS for div animations
-AOS.init();
-console.log("AOS initialization");
 
 async function updateQuote() {
   const quote = document.querySelector("blockquote p");
@@ -101,3 +99,5 @@ document
       changeMode();
     }
   });
+
+  
