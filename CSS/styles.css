@@ -483,7 +483,6 @@ a.navbar-brand {
   left: 1%;
   top: -15%;
   text-align: left;
-  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -1188,6 +1187,14 @@ a.navbar-brand {
     font-size: 1.6rem;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  #Skills .content .sub-skill-heading {
+    text-align: center;
+  }
+  #Skills .content .sub-skill-heading::before {
+    text-align: center;
+    letter-spacing: 0px;
   }
   /* Project Section */
   #Projects {
