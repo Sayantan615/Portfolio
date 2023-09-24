@@ -818,6 +818,7 @@ a.navbar-brand {
 }
 
 #Contact .content {
+  width: 100vw;
   height: max-content;
 }
 #contact_box {
