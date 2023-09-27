@@ -968,7 +968,7 @@ a.navbar-brand {
 /* New Responsive settings */
 /* Desktop Responsive */
 
-/* Bigscreen respostive */
+/* Big screen respostive */
 @media only screen and (max-width: 1600px) and (min-width: 1081px) {
   .callout-header {
     margin-top: 10px;
@@ -1109,9 +1109,6 @@ a.navbar-brand {
     list-style: none;
     padding-bottom: 0px;
   }
-  #Projects .container-fluid .all-items .item .right .buttons strong {
-    display: none;
-  }
   /* Hobbys Section */
   #Hobbys {
     padding: 5rem 10px;
@@ -1137,7 +1134,6 @@ a.navbar-brand {
 
 /* *Android - Small Screen Responsive* */
 @media only screen and (max-width: 450px) {
-
   .download_btn {
     position: absolute;
     top: 92vh;
@@ -1239,8 +1235,34 @@ a.navbar-brand {
     padding-bottom: 0px;
   }
 
-  /* !Hide Project item images in mobile view*/
+  #Projects .item:nth-last-of-type(even) .right {
+    text-align: left;
+  }
 
+  #Projects .item .left .img {
+    height: 20rem;
+  }
+
+  #Projects .item .left .img img {
+    zoom: 50%;
+  }
+
+  #Projects .item .right {
+    padding: 2rem 1.5rem;
+    margin-top : -100px;
+  }
+
+  #Projects .item .right .project-title {
+    font-size: 7vw;
+    text-align: center;
+  }
+  #Projects .item .right .project-desc {
+    font-size: 4vw;
+    margin-bottom: 1.5rem;
+  }
+  #Projects .item .right strong {
+    display: none;
+  }
   /* Hobbys Section */
 
   #Hobbys {
@@ -1299,7 +1321,7 @@ a.navbar-brand {
     font-size: 10px;
   }
 
-  /* !Don't Know if need */
+  /* !Don't Know if needed */
   /* .callout-header {
     padding: 5px 10px;
     background-color: rgba(199, 199, 199, 0.3);
