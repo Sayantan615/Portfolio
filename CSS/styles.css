@@ -6,7 +6,7 @@
   --inverse-font-color: black;
   --pop-color: #ffdd7e;
   --heading-color: #ffdd7e;
-  --inverse-heading-color: #333;
+  --inverse-heading-color: #C70039;
   --background-color: #222;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --inverse-shadow-color: #0000002f;
@@ -446,11 +446,20 @@ a.navbar-brand {
   -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
   z-index: 0;
 }
+
+#Skills .container {
+  padding: 8%;
+}
+
 #Skills .skill:hover {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-color: black;
   color: var(--pop-color);
   z-index: 1;
-  /* box-shadow: -10px 5px 5px black; */
+}
+
+#Skills .content {
+  margin-bottom: 5rem;
 }
 
 #Skills .content .skill {
@@ -468,15 +477,16 @@ a.navbar-brand {
   font-size: clamp(3.5rem, 40%, 4rem);
   border: 0.2vw solid black;
   overflow: hidden;
+  box-shadow: 5px 5px 25px black;
 }
 
 #Skills .content .sub-skill-heading {
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: clamp(2rem, 3vw, 5rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   text-align: left;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--inverse-heading-color);
 }
 
