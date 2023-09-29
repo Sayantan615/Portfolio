@@ -6,7 +6,7 @@
   --inverse-font-color: black;
   --pop-color: #ffdd7e;
   --heading-color: #ffdd7e;
-  --inverse-heading-color: #C70039;
+  --inverse-heading-color: #c70039;
   --background-color: #222;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --inverse-shadow-color: #0000002f;
@@ -477,7 +477,7 @@ a.navbar-brand {
   font-size: clamp(3.5rem, 40%, 4rem);
   border: 0.2vw solid black;
   overflow: hidden;
-  box-shadow: 5px 5px 25px black;
+  box-shadow: 5px 5px 10px black;
 }
 
 #Skills .content .sub-skill-heading {
@@ -1146,7 +1146,7 @@ a.navbar-brand {
 
 /* *Android - Small Screen Responsive* */
 @media only screen and (max-width: 450px) {
-  .navbar{
+  .navbar {
     margin: 0%;
   }
 
@@ -1265,7 +1265,7 @@ a.navbar-brand {
 
   #Projects .item .right {
     padding: 2rem 1.5rem;
-    margin-top : -100px;
+    margin-top: -100px;
   }
 
   #Projects .item .right .project-title {
