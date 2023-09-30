@@ -7,8 +7,8 @@
 }
 
 .scroller {
-  max-width: 35vw;
-  margin: auto;
+  max-width: 25vw;
+  margin-left: auto;
 }
 
 .small-scroller {
@@ -41,20 +41,14 @@
   width: -moz-fit-content;
   width: fit-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 30s)
-    var(--_animation-direction, forwards) linear infinite;
   -webkit-animation: scroll var(--_animation-duration, 30s)
-    var(--_animation-direction, forwards) linear infinite;
+    var(--_animation-direction, reverse) linear infinite;
+  animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, reverse) linear infinite;
 }
 
 .scroller[data-animated="true"] .scroller-inner:hover {
   animation-play-state: paused;
-}
-
-.scroller[animation-speed="faster"] .scroller-inner {
-  animation: scroll 3s var(--_animation-direction, forwards) linear infinite;
-  -webkit-animation: scroll 3s var(--_animation-direction, forwards) linear
-    infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -63,12 +57,12 @@
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 0.5rem));
     -webkit-transform: translate(calc(-50% - 0.5rem));
     -moz-transform: translate(calc(-50% - 0.5rem));
     -ms-transform: translate(calc(-50% - 0.5rem));
     -o-transform: translate(calc(-50% - 0.5rem));
-  }
+    transform: translate(calc(-50% - 0.5rem));
+}
 }
 
 @media only screen and (max-width: 768px) {
