@@ -1,0 +1,96 @@
+/* Skill section */
+
+.skill-div {
+  height: max-content;
+  background: var(--inverse-background-color);
+  color: var(--inverse-font-color);
+  text-align: center;
+  word-spacing: normal;
+  padding: clamp(10rem, 8vw, 12rem) clamp(2rem, 14vw, 10rem);
+}
+#Skills .heading {
+  font-size: clamp(5rem, 10vw, 10rem);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+  color: var(--inverse-heading-color);
+}
+#Skills .heading::before {
+  content: attr(data-outline);
+  position: absolute;
+  width: 100%;
+  left: 2%;
+  top: -20%;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: 0.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
+  z-index: 0;
+}
+
+#Skills .container {
+  padding: 8%;
+}
+
+#Skills .skill:hover {
+}
+
+#Skills .content {
+  margin-bottom: 2rem;
+}
+
+#Skills .content .skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: black;
+  border: 2px solid var(--background-color);
+  border-radius: 50px;
+  text-align: center;
+  margin: 0.5rem 0.2rem;
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  border: 0.2vw solid black;
+  overflow: hidden;
+}
+
+#Skills .content .sub-skill-heading {
+  font-size: clamp(2rem, 3vw, 5rem);
+  text-transform: uppercase;
+ font-family: 'Caveat', cursive;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: var(--inverse-heading-color);
+}
+
+#Skills .content .sub-skill-heading::before {
+  content: attr(data-outline);
+  position: absolute;
+  width: 100%;
+  left: 2%;
+  top: -20%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
+  z-index: 0;
+}
+
+#Skills .content .skill p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+/* Skill section end */

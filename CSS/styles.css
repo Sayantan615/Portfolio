@@ -1,17 +1,22 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Open+Sans&family=Sacramento&family=Ubuntu:ital@1&display=swap");
 @import "./special-effects.css";
-/* CSS */
+@import "./Header.css";
+@import "./About.css";
+@import "./Skills.css";
 
 :root {
   /* Light Mode Colors */
-  --font-color: rgb(255, 255, 255);
-  --inverse-font-color: black;
+  --font-color: white;
+  --inverse-font-color: white;
   --pop-color: #ffdd7e;
   --heading-color: #ffdd7e;
   --inverse-heading-color: #c70039;
-  --background-color: #222;
+  --header-background-color: linear-gradient(to bottom, #213555, #001524);
+  --background-color: linear-gradient(to bottom, #213555, #001524 90%);
   --inverse-background-color: #001524;
   --shadow-color: rgba(255, 255, 255, 0.103);
-  --inverse-shadow-color: #0000002f;
+  --inverse-shadow-color: rgba(255, 255, 255, 0.1);
 
   /* Dark Mode colors */
   --dark-font-color: white;
@@ -19,6 +24,7 @@
   --dark-pop-color: #ebef95;
   --dark-heading-color: #ebef95;
   --dark-inverse-heading-color: #ee046c;
+  --dark-header-background-color: #e25e3e;
   --dark-background-color: #e25e3e;
   --dark-inverse-background-color: #ebef95;
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
@@ -27,7 +33,6 @@
 ::-webkit-scrollbar {
   display: none;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -42,7 +47,7 @@ body {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
-  background-color: var(--background-color);
+  background: var(--background-color);
   text-align: center;
   color: var(--font-color);
   font-family: "Montserrat";
@@ -71,13 +76,6 @@ a:hover {
   border-color: var(--pop-color);
 }
 
-.hr-2 {
-  border-style: solid none repeat;
-  border-color: var(--pop-color);
-  border-width: 4px;
-  width: 100%;
-}
-
 h3 {
   font-weight: bolder;
 }
@@ -91,7 +89,7 @@ div {
 
 .navbar {
   margin: 0% 5%;
-  background-color: rgba(16, 16, 16, 0.3);
+  background: rgba(16, 16, 16, 0.3);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px) !important;
 }
@@ -116,7 +114,7 @@ a.navbar-brand {
 }
 .navbar-toggler {
   color: var(--pop-color);
-  background-color: transparent;
+  background: transparent;
 }
 
 .navbar-toggler:focus {
@@ -132,7 +130,7 @@ a.navbar-brand {
   width: 45px;
   font-size: 1.3rem !important;
   border: 2px solid var(--pop-color);
-  background-color: var(--background-color);
+  background: var(--background-color);
   border-radius: 30px;
   padding: 10px;
   margin-right: 0%;
@@ -158,7 +156,7 @@ a.navbar-brand {
   position: relative;
   top: 50px;
   padding: 10px 50px;
-  background-color: rgba(199, 199, 199, 0.3);
+  background: rgba(199, 199, 199, 0.3);
   font-size: 20px;
   color: black;
 }
@@ -170,79 +168,17 @@ a.navbar-brand {
 }
 /*! Message call out end */
 
-/* Header Section */
-#Header {
-  margin-bottom: 2rem;
-}
-#Header .container-fluid {
-  height: 100vh;
-  background: var(--background-color);
-  display: inline-block;
-  padding-top: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  text-align: center;
-  line-height: 1;
-  flex-direction: column;
-}
-
-.img-1 {
-  margin-top: 0%;
-  margin-bottom: 1rem;
-}
-.profile_pic {
-  height: 12rem;
-  border-radius: 100%;
-  border: 4px solid var(--pop-color);
-}
-.hey {
-  font-size: 32px;
-  font-family: "sacramento";
-  color: var(--pop-color);
-}
-.Name {
-  position: relative;
-  font-family: "sacramento", sans-serif;
-  font-size: 550%;
-  /* color: gray; */
-  color: var(--pop-color);
-  font-weight: bold;
-  animation: fade 2s ease-in forwards;
-  margin-bottom: 20px;
-}
-/* !check */
-@keyframes fade {
-  0% {
-    opacity: 5%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-.ShortIntro {
-  font-size: clamp(1.2rem, 1.5rem, 2rem);
-  word-spacing: 5px;
-  color: var(--font-color);
-  font-family: "Ubuntu", "sacramento", monospace, sans-serif;
-}
-
-/* Hader section end */
-
 /* Quote section */
 .firstQuote .container-fluid {
-  background-color: var(--pop-color);
+  background: var(--inverse-background-color);
   padding: 8rem clamp(10rem, 20vw, 30rem);
   margin: 0px;
   color: var(--inverse-font-color);
   background-position: 0;
   text-align: center;
-  font-size: clamp(1.2rem, 1.4vw, 5rem);
-  letter-spacing: 0.5px;
-  font-weight: normal;
-  font-family: "Lobster", sans-serif;
+  font-size: clamp(2rem, 1.4vw, 5rem);
+  letter-spacing: 1px;
+  font-family: "Ubuntu", "sacramento", monospace, sans-serif;
   height: clamp(min-content, 40vh, 50vh);
 }
 .firstQuote cite {
@@ -271,68 +207,13 @@ a.navbar-brand {
 }
 .RandomQ:hover {
   color: #fff;
-  background-color: #000;
+  background: #000;
 }
 /* Quote section end */
 
-/* About section */
-
-#About .text_box {
-  height: 100vh;
-  display: flex;
-  text-align: justify;
-  align-items: left;
-  flex-direction: column;
-  justify-content: center;
-  word-spacing: normal;
-  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
-  font-size: clamp(0.9rem, 2.4vw, 1.4rem);
-}
-
-.text_box strong {
-  color: var(--pop-color);
-  margin-left: 4px;
-}
-.text_box a {
-  text-decoration: none;
-  /* color: var(--pop-color); */
-}
-.text_box .subheading {
-  font-size: 6rem;
-  color: var(--pop-color);
-}
-
-#About .heading {
-  /* color: gray; */
-  color: var(--heading-color);
-  font-size: clamp(5rem, 10vw, 10rem);
-  /* Resposive font size  */
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3rem;
-  text-align: center;
-  position: relative;
-  margin-bottom: 2rem;
-}
-#About .heading::before {
-  content: attr(data-outline);
-  position: absolute;
-  left: 2%;
-  top: -20%;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 0.4rem;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--shadow-color);
-  z-index: 0;
-}
-
 /* Achivement Download Button Effect */
 .download_button_p {
-  background-color: var(--pop-color);
+  background: var(--pop-color);
   margin: 10px auto;
   text-decoration: none;
   color: var(--background-color);
@@ -345,7 +226,7 @@ a.navbar-brand {
   content: "";
   position: absolute;
   opacity: 0.1;
-  background-color: #000;
+  background: #000;
   border-radius: inherit;
   height: 100%;
   width: 100%;
@@ -370,7 +251,9 @@ a.navbar-brand {
 
 /* Achivement Download Button Effect */
 /* Achievements section start */
-
+#Achievements {
+  background: var(--background-color);
+}
 #Achievements .heading {
   color: var(--heading-color);
   font-size: clamp(2rem, 8vw, 10rem);
@@ -414,102 +297,7 @@ a.navbar-brand {
 }
 
 /* Achievement section end */
-/* Skill section */
 
-.skill-div {
-  height: max-content;
-  background-color: var(--pop-color);
-  color: var(--inverse-font-color);
-  text-align: left;
-  word-spacing: normal;
-  padding: clamp(10rem, 8vw, 12rem) clamp(2rem, 14vw, 10rem);
-}
-#Skills .heading {
-  font-size: clamp(5rem, 10vw, 10rem);
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3rem;
-  text-align: right;
-  position: relative;
-  margin-bottom: 2rem;
-  color: var(--inverse-heading-color);
-}
-#Skills .heading::before {
-  content: attr(data-outline);
-  position: absolute;
-  width: 100%;
-  left: 2%;
-  top: -20%;
-  text-align: right;
-  letter-spacing: 0.4rem;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
-  z-index: 0;
-}
-
-#Skills .container {
-  padding: 8%;
-}
-
-#Skills .skill:hover {
-}
-
-#Skills .content {
-  margin-bottom: 2rem;
-}
-
-#Skills .content .skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  background: black;
-  border: 2px solid var(--background-color);
-  border-radius: 50px;
-  text-align: center;
-  margin: 0.5rem 0.2rem;
-  color: white;
-  cursor: pointer;
-  font-size: 3rem;
-  border: 0.2vw solid black;
-  overflow: hidden;
-}
-
-#Skills .content .sub-skill-heading {
-  font-size: clamp(2rem, 3vw, 5rem);
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  position: relative;
-  margin-bottom: 0.5rem;
-  color: black;
-}
-
-#Skills .content .sub-skill-heading::before {
-  content: attr(data-outline);
-  position: absolute;
-  width: 100%;
-  left: 1%;
-  top: -15%;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
-  z-index: 0;
-}
-
-#Skills .content .skill p {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-/* Skill section end */
 /* Project Section */
 #Projects {
   height: max-content;
@@ -564,7 +352,7 @@ a.navbar-brand {
   margin-top: 40%;
   flex: 1;
   font-family: "Ubuntu", sans-serif;
-  background-color: var(--background-color);
+  background: var(--background-color);
   color: var(--font-color);
   padding: 2rem 3rem;
   border-radius: 12px;
@@ -597,7 +385,7 @@ a.navbar-brand {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #42414638;
+  background: #42414638;
 }
 #Projects .item .left .img img {
   object-fit: cover;
@@ -650,7 +438,7 @@ a.navbar-brand {
 .buttons .btn {
   position: relative;
   border: 2px solid var(--inverse-font-color);
-  background-color: #ffdd7e;
+  background: #ffdd7e;
   color: var(--inverse-font-color);
   margin-right: 5px;
 }
@@ -675,14 +463,14 @@ a.navbar-brand {
   list-style: circle;
 }
 .innerSection .btn {
-  background-color: var(--pop-color);
+  background: var(--pop-color);
   border-color: black;
   color: black;
   font-weight: bolder;
 }
 .innerSection .btn:hover {
   color: #fff;
-  background-color: black;
+  background: black;
   border: 2px solid var(--pop-color);
   margin-bottom: 0px;
 }
@@ -748,14 +536,14 @@ a.navbar-brand {
 #Hobbys {
   overflow: hidden;
   margin-top: 0%;
-  background: var(--pop-color);
+  background: var(--inverse-background-color);
   text-align: left;
   padding: 3rem 10rem 6rem;
   color: var(--inverse-font-color);
 }
 
 #Hobbys .container-fluid {
-  background-color: var(--pop-color);
+  /* background: var(--pop-color); */
 }
 
 #Hobbys .heading {
@@ -779,7 +567,6 @@ a.navbar-brand {
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   color: transparent;
-  /* -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.103); */
   -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
   z-index: 1;
 }
@@ -795,7 +582,7 @@ a.navbar-brand {
 #Hobbys .hobby {
   display: inline-block;
   color: var(--pop-color);
-  background-color: var(--background-color);
+  background: var(--background-color);
   border: 3px solid var(--inverse-font-color);
   border-radius: 50px;
   text-align: center;
@@ -810,7 +597,7 @@ a.navbar-brand {
 .inner-text {
   font-size: 1.4rem;
   padding: clamp(2rem, 4vw, 8rem);
-  font-weight: bolder;
+  /* font-weight: bold; */
 }
 .inner-text .sub-texts a {
   color: var(--inverse-font-color);
@@ -954,7 +741,7 @@ a.navbar-brand {
   background: transparent;
   color: var(--pop-color);
   bottom: 5px;
-  text-shadow: -1px 1px 5px var(--inverse-font-color);
+  /* text-shadow: -1px 1px 5px var(--inverse-font-color); */
 }
 
 .fixed-button:hover {
@@ -1029,7 +816,7 @@ a.navbar-brand {
     right: 30%;
     height: 40px;
     width: 40%;
-    background-color: var(--background-color);
+    background: var(--background-color);
   }
   .download_btn::before {
     -webkit-backdrop-filter: blur(5px);
@@ -1146,7 +933,7 @@ a.navbar-brand {
     right: 30%;
     height: 40px;
     width: 40%;
-    background-color: var(--background-color);
+    background: var(--background-color);
     box-shadow: 1px 1px 5px black;
   }
   /* Message popup */
@@ -1326,7 +1113,7 @@ a.navbar-brand {
   /* !Don't Know if needed */
   /* .callout-header {
     padding: 5px 10px;
-    background-color: rgba(199, 199, 199, 0.3);
+    background: rgba(199, 199, 199, 0.3);
     font-size: 15px;
     color: rgb(0, 0, 0);
   } */
