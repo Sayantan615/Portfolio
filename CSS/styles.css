@@ -1,9 +1,10 @@
 /* imports */
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Open+Sans&family=Sacramento&family=Ubuntu:ital@1&display=swap");
-@import "./special-effects.css";
+@import "./Navbar.css";
 @import "./Header.css";
 @import "./About.css";
 @import "./Skills.css";
+@import "./special-effects.css";
 @import "./Projects.css";
 
 :root {
@@ -11,18 +12,19 @@
   --font-color: white;
   --inverse-font-color: white;
   --pop-color: #ffdd7e;
-  --heading-color: #ffdd7e;
+  --heading-color: #EEEBDD;
   --inverse-heading-color: #c70039;
   --header-background-color: linear-gradient(
     to top,
-    #001524 0%,
-    #213555,
-    rgba(6, 131, 70, 0.784) 98%
+    #0F0E0E 5%,
+    #1e1b1b,
+    rgba(148, 44, 31, 0.784) 99%
   );
-  --background-color: linear-gradient(to bottom, #213555, #001524 90%);
-  --inverse-background-color: #001524;
+  --background-color: #0F0E0E;
+  --inverse-background-color: #0F0E0E;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --inverse-shadow-color: rgba(255, 255, 255, 0.1);
+  --skill-background-color: black;
 
   /* Dark Mode colors */
   --dark-font-color: white;
@@ -104,65 +106,6 @@ div {
 
 /* Global Classes */
 
-/* Navbar */
-
-.navbar {
-  margin: 0% 5%;
-  background: rgba(16, 16, 16, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px) !important;
-}
-a.navbar-brand {
-  margin-right: 0px;
-}
-.navbar-brand .resize {
-  height: 40px;
-  width: 40px;
-  margin: 0px;
-}
-.nav-link {
-  color: var(--font-color);
-  font-weight: bold;
-}
-.navbar-nav .nav-link.active,
-.navbar-nav .show > .nav-link {
-  color: var(--pop-color);
-}
-.nav-item :hover {
-  color: var(--pop-color);
-}
-.navbar-toggler {
-  color: var(--pop-color);
-  background: transparent;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none !important;
-}
-.download_btn {
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  height: 40px;
-  width: 45px;
-  font-size: 1.3rem !important;
-  border: 2px solid var(--pop-color);
-  background: var(--background-color);
-  border-radius: 30px;
-  padding: 10px;
-  margin-right: 0%;
-}
-.download_btn a {
-  color: var(--pop-color);
-  text-decoration: none;
-}
-.download_btn :hover {
-  color: var(--font-color);
-}
-
-/* Navbar section end */
 /*! Message call out */
 .callout {
   width: 100%;
@@ -317,7 +260,6 @@ a.navbar-brand {
 
 /* Achievement section end */
 
-
 @media only screen and (max-width: 768px) {
   #Skills .content {
     padding-right: 0rem;
@@ -376,7 +318,6 @@ a.navbar-brand {
   padding: 3rem 10rem 6rem;
   color: var(--inverse-font-color);
 }
-
 
 #Hobbys .heading {
   font-size: clamp(2rem, 6vw, 10rem);

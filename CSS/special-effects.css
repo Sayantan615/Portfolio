@@ -41,10 +41,8 @@
   width: -moz-fit-content;
   width: fit-content;
   flex-wrap: nowrap;
-  -webkit-animation: scroll var(--_animation-duration, 30s)
-    var(--_animation-direction, reverse) linear infinite;
-  animation: scroll var(--_animation-duration, 30s)
-    var(--_animation-direction, reverse) linear infinite;
+  -webkit-animation: scroll var(--_animation-duration, 30s)    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 30s)    var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-animated="true"] .scroller-inner:hover {
@@ -62,7 +60,7 @@
     -ms-transform: translate(calc(-50% - 0.5rem));
     -o-transform: translate(calc(-50% - 0.5rem));
     transform: translate(calc(-50% - 0.5rem));
-}
+  }
 }
 
 @media only screen and (max-width: 768px) {

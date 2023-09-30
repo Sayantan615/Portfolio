@@ -1,12 +1,12 @@
 /* Header Section */
 #Header {
   background: var(--header-background-color);
-  background-size: 200% 200%;
-  -webkit-animation: animate 25s linear infinite;
-  animation: animate 25s linear infinite;
+  background-size: 100% 100%;
+  /* -webkit-animation: animate 25s linear infinite;
+  animation: animate 25s linear infinite; */
 }
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
     background-position: 90% 90%;
   }
@@ -16,7 +16,7 @@
   100% {
     background-position: 90% 90%;
   }
-}
+} */
 
 #Header .container-fluid {
   height: 100vh;

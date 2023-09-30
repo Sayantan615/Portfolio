@@ -1,0 +1,64 @@
+/* Navbar */
+
+.navbar {
+  margin: 0% 5%;
+  background: rgba(16, 16, 16, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px) !important;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0px;
+}
+a.navbar-brand {
+  margin-right: 0px;
+}
+.navbar-brand .resize {
+  height: 40px;
+  width: 40px;
+  margin: 0px;
+}
+.nav-link {
+  color: var(--font-color);
+  font-weight: bold;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--pop-color);
+}
+.nav-item :hover {
+  color: var(--pop-color);
+}
+.navbar-toggler {
+  color: var(--pop-color);
+  background: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.download_btn {
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+  font-size: 1.3rem !important;
+  border: 2px solid var(--pop-color);
+  background: var(--background-color);
+  border-radius: 30px;
+  padding: 10px;
+  margin-right: 0%;
+}
+.download_btn a {
+  color: var(--pop-color);
+  text-decoration: none;
+}
+.download_btn :hover {
+  color: var(--font-color);
+}
+
+/* Navbar section end */
