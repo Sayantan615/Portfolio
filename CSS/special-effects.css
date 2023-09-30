@@ -1,6 +1,9 @@
 @import "./styles.css";
 /* Scroller Effect */
-
+:root{
+  --_animation-duration: 80s;
+  --_animation-direction: forwards;
+}
 .skill img {
   height: 70%;
   width: 60%;

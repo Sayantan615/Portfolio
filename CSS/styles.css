@@ -3,7 +3,6 @@
 @import "./Navbar.css";
 @import "./Header.css";
 @import "./About.css";
-@import "./Skills.css";
 @import "./special-effects.css";
 @import "./Projects.css";
 
@@ -12,16 +11,16 @@
   --font-color: white;
   --inverse-font-color: white;
   --pop-color: #ffdd7e;
-  --heading-color: #EEEBDD;
+  --heading-color: #eeebdd;
   --inverse-heading-color: #c70039;
   --header-background-color: linear-gradient(
     to top,
-    #0F0E0E 5%,
+    #0f0e0e 5%,
     #1e1b1b,
     rgba(148, 44, 31, 0.784) 99%
   );
-  --background-color: #0F0E0E;
-  --inverse-background-color: #0F0E0E;
+  --background-color: #0f0e0e;
+  --inverse-background-color: #0f0e0e;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --inverse-shadow-color: rgba(255, 255, 255, 0.1);
   --skill-background-color: black;
@@ -755,6 +754,14 @@ div {
 
   /* Skill section */
 
+  #Skills .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
   #Skills .content .skill {
     margin: 5px;
     width: 12vw;
