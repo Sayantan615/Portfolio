@@ -1,4 +1,4 @@
-@import './special-effects.css';
+@import "./special-effects.css";
 /* CSS */
 
 :root {
@@ -9,6 +9,7 @@
   --heading-color: #ffdd7e;
   --inverse-heading-color: #c70039;
   --background-color: #222;
+  --inverse-background-color: #001524;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --inverse-shadow-color: #0000002f;
 
@@ -19,6 +20,7 @@
   --dark-heading-color: #ebef95;
   --dark-inverse-heading-color: #ee046c;
   --dark-background-color: #e25e3e;
+  --dark-inverse-background-color: #ebef95;
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
   --dark-inverse-shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -453,14 +455,10 @@ a.navbar-brand {
 }
 
 #Skills .skill:hover {
-  /* background-color: var(--background-color); */
-  background-color: black;
-  color: var(--pop-color);
-  z-index: 1;
 }
 
 #Skills .content {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 #Skills .content .skill {
@@ -469,26 +467,26 @@ a.navbar-brand {
   align-items: center;
   width: 80px;
   height: 80px;
+  background: black;
   border: 2px solid var(--background-color);
   border-radius: 50px;
   text-align: center;
-  margin: 1rem;
-  text-shadow: 1px 1px var(--inverse-heading-color);
+  margin: 0.5rem 0.2rem;
+  color: white;
   cursor: pointer;
-  font-size: clamp(3.5rem, 40%, 4rem);
+  font-size: 3rem;
   border: 0.2vw solid black;
   overflow: hidden;
-  box-shadow: 5px 5px 10px black;
 }
 
 #Skills .content .sub-skill-heading {
   font-size: clamp(2rem, 3vw, 5rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
+  text-align: center;
   position: relative;
   margin-bottom: 0.5rem;
-  color: var(--inverse-heading-color);
+  color: black;
 }
 
 #Skills .content .sub-skill-heading::before {
@@ -497,7 +495,7 @@ a.navbar-brand {
   width: 100%;
   left: 1%;
   top: -15%;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
@@ -1069,6 +1067,7 @@ a.navbar-brand {
   /* Skill section */
   .skill-div {
     height: max-content;
+    color: white;
   }
   #Skills .heading {
     text-align: center;
@@ -1081,17 +1080,7 @@ a.navbar-brand {
     word-spacing: normal;
     padding: 2rem 1.5rem;
   }
-  #Skills .content:nth-child(3) div {
-    display: grid !important;
-    grid-template-columns: max-content max-content max-content max-content;
-    margin: 1rem !important;
-    justify-items: center;
-    align-content: center;
-  }
-  #Skills .content:nth-child(3) .skill {
-    text-align: center;
-    display: flex !important;
-  }
+
   #Skills .content {
     padding-right: 0px;
   }
@@ -1222,11 +1211,7 @@ a.navbar-brand {
     text-align: center;
     letter-spacing: 0px;
   }
-  #Skills .content:nth-child(3) div {
-    display: flex !important;
-    margin: 2px !important;
-    margin-bottom: 1rem !important;
-  }
+
   /* Project Section */
   #Projects {
     height: max-content;
