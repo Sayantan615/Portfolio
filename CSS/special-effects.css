@@ -1,6 +1,6 @@
 @import "./styles.css";
 /* Scroller Effect */
-:root{
+:root {
   --_animation-duration: 80s;
   --_animation-direction: forwards;
 }
@@ -44,8 +44,10 @@
   width: -moz-fit-content;
   width: fit-content;
   flex-wrap: nowrap;
-  -webkit-animation: scroll var(--_animation-duration, 30s)    var(--_animation-direction, forwards) linear infinite;
-  animation: scroll var(--_animation-duration, 30s)    var(--_animation-direction, forwards) linear infinite;
+  -webkit-animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-animated="true"] .scroller-inner:hover {
@@ -64,6 +66,11 @@
     -o-transform: translate(calc(-50% - 0.5rem));
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+.scroller[animation-speed="faster"] .scroller-inner {
+  animation: scroll 10s reverse linear infinite;
+  -webkit-animation: scroll 10s reverse linear infinite;
 }
 
 @media only screen and (max-width: 768px) {

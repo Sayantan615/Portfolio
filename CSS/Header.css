@@ -70,10 +70,16 @@
   border-radius: 25px;
   border-color: var(--pop-color);
   color: var(--pop-color);
+  background: transparent;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+.header_button_container .btn:hover{
+  color: white;
+  background: red;
 }
 
 .short_intro {

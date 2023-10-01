@@ -101,4 +101,19 @@ document
     }
   });
 
+const fullviewbtn = document.querySelectorAll(".fullviewbtn");
+const fullview_container = document.querySelectorAll(".fullview_container");
+const closeviewbtn = document.querySelectorAll(".closeviewbtn");
+fullviewbtn.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    fullview_container[index].style.display = "flex";
+  });
+  closeviewbtn[index].addEventListener("click", () => {
+    fullview_container[index].style.display = "none";
+  });
+});
+
 // changeMode();
+const headings = document.querySelectorAll(".p_heading");
+
+
