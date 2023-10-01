@@ -108,10 +108,9 @@
         with you.
       </div>
     </div> -->
-    <!-- Header -->
-
+    <!-- Header Section start -->
     <section id="Header">
-      <div class="container-fluid container">
+      <div class="container-fluid">
         <div class="img-1">
           <img
             src="Images/profile-pic.png"
@@ -122,13 +121,20 @@
           <!-- Add glow effect on the image side -->
           <!-- Add alternative picture -->
         </div>
-        <span class="hey">Hey, I am</span>
-        <h2 class="Name">Sayantan Chowdhury</h2>
-        <p class="ShortIntro">Programmer & Developer</p>
-        <p class="ShortIntro">
-          <em> Computer Engineer</em>
-        </p>
-        <hr class="hr-1" />
+        <span class="greetings">Hey, I am</span>
+        <h2 class="name_text">Sayantan Chowdhury</h2>
+        <p class="short_intro">programmer <strong>•</strong> developer <strong>•</strong> engineer</p>
+        <div class="d-flex mb-3 justify-content-evenly header_button_container">
+          <a class="btn btn-outline-danger" href="https://github.com/Sayantan615"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a class="btn btn-outline-danger" href="https://github.com/Sayantan615"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a class="btn btn-outline-danger" href="https://github.com/Sayantan615"
+            ><i class="fa-brands fa-x"></i
+          ></a>
+        </div>
       </div>
     </section>
     <hr class="section-breaker" />
@@ -182,44 +188,45 @@
           <h3 class="heading" data-outline="Skills">Skills</h3>
         </div>
         <div class="d-lg-flex">
-        <div class="container">
-          <h4>Hello!</h4>
-          <p>
-            I am Sayantan Chowdhury, a recent graduate in
-            <strong>Computer Science and Engineering</strong> from GCETTB, where
-            I maintained a solid CGPA of
-            <strong>8.6</strong>
-            throughout my academic journey. My passion for technology and
-            problem-solving drives me to continually enhance my skills.
-          </p>
-          <p>
-            Currently, I am dedicated to preparing for the GATE 2024 examination
-            with the goal of pursuing a Master's degree. This journey reflects
-            my commitment to continuous learning and personal growth.
-          </p>
-          <p>
-            I am actively seeking opportunities to apply and expand my skills in
-            a professional setting. I am open to remote work options that align
-            with my expertise and allow me to make a meaningful contribution.
-          </p>
-          <p>
-            My qualifications are aligned with my enthusiasm to tackle new
-            challenges in the world of technology. If you believe my skills and
-            aspirations align with your requirements,
-            <a href="#Contact">please do not hesitate to reach out to me</a>.
-            Your consideration is greatly appreciated.
-          </p>
+          <div class="container">
+            <h4>Hello!</h4>
+            <p>
+              I am Sayantan Chowdhury, a recent graduate in
+              <strong>Computer Science and Engineering</strong> from GCETTB,
+              where I maintained a solid CGPA of
+              <strong>8.6</strong>
+              throughout my academic journey. My passion for technology and
+              problem-solving drives me to continually enhance my skills.
+            </p>
+            <p>
+              Currently, I am dedicated to preparing for the GATE 2024
+              examination with the goal of pursuing a Master's degree. This
+              journey reflects my commitment to continuous learning and personal
+              growth.
+            </p>
+            <p>
+              I am actively seeking opportunities to apply and expand my skills
+              in a professional setting. I am open to remote work options that
+              align with my expertise and allow me to make a meaningful
+              contribution.
+            </p>
+            <p>
+              My qualifications are aligned with my enthusiasm to tackle new
+              challenges in the world of technology. If you believe my skills
+              and aspirations align with your requirements,
+              <a href="#Contact">please do not hesitate to reach out to me</a>.
+              Your consideration is greatly appreciated.
+            </p>
 
-          <h4 class="text-gray">Birth Date:</h4>
-          <p>25th March 2002</p>
-          <h4 class="text-gray">Email:</h4>
-          <a href="mailto:sayantanchowdhury615@gmail.com?"
-            >sayantanchowdhury615@gmail.com</a
-          >
-        </div>
-        <div id="Skills">
-          <div class="skill-div">
-            <div class="">
+            <h4 class="text-gray">Birth Date:</h4>
+            <p>25th March 2002</p>
+            <h4 class="text-gray">Email:</h4>
+            <a href="mailto:sayantanchowdhury615@gmail.com?"
+              >sayantanchowdhury615@gmail.com</a
+            >
+          </div>
+          <div id="Skills">
+            <div class="skill-div">
               <!-- Tech Stack -->
               <div class="content">
                 <h3 class="sub-skill-heading" data-outline="Tech Stack">
@@ -300,12 +307,6 @@
                     </div>
                     <div class="skill">
                       <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
-                        alt="jquery"
-                      />
-                    </div>
-                    <div class="skill">
-                      <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                         alt="tailwind"
                       />
@@ -314,6 +315,18 @@
                       <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                         alt="javascript"
+                      />
+                    </div>
+                    <div class="skill">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                        alt="jquery"
+                      />
+                    </div>
+                    <div class="skill">
+                      <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="react"
                       />
                     </div>
                   </div>
@@ -352,8 +365,7 @@
               </div>
             </div>
           </div>
-        </d>
-      </div>
+        </div>
       </div>
     </section>
     <!-- About Section end -->
@@ -366,7 +378,8 @@
     <!-- Project Section start -->
     <section id="Projects">
       <h3 class="heading" data-outline="Projects">Projects</h3>
-      <div class="container-fluid">
+      
+      <div class="container-fluid" style="display: none;">
         <div class="innerSection">
           <h1>Personal Projects</h1>
           <div class="project-section-details">

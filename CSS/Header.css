@@ -36,24 +36,22 @@
   margin-bottom: 1rem;
 }
 .profile_pic {
-  height: 12rem;
+  height: 25vh;
   border-radius: 100%;
   border: 4px solid var(--pop-color);
 }
-.hey {
-  font-size: 32px;
+.greetings {
+  font-size: 2vw;
   font-family: "sacramento";
   color: var(--pop-color);
 }
-.Name {
+.name_text {
   position: relative;
   font-family: "sacramento", sans-serif;
-  font-size: 550%;
-  /* color: gray; */
+  font-size: 5vw;
   color: var(--pop-color);
   font-weight: bold;
   animation: fade 2s ease-in forwards;
-  margin-bottom: 20px;
 }
 /* !check */
 @keyframes fade {
@@ -64,12 +62,29 @@
     opacity: 100%;
   }
 }
+.header_button_container {
+  width: 12vw;
+}
 
-.ShortIntro {
-  font-size: clamp(1.2rem, 1.5rem, 2rem);
+.header_button_container .btn {
+  border-radius: 25px;
+  border-color: var(--pop-color);
+  color: var(--pop-color);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.short_intro {
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
   word-spacing: 5px;
   color: var(--font-color);
   font-family: "Ubuntu", "sacramento", monospace, sans-serif;
+}
+
+.short_intro strong {
+  color: rgba(148, 44, 31, 0.784);
 }
 
 /* Hader section end */

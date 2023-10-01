@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   word-spacing: normal;
-  padding: 10rem 10rem 4rem;
+  padding: 10rem clamp(4rem, 10vw, 10rem) 4rem;
   font-size: 1rem;
 }
 
@@ -27,7 +27,6 @@
 }
 .text_box a {
   text-decoration: none;
-  /* color: var(--pop-color); */
 }
 .text_box .subheading {
   font-size: 6rem;
@@ -35,9 +34,8 @@
 }
 
 #About .heading {
-  /* color: gray; */
   color: var(--heading-color);
-  font-size: 5rem;
+  font-size: clamp(1.5rem, 5vw, 5rem);
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3rem;
@@ -68,7 +66,7 @@
   color: var(--inverse-font-color);
   text-align: center;
   word-spacing: normal;
-  padding: 0rem 0rem 2rem 4rem;
+  padding: 0rem 0rem 2rem 2rem;
 }
 
 #Skills .container {
@@ -78,7 +76,7 @@
 #Skills .content {
   width: max-content;
   margin-left: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #Skills .content .skill {
@@ -100,7 +98,7 @@
 }
 
 #Skills .content .sub-skill-heading {
-  font-size: clamp(2rem, 3vw, 5rem);
+  font-size: clamp(1rem, 4vw, 3rem);
   text-transform: uppercase;
   font-family: "Caveat", cursive;
   text-align: right;
@@ -108,7 +106,7 @@
   margin-bottom: 0.5rem;
   color: transparent;
   -webkit-text-stroke: 1.5px var(--shadow-color);
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 #Skills .content .skill p {
