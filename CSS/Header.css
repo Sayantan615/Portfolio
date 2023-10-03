@@ -20,13 +20,10 @@
 
 #Header .container-fluid {
   height: 100vh;
-  display: inline-block;
-  padding-top: 0rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  text-align: center;
+  justify-content: end;
+  padding: 5% 5%;
+  text-align: left;
   line-height: 1;
   flex-direction: column;
 }
@@ -34,6 +31,7 @@
 .img-1 {
   margin-top: 0%;
   margin-bottom: 1rem;
+  display: none;
 }
 .profile_pic {
   height: 25vh;
@@ -42,55 +40,59 @@
 }
 .greetings {
   font-size: 2vw;
-  font-family: "sacramento";
+  font-family: "caveat";
   color: var(--pop-color);
+  padding-left: 1rem;
 }
-.name_text {
+
+.starting_text {
   position: relative;
-  font-family: "sacramento", sans-serif;
-  font-size: 5vw;
-  color: var(--pop-color);
+  font-family: "caveat";
+  font-size: 7vw;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--pop-color);
   font-weight: bold;
   animation: fade 2s ease-in forwards;
 }
+
 /* !check */
-@keyframes fade {
+/* @keyframes fade {
   0% {
     opacity: 5%;
   }
   100% {
     opacity: 100%;
   }
-}
+} */
 .header_button_container {
   width: 12vw;
+  gap: 5%;
 }
 
 .header_button_container .btn {
-  border-radius: 25px;
+  border-radius: 50%;
   border-color: var(--pop-color);
   color: var(--pop-color);
   background: transparent;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.header_button_container .btn:hover{
+.header_button_container .btn:hover {
   color: white;
   background: red;
 }
 
 .short_intro {
-  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  font-size: clamp(1.5rem, 3vw, 5rem);
   word-spacing: 5px;
   color: var(--font-color);
-  font-family: "Ubuntu", "sacramento", monospace, sans-serif;
+  font-family: var(--heading-font-family);
 }
-
 .short_intro strong {
-  color: rgba(148, 44, 31, 0.784);
+  color: red;
 }
 
 /* Hader section end */

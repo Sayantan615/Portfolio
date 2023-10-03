@@ -10,13 +10,10 @@
 }
 
 .scroller {
-  max-width: 25vw;
+  max-width: 20vw;
   margin-left: auto;
 }
 
-.small-scroller {
-  max-width: 25vw !important;
-}
 
 .scroller-inner {
   display: flex;

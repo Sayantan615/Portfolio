@@ -1,11 +1,13 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600&family=Fredericka+the+Great&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Open+Sans&family=Sacramento&family=Ubuntu:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Handjet:wght@100;200&family=Indie+Flower&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=New+Tegomin&family=Noto+Color+Emoji&family=Open+Sans&family=Orbitron:wght@400;700;900&family=Sacramento&family=Ubuntu:ital@1&family=Zeyada&display=swap");
 @import "./Navbar.css";
 @import "./Header.css";
 @import "./About.css";
 @import "./special-effects.css";
 @import "./Projects.css";
-
+@import "./Achive.css";
+@import "./myself_section.css";
+@import "./contact.css";
 :root {
   /* Light Mode Colors */
   --font-color: white;
@@ -14,9 +16,8 @@
   --heading-color: #eeebdd;
   --inverse-heading-color: #c70039;
   --header-background-color: linear-gradient(
-    to top,
+    25deg,
     #0f0e0e 5%,
-    #1e1b1b,
     rgba(148, 44, 31, 0.784) 99%
   );
   --background-color: #0f0e0e;
@@ -36,6 +37,9 @@
   --dark-inverse-background-color: #ebef95;
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
   --dark-inverse-shadow-color: rgba(0, 0, 0, 0.1);
+
+  /* Font Family */
+  --heading-font-family: "caveat", sans-serif;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -172,93 +176,6 @@ div {
 }
 /* Quote section end */
 
-/* Achivement Download Button Effect */
-.download_button_p {
-  background: var(--pop-color);
-  margin: 10px auto;
-  text-decoration: none;
-  color: var(--background-color);
-  transition: transform 0.3s ease;
-  position: relative;
-}
-
-.download_button_p::after,
-.download_button_p::before {
-  content: "";
-  position: absolute;
-  opacity: 0.1;
-  background: #000;
-  border-radius: inherit;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  bottom: 0px;
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-
-.download_button_p:hover {
-  transform: translate(-6px, -6px);
-  color: var(--font-color);
-}
-.download_button_p:hover::after {
-  transform: translate(6px, 6px);
-  z-index: -1;
-}
-.download_button_p:hover::before {
-  transform: translate(12px, 12px);
-  z-index: -1;
-}
-
-/* Achivement Download Button Effect */
-/* Achievements section start */
-#Achievements {
-  background: var(--background-color);
-}
-#Achievements .heading {
-  color: var(--heading-color);
-  font-size: clamp(2rem, 8vw, 10rem);
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3rem;
-  text-align: center;
-  position: relative;
-  margin-bottom: 5rem;
-}
-#Achievements .heading::before {
-  content: attr(data-outline);
-  position: absolute;
-  left: 2%;
-  top: -20%;
-  width: 100%;
-  text-align: center;
-  letter-spacing: 0.4rem;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--shadow-color);
-  /* -webkit-text-stroke: 1.5px #fff; */
-  z-index: 0;
-}
-
-#Achievements .text_box {
-  text-align: left;
-  word-spacing: normal;
-  height: 100vh;
-  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
-  font-size: clamp(0.9rem, 2.4vw, 1.4rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#Achievements .text_box p {
-  padding-left: 2rem;
-}
-
-/* Achievement section end */
-
 @media only screen and (max-width: 768px) {
   #Skills .content {
     padding-right: 0rem;
@@ -308,211 +225,18 @@ div {
   }
 }
 
-/* Hobby Section */
-#Hobbys {
-  overflow: hidden;
-  margin-top: 0%;
-  background: var(--inverse-background-color);
-  text-align: left;
-  padding: 3rem 10rem 6rem;
-  color: var(--inverse-font-color);
-}
 
-#Hobbys .heading {
-  font-size: clamp(2rem, 6vw, 10rem);
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  text-align: right;
-  position: relative;
-  z-index: 3;
-  color: var(--inverse-heading-color);
-}
-#Hobbys .heading::before {
-  content: attr(data-outline);
-  width: 100%;
-  position: absolute;
-  left: 2%;
-  top: -10%;
-  text-align: right;
-  text-transform: uppercase;
-  font-family: "Montserrat";
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--inverse-shadow-color);
-  z-index: 1;
-}
-#Hobbys .heading :last-child {
-  margin-bottom: 4rem;
-}
-#Hobbys .con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-#Hobbys .hobby {
-  display: inline-block;
-  color: var(--pop-color);
-  background: var(--background-color);
-  border: 3px solid var(--inverse-font-color);
-  border-radius: 50px;
-  text-align: center;
-  margin: 0px 10px;
-  padding: clamp(20px, 1vw, 2rem);
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inner-text {
-  font-size: 1.4rem;
-  padding: clamp(2rem, 4vw, 8rem);
-  /* font-weight: bold; */
-}
-.inner-text .sub-texts a {
-  color: var(--inverse-font-color);
-}
-
-.sub-texts {
-  margin-bottom: 1rem;
-}
-
-/* Contact Section */
-#Contact {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#Contact .content {
-  width: 100vw;
-  height: max-content;
-}
-#contact_box {
-  width: auto;
-  height: calc(100vh - 4rem);
-  display: flex;
-  flex-direction: row;
-  overflow-y: hidden;
-  justify-content: center;
-  align-items: center;
-}
-
-#contact_box .right {
-  height: clamp(25rem, 40vh, 30rem);
-  width: clamp(20rem, 70vw, 35rem);
-  color: var(--font-color);
-  border-radius: 10px;
-  border: 2px solid var(--font-color);
-  background: var(--background-color);
-  padding: 60px;
-  display: flex;
-  text-align: justify;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#contact_box .right h1 {
-  letter-spacing: 1px;
-  font-weight: lighter;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-#contact_box .right h1 {
-  margin-bottom: 0.5rem;
-}
-
-#contact_box .right a {
-  text-decoration: none;
-  margin-bottom: 5px;
-}
-
-#Contact .innerdiv {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-#Contact ul {
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  padding: 0px !important;
-}
-
-#Contact ul li {
-  position: relative;
-  list-style: none;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-#Contact ul li a {
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: large;
-  position: relative;
-  width: clamp(10px, 10vw, 50px);
-  height: clamp(10px, 10vw, 50px);
-  color: var(--font-color);
-  display: inline-block;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  display: flex;
-  border: 1px solid rgba(6, 5, 5, 0.4);
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(-10px);
-  transition: trnsform 0.5s ease-in;
-}
-
-#Contact ul li a:hover {
-  transform: translateY(-10px);
-}
-#Contact ul li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  transform: skewX(45deg) translateX(150px);
-  transition: transform 0.5s ease-in;
-}
-#Contact ul li a:hover::before {
-  transform: skewX(45deg) translateX(-150px);
-}
-
-#Contact .bottom_text {
-  color: white;
-}
 
 /* Buttons */
 .fixed-button {
   position: fixed;
   z-index: 999;
   padding: 10px 15px !important;
-  font-size: 1.2rem;
+  font-size: 2rem;
   background: transparent;
   color: var(--pop-color);
-  bottom: 5px;
+  bottom: 10px;
   /* text-shadow: -1px 1px 5px var(--inverse-font-color); */
 }
 
@@ -522,21 +246,9 @@ div {
 }
 
 /* Toggle Button */
-.destroy-button {
-  left: 20px;
-}
-
-/* Navigation Buttons */
-.navigation-buttons {
+.theme-button {
   right: 20px;
 }
-
-/* .navigation-buttons span .next {
-  background: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 /* New Responsive settings */
 /* Desktop Responsive */
@@ -898,13 +610,7 @@ div {
     color: rgb(0, 0, 0);
   } */
 
-  /* Contact Section */
-
-  /* Navigation Buttons */
-  /*.navigation-buttons {
-    display: none;
-  }
-
+  /* Contact Section
   .text_box .subheading {
     font-size: 2rem;
     color: #ffdd7e;

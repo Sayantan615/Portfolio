@@ -39,6 +39,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
     />
+    <!-- Text Typewriter.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="CSS/styles.css" />
@@ -51,8 +53,9 @@
           class="navbar-brand fw-bold fst-italic"
           href="#Header"
           aria-label="Header"
-          ><img class="resize" src="Images/profile-pic.png" alt=""
-        /></a>
+        >
+          <img class="resize" src="Images/profile-pic.png" alt="" />
+        </a>
         <button
           class="navbar-toggler border-2"
           type="button"
@@ -65,40 +68,35 @@
           <i class="fa-solid fa-ellipsis"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#Header">Home</a>
+              <a class="nav-link active" href="#Header">home.</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link go_to_about" href="#About">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link go_to_projects" href="#Projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link go_to_achievements" href="#Achievements"
-                >Achievements</a
-              >
+              <a class="nav-link" href="#About">about.</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link go_to_hobbys" href="#Hobbys">Q&A</a>
+              <a class="nav-link" href="#Projects">project.</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link go_to_contact" href="#Contact">Contact</a>
+              <a class="nav-link" href="#Journey">journey.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-none" href="#myself">know me.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">contact.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Resume.pdf" target="_blank">resume.</a>
             </li>
           </ul>
-        </div>
-        <div class="navbar-brand download_btn">
-          <a href="Resume.pdf" download
-            ><i class="fa-solid fa-cloud-arrow-down"></i
-          ></a>
         </div>
       </div>
     </nav>
     <!-- Navigation end -->
-    <!-- Message popup -->
+    <!-- !Message start -->
     <!-- <div class="callout relative">
       <div class="callout-header">
         Thank you for visiting. love to
@@ -108,6 +106,7 @@
         with you.
       </div>
     </div> -->
+    <!-- !Message end -->
     <!-- Header Section start -->
     <section id="Header">
       <div class="container-fluid">
@@ -118,22 +117,41 @@
             class="profile_pic"
             loading="lazy"
           />
-          <!-- Add glow effect on the image side -->
-          <!-- Add alternative picture -->
         </div>
-        <span class="greetings">Hey, I am</span>
-        <h2 class="name_text">Sayantan Chowdhury</h2>
+
+        <span class="greetings"
+          ><span
+            class="typeWriter"
+            data-text='["স্বাগতম, নমস্কার",  
+                        "स्वागत, नमस्ते", 
+                        "Welcome, Hello", 
+                        "ಸುಸ್ವಾಗತ, ಹಲೋ",
+                        "வரவேற்பு, வணக்கம்", 
+                        "സ്വാഗതം, ഹലോ ",
+                        "ਜੀ ਆਇਆ ਨੂੰ, ਹੈਲੋ ",
+                        "ସ୍ୱାଗତ, ନମସ୍କାର", 
+                        "ようこそ, こんにちは", 
+                        "환영합니다, 안녕하세요", 
+                        "مرحباً, مرحباً", 
+                        "Bienvenue, Bonjour", 
+                        "Bienvenido, Hola"]'
+            data-speed="4"
+          ></span
+        ></span>
+        <h2 class="starting_text">I'm Sayantan Chowdhury.</h2>
         <p class="short_intro">
-          engineer <strong>•</strong> programmer <strong>•</strong> developer
+          Engineer <strong>•</strong> Programmer <strong>•</strong> Developer
         </p>
-        <div class="d-flex mb-3 justify-content-evenly header_button_container">
+        <div class="d-flex mb-3 header_button_container">
           <a class="btn" href="https://github.com/Sayantan615"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a class="btn" href="https://github.com/Sayantan615"
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/sayantan-chowdhury-689772168/"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
-          <a class="btn" href="https://github.com/Sayantan615"
+          <a class="btn" href="https://twitter.com/Iamchowdhury_7"
             ><i class="fa-brands fa-x"></i
           ></a>
         </div>
@@ -186,8 +204,8 @@
     <section id="About">
       <div class="text_box">
         <div class="d-flex justify-content-between">
-          <h3 class="heading" data-outline="About">About</h3>
-          <h3 class="heading" data-outline="Skills">Skills</h3>
+          <h3 class="heading" data-outline="about.">about.</h3>
+          <h3 class="heading" data-outline="skill.">skill.</h3>
         </div>
         <div class="d-lg-flex">
           <div class="container">
@@ -226,13 +244,14 @@
             <a href="mailto:sayantanchowdhury615@gmail.com?"
               >sayantanchowdhury615@gmail.com</a
             >
+            🔗
           </div>
           <div id="Skills">
             <div class="skill-div">
               <!-- Tech Stack -->
               <div class="content">
                 <h3 class="sub-skill-heading" data-outline="Tech Stack">
-                  Tech Stack
+                  Tech Stack.
                 </h3>
                 <div class="scroller">
                   <div class="scroller-inner">
@@ -284,7 +303,7 @@
               <!-- Front End Scetion -->
               <div class="content">
                 <h3 class="sub-skill-heading" data-outline="Front-End">
-                  Front-End
+                  Front-End.
                 </h3>
                 <div class="scroller">
                   <div class="scroller-inner">
@@ -337,7 +356,7 @@
               <!-- Back End Section -->
               <div class="content">
                 <h3 class="sub-skill-heading" data-outline="Back-End">
-                  Back-End
+                  Back-End.
                 </h3>
                 <div class="scroller small-scroller">
                   <div class="scroller-inner">
@@ -377,15 +396,15 @@
     <hr class="section-breaker" />
     <!-- Project Section start -->
     <section id="Projects">
-      <h3 class="heading" data-outline="Projects">Projects</h3>
+      <h3 class="heading" data-outline="projects.">projects.</h3>
       <div class="container">
         <div class="d-grid g-5 container-grid">
           <!-- Portfolio-->
-          <div class="p_div" data-aos="fade-right" data-aos-delay="300">
+          <div class="p_div">
             <div
               class="d-flex flex-row justify-content-between align-items-center"
             >
-              <h1 class="p_heading">Portfolio</h1>
+              <h1 class="p_heading"><strong>2022</strong>/Portfolio</h1>
               <button
                 id="fullviewbtn"
                 type="submit"
@@ -477,11 +496,11 @@
           </div>
           <!-- End -->
           <!-- Simon Game-->
-          <div class="p_div" data-aos="fade-right" data-aos-delay="500">
+          <div class="p_div">
             <div
               class="d-flex flex-row justify-content-between align-items-center"
             >
-              <h1 class="p_heading">Simon Game</h1>
+              <h1 class="p_heading"><strong>2021</strong>/Simon Game</h1>
               <button
                 id="fullviewbtn"
                 type="submit"
@@ -570,11 +589,11 @@
           </div>
           <!-- End -->
           <!-- Newsletter-->
-          <div class="p_div" data-aos="fade-right" data-aos-delay="700">
+          <div class="p_div">
             <div
               class="d-flex flex-row justify-content-between align-items-center"
             >
-              <h1 class="p_heading">Newsletter</h1>
+              <h1 class="p_heading"><strong>2022</strong>/Newsletter</h1>
               <button
                 id="fullviewbtn"
                 type="submit"
@@ -665,302 +684,177 @@
           <!-- End -->
         </div>
       </div>
-      <div class="container-fluid" style="display: none">
-        <div class="innerSection">
-          <h1>Personal Projects</h1>
-          <div class="project-section-details">
-            <ul>
-              <li>
-                I have dedicated a significant portion of my personal time to
-                working on web development-related projects, showcasing my
-                proficiency in a range of technologies. My front-end projects
-                primarily leverage HTML5, CSS, JavaScript, and ReactJS, while my
-                back-end projects are built using NodeJS, ExpressJS, and
-                MongoDB.
-              </li>
-              <li>
-                Throughout these projects, I have gained valuable insights and
-                practical experience in various facets of web development. This
-                journey has expanded my knowledge in diverse areas, including
-                data structures and algorithms (DSA), where I've applied these
-                concepts to solve complex problems effectively. Additionally, I
-                have delved into more advanced topics such as password hashing,
-                API management, and CSS techniques.
-              </li>
-              <li>
-                Furthermore, I have honed my skills in crafting RESTful APIs, a
-                critical component in modern web development. Working with
-                MongoDB databases has proven both challenging and rewarding.
-                Tackling intricate query problems has been both intellectually
-                stimulating and enjoyable. These experiences have further
-                deepened my understanding of database management and
-                optimization.
-              </li>
-              <li>
-                I am committed to continuously enhancing my expertise in web
-                development and am eager to apply my skills in a professional
-                capacity.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="all-items">
-          <!-- Portfolio -->
-          <div class="item">
-            <div class="left" data-aos="zoom-in">
-              <div class="img">
-                <img src="Images/PortfolioWebsite.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right" data-aos="zoom-in">
-              <h2 class="project-title">Portfolio</h2>
-              <p class="project-desc">
-                My portfolio website is a testament to my dedication and growth.
-                It's where I've poured my heart and soul, learning from every
-                misstep. It's the stage where I proudly display all my projects,
-                offering a holistic view of my journey and skills.
-              </p>
-              <div class="buttons">
-                <a href="https://github.com/Sayantan615/Portfolio" class="btn">
-                  <i class="fa-brands fa-github"></i><strong> GitHub </strong>
-                </a>
-                <a href="https://sayantan615.github.io/Portfolio/" class="btn">
-                  <i class="fa-solid fa-up-right-from-square"></i
-                  ><strong> Open </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Snake Game -->
-          <div class="item">
-            <div class="left" data-aos="zoom-in">
-              <div class="img">
-                <img src="Images/SnakeGame1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right" data-aos="zoom-in">
-              <h2 class="project-title">Snake Game</h2>
-              <p class="project-desc">
-                Relive the nostalgia with my rendition of the classic snake game
-                we all cherished. Crafted using HTML5, CSS, and JavaScript, it's
-                a faithful homage to the good old days of gaming.
-              </p>
-              <div class="buttons">
-                <a href="https://github.com/Sayantan615/Snake_Game" class="btn">
-                  <i class="fa-brands fa-github"></i><strong> GitHub </strong>
-                </a>
-                <a href="Projects/SnakeGame/index.html" class="btn">
-                  <i class="fa-solid fa-up-right-from-square"></i
-                  ><strong> Open </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Play the Drum -->
-          <!-- <div
-            id="destroy-box"
-            class="item remove_project"
-            data-tilt=""
-            data-tilt-axis="x"
-            data-tilt-reset="false"
-          >
-            <div class="left">
-              <div class="img">
-                <img src="Images/PlayTheDrum.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right">
-              <h2 class="project-title">Play The Drum</h2>
-              <h3 class="project-sub-title">Do you love music ?</h3>
-              <p class="project-desc">
-                If you are a fan of rock music than you definitly gonna love the
-                site, The site is a online drum kit simulator made with HTML,
-                CSS, and JS.
-              </p>
-              <div class="buttons">
-                <a
-                  href="https://github.com/Sayantan615/Play_The_Drum"
-                  class="btn"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="Projects/01 - Play The Drum/index.html" class="btn">
-                  <i class="fa-solid fa-up-right-from-square"></i> Open
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- Saimon Game -->
-          <div class="item">
-            <div class="left" data-aos="zoom-in">
-              <div class="img">
-                <img src="Images/SaimonGame.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right" data-aos="zoom-in">
-              <h2 class="project-title">Simon Game</h2>
-              <p class="project-desc">
-                I've crafted an engaging memory challenge game using HTML5, CSS,
-                and JavaScript. How many levels can you conquer? It's a
-                captivating test of your memory prowess.
-              </p>
-              <div class="buttons">
-                <a href="https://github.com/Sayantan615/Simon_Game" class="btn">
-                  <i class="fa-brands fa-github"></i><strong> GitHub </strong>
-                </a>
-                <a href="https://simon-game-eight-sage.vercel.app/" class="btn">
-                  <i class="fa-solid fa-up-right-from-square"></i
-                  ><strong> Open </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Newsletter -->
-          <div class="item">
-            <div class="left" data-aos="zoom-in">
-              <div class="img">
-                <img src="Images/Newsletter1.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right" data-aos="zoom-in">
-              <h2 class="project-title">Newsletter</h2>
-              <p class="project-desc">
-                My first backend project, born from Node.js and Express.js, was
-                an unforgettable experience. It was a delightful journey,
-                enriched with various modules, and I absolutely loved building
-                it!
-              </p>
-              <div class="buttons">
-                <a href="https://github.com/Sayantan615/Newsletter" class="btn">
-                  <i class="fa-brands fa-github"></i><strong> GitHub </strong>
-                </a>
-                <a
-                  href="https://newsletter-git-main-sayantan615.vercel.app/"
-                  class="btn"
-                >
-                  <i class="fa-solid fa-up-right-from-square"></i
-                  ><strong> Open </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- AI_Image_Generator -->
-          <div class="item">
-            <div class="left" data-aos="zoom-in">
-              <div class="img">
-                <img src="Images/AI_Image_Generator.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right" data-aos="zoom-in">
-              <h2 class="project-title">AI Image Generator</h2>
-              <p class="project-desc">
-                In my first AI project, I combined React, CSS, JavaScript, and
-                OpenAI's ChatGPT Dalee API to create a platform that generates
-                captivating AI images from text prompts, blending front-end
-                development with AI for an immersive art experience.
-              </p>
-              <div class="buttons">
-                <a
-                  href="https://github.com/Sayantan615/AI_Image_Generator"
-                  class="btn"
-                >
-                  <i class="fa-brands fa-github"></i><strong> GitHub </strong>
-                </a>
-                <a
-                  href="https://ai-image-generator-six-nu.vercel.app/"
-                  class="btn"
-                >
-                  <i class="fa-solid fa-up-right-from-square"></i
-                  ><strong> Open </strong>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Blog Site -->
-          <!-- <div
-            id="destroy-box"
-            class="item"
-            data-tilt=""
-            data-tilt-axis="x"
-            data-tilt-reset="false"
-          >
-            <div class="left">
-              <div class="img">
-                <img src="Images/sblog.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right">
-              <h2 class="project-title">Blog Website</h2>
-              <h3 class="project-sub-title">I love it. 😁</h3>
-              <p class="project-desc">
-                A Blog website made with EJS, Node Js, Express Js and MongoDB.
-                It is up and running using RENDER hosting services.
-              </p>
-              <div class="buttons">
-                <a href="https://github.com/Sayantan615/sblog.git" class="btn">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://sblog.onrender.com" class="btn">
-                  <i class="fa-solid fa-up-right-from-square"></i> Open
-                </a>
-              </div>
-            </div>
-          </div> -->
-        </div>
-        <!-- Project Bottom Scetion -->
-        <div class="text-center">
-          <p>
-            Visit
-            <a href="https://github.com/Sayantan615"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            for more :)
-          </p>
-        </div>
-      </div>
     </section>
     <!-- Project Section end -->
     <hr class="section-breaker" />
-    <!-- Achievements -->
-    <section id="Achievements">
+    <!-- journey Start -->
+    <section id="Journey">
       <div class="text_box">
-        <h3 class="heading" data-outline="Achievements">Achievements</h3>
-        <h4><strong>Codding :</strong></h4>
-        <p>
-          I have consistently tackled problems on popular platforms such as
-          <a href="https://leetcode.com/sayantanchowdhury615/">LeetCode</a>
-          (maintaining a streak of over 400 days),
-          <a
-            href="https://auth.geeksforgeeks.org/user/sayantanchowdhury615/practice"
-            >GeeksforGeeks</a
-          >.
-        </p>
-        <h4><strong>Web Development :</strong></h4>
-        <p>
-          Worked on numerous personal projects, including the Snake Game, Simon
-          Game, Portfolio, Blog Website, Newsletter Subscribe service, and AI
-          Image Generator. For my final year project, I collaborated with a team
-          on an E-commerce website called Flex Cart. We utilized front-end
-          technologies like EJS, CSS, and JavaScript, while I was responsible
-          for the back-end development using Node JS and the NOSQL database
-          MongoDB.
-        </p>
-
-        <a class="btn download_button_p" href="Resume.pdf" download=""
-          >Download Resume</a
+        <h3
+          class="heading"
+          data-outline="journey.
+"
         >
+          journey.
+        </h3>
+        <div id="Milestones" class="d-flex flex-column">
+          <!-- Event 1 -->
+          <div class="milestone">
+            <div class="stone">
+              <div class="timeline"></div>
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2019</h4>
+              <div class="sub_events">
+                <p>
+                  Embarked on my epic educational odyssey at GCETTB, where the
+                  thrilling adventure of coding began! 🚀
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 2 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2020</h4>
+              <div class="sub_events">
+                <p>
+                  2020, brought a lockdown, confining us to our
+                  homes,temporarily hitting the 'pause' button on my coding
+                  adventures!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 3 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2021</h4>
+              <div class="sub_events">
+                <p>
+                  embarked on epic quests to conquer coding conundrums on
+                  platforms like GeeksforGeeks and LeetCode, armed with my
+                  trusty keyboard! 💻😄
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 4 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2021</h4>
+              <div class="sub_events">
+                <p>
+                  My fascination with web development sparked a fiery passion
+                  within me, setting me on the exhilarating journey of learning
+                  this captivating craft. 🔥
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 5 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2021</h4>
+              <div class="sub_events">
+                <p>
+                  I wholeheartedly invested a significant chunk of my personal
+                  time in crafting projects and elevating my web development
+                  powers. 🌟💻
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 6 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2022</h4>
+              <div class="sub_events">
+                <p>
+                  My final year of college turned into an unforgettable chapter
+                  in my life.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 7 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2023</h4>
+              <div class="sub_events">
+                <p>
+                  Graduating with a B.Tech degree and achieving a CGPA of 8.6
+                  marked a significant milestone in my academic journey. It was
+                  a moment of pride and accomplishment. 🎓📚
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 8 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2023</h4>
+              <div class="sub_events">
+                <p>
+                  I ventured into open-source like a knight on a quest and honed
+                  my web skills till they sparkled. By 2023, I'd collected more
+                  GeeksforGeeks points than Pokémon and kept a LeetCode coding
+                  streak longer than a giraffe's neck! 🕶️😄
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Event 9 -->
+          <div class="milestone">
+            <div class="stone">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <div class="event">
+              <h4 class="event_year">2023</h4>
+              <div class="sub_events">
+                <p>
+                  As I gaze into the future, I'm on the edge of my seat, waiting
+                  for the next exciting chapter in my adventure to unfold. 🔭
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <a class="btn download_button" href="Resume.pdf" download=""
+        >Resume <i class="fa-solid fa-cloud-arrow-down"></i
+      ></a>
     </section>
-    <!-- Achievements -->
-    <!-- Hobbys Section start -->
-    <section id="Hobbys">
+    <!-- journey End -->
+    <hr class="section-breaker" />
+    <!-- Myself Section start -->
+    <section id="myself" class="d-none">
       <div class="container-fluid">
-        <h3 class="heading" data-outline="Something">Something</h3>
-        <h3 class="heading" data-outline="about">about</h3>
-        <h3 class="heading" data-outline="Myself">Myself</h3>
+        <h3 class="heading" data-outline="something about myself.">
+          something about myself.
+        </h3>
         <div class="inner-text">
           <div class="sub-texts" data-aos="fade" data-aos-once="false">
             Hello,
@@ -990,7 +884,7 @@
             How do you describe yourself? In terms of personality, I identify as
             an INFP-T (<a
               href="https://www.16personalities.com/infp-personality"
-              >for those unfamiliar with it, you can click here</a
+              >🔗</a
             >). People often describe me as reserved, and I tend to agree. I'm
             selective about opening up to others.
           </div>
@@ -1037,9 +931,49 @@
         </div>
       </div>
     </section>
+    <!-- Myself Section End -->
+    <hr class="section-breaker" />
     <!-- Contect Section Start-->
     <section id="Contact">
-      <div class="continer-fluid">
+      <div class="container-fluid">
+        <div class="d-flex container">
+          <div class="text">
+            <h1>Thank You.</h1>
+            <a href=""> mail me </a>
+          </div>
+          <!-- here will be a floating div with a form -->
+          <div class="social_handles">
+            <div class="social_link">
+              X
+              <a href="https://twitter.com/Iamchowdhury_7">@Iamchowdhury_7</a>
+            </div>
+            <div class="social_link">
+              Instagram
+              <a href="https://www.instagram.com/iamchowdhury_/"
+                >@iamchowdhury_</a
+              >
+            </div>
+            <div class="social_link">
+              GitHub
+              <a href="https://github.com/Sayantan615">@Sayantan615</a>
+            </div>
+            <div class="social_link">
+              Linkdin
+              <a
+                href="https://www.linkedin.com/in/sayantan-chowdhury-689772168/"
+                >Sayantan Chowdhury</a
+              >
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="bottom_text">
+          <p>&copy; Sayantan 2022</p>
+          <p>•</p>
+          <p>Design by yours truly</p>
+        </div>
+      </div>
+      <div class="continer-fluid d-none">
         <div class="content">
           <div id="contact_box">
             <div class="right" data-tilt data-animation-off>
@@ -1060,7 +994,7 @@
                   </li>
                   <li>
                     <a href="https://twitter.com/Iamchowdhury_7"
-                      ><i class="fa-brands fa-twitter"></i
+                      ><i class="fa-brands fa-x"></i
                     ></a>
                   </li>
                   <li>
@@ -1091,26 +1025,17 @@
     </section>
     <!-- Contect Section end-->
     <!-- Buttons -->
-    <!-- !Some Error showing in tablet mode see to it -->
-    <a class="btn fixed-button destroy-button" id="destroy-button"
-      ><i class="fa fa-light fa-toggle-on"></i
+    <a class="btn fixed-button theme-button" id="theme-button"
+      ><i class="fa-regular fa-sun"></i
     ></a>
 
-    <a href="#Header" class="prev btn navigation-buttons fixed-button">
-      <i class="fa fa-solid fa-caret-up"></i>
-    </a>
-    <!-- <span class="next"> <img src="Images/buttonNext.png" alt="" /> </span> -->
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script src="JS/script.js"></script>
     <script src="JS/special-effect.js"></script>
     <script>
-      AOS.init({
-        // disable: tablet,
-        // mobile,
-        // phone,
-      });
+      AOS.init({});
     </script>
   </body>
 </html>

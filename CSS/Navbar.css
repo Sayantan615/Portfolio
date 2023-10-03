@@ -9,8 +9,15 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  padding-bottom: 0px;
+  padding: 0px;
+  font-family: "caveat";
+  font-size: 2rem;
 }
+
+.navbar-nav {
+  margin-left: auto;
+}
+
 a.navbar-brand {
   margin-right: 0px;
 }
@@ -18,8 +25,11 @@ a.navbar-brand {
   height: 40px;
   width: 40px;
   margin: 0px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px red;
 }
 .nav-link {
+  text-shadow: 2px 2px red;
   color: var(--font-color);
   font-weight: bold;
 }
@@ -29,6 +39,10 @@ a.navbar-brand {
 }
 .nav-item :hover {
   color: var(--pop-color);
+  text-decoration:underline;
+}
+.nav-link.active:hover {
+  text-decoration: none;
 }
 .navbar-toggler {
   color: var(--pop-color);
@@ -37,28 +51,6 @@ a.navbar-brand {
 
 .navbar-toggler:focus {
   box-shadow: none !important;
-}
-.download_btn {
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  height: 40px;
-  width: 45px;
-  font-size: 1.3rem !important;
-  border: 2px solid var(--pop-color);
-  background: var(--background-color);
-  border-radius: 30px;
-  padding: 10px;
-  margin-right: 0%;
-}
-.download_btn a {
-  color: var(--pop-color);
-  text-decoration: none;
-}
-.download_btn :hover {
-  color: var(--font-color);
 }
 
 /* Navbar section end */
