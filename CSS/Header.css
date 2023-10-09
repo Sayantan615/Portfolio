@@ -95,7 +95,9 @@
 }
 /* mobile phones */
 @media (max-width: 768px) {
-  /* Your CSS rules here */
+  #Header .container-fluid {
+    padding-block-end: 20%;
+  }
   .greetings {
     font-size: 1.3rem;
     padding-left: 0px;
