@@ -1,13 +1,30 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Handjet:wght@100;200&family=Indie+Flower&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=New+Tegomin&family=Noto+Color+Emoji&family=Open+Sans&family=Orbitron:wght@400;700;900&family=Sacramento&family=Ubuntu:ital@1&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600&family=Fredericka+the+Great&family=Gloria+Hallelujah&family=Handjet:wght@100;200&family=Indie+Flower&family=Lobster&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=New+Tegomin&family=Noto+Color+Emoji&family=Noto+Sans+Bengali:wght@100;200;300&family=Noto+Serif+Devanagari:wght@200;300;400&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Serif+KR:wght@400;500;600&family=Open+Sans&family=Orbitron:wght@400;700;900&family=Sacramento&family=Ubuntu:ital@1&family=Zeyada&display=swap");
 @import "./Navbar.css";
 @import "./Header.css";
 @import "./About.css";
 @import "./special-effects.css";
 @import "./Projects.css";
-@import "./Achive.css";
+@import "./Journey.css";
 @import "./myself_section.css";
 @import "./contact.css";
+@font-face {
+  font-family: "stanly";
+  src: url("../Fonts/Stanley.woff") format("woff");
+}
+@font-face {
+  font-family: "Nighty";
+  src: url("../Fonts/Nighty.woff") format("woff");
+}
+@font-face {
+  font-family: "Elanor";
+  src: url("../Fonts/ElanorFreePersonalUse-ExBdIt.woff") format("woff"),
+    url("../Fonts/ElanorFreePersonalUse-ExtLt.woff") format("woff");
+}
+@font-face {
+  font-family: "Casta";
+  src: url("../Fonts/Casta-ThinSlanted.woff") format("woff");
+}
 :root {
   /* Light Mode Colors */
   --font-color: white;
@@ -41,9 +58,9 @@
   /* Font Family */
   --heading-font-family: "caveat", sans-serif;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 * {
   box-sizing: border-box;
 }
@@ -76,18 +93,7 @@ a:hover {
   position: relative;
 }
 .text-gray {
-  color: rgb(54, 49, 49);
-}
-
-/* Doted Horizontal Rule */
-.hr-1 {
-  border-style: dotted none none;
-  border-width: 0.313rem;
-  height: 0rem;
-  width: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  border-color: var(--pop-color);
+  color: rgb(71, 65, 65) !important;
 }
 
 .section-breaker {
@@ -98,6 +104,7 @@ a:hover {
   margin: auto;
   border-color: white;
   background: black;
+  
 }
 
 h3 {
@@ -133,101 +140,6 @@ div {
 }
 /*! Message call out end */
 
-/* Quote section */
-.firstQuote .container-fluid {
-  background: var(--inverse-background-color);
-  padding: 8rem clamp(10rem, 20vw, 30rem);
-  margin: 0px;
-  color: var(--inverse-font-color);
-  background-position: 0;
-  text-align: center;
-  font-size: clamp(2rem, 1.4vw, 5rem);
-  letter-spacing: 1px;
-  font-family: "Ubuntu", "sacramento", monospace, sans-serif;
-  height: clamp(min-content, 40vh, 50vh);
-}
-.firstQuote cite {
-  font-size: clamp(1.5rem, 2vw, 5rem);
-}
-
-.q1 {
-  position: absolute;
-  left: 5%;
-  top: -4vw;
-  height: 12.5vw;
-  font-size: 12.5vw;
-  color: var(--inverse-font-color);
-}
-.q2 {
-  position: absolute;
-  right: 5%;
-  bottom: -4vw;
-  height: 12.5vw;
-  font-size: 12.5vw;
-  color: var(--inverse-font-color);
-}
-
-.RandomQ:focus {
-  box-shadow: none;
-}
-.RandomQ:hover {
-  color: #fff;
-  background: #000;
-}
-/* Quote section end */
-
-@media only screen and (max-width: 768px) {
-  #Skills .content {
-    padding-right: 0rem;
-  }
-  #Projects .item {
-    flex-direction: column;
-  }
-  #Projects .item .right {
-    margin-left: 0;
-    width: 90%;
-    margin-top: -150px;
-  }
-
-  #Projects .item .left {
-    width: 80%;
-    height: 100%;
-  }
-
-  #Projects .item .left .img img {
-    object-fit: cover;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.3s ease transform;
-  }
-
-  #Projects .item:nth-of-type(even) {
-    flex-direction: column;
-  }
-
-  #Projects .item:nth-of-type(even) .left {
-    margin-left: 0px;
-  }
-
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 450px) {
-  #Projects .item .left .img img {
-    object-fit: fill;
-    transition: 0.3s ease transform;
-  }
-}
-
-
-
-
 /* Buttons */
 .fixed-button {
   position: fixed;
@@ -252,367 +164,3 @@ div {
 
 /* New Responsive settings */
 /* Desktop Responsive */
-
-/* Big screen respostive */
-@media only screen and (max-width: 1600px) and (min-width: 1081px) {
-  /* Quote Section */
-  .firstQuote .container-fluid {
-    font-size: 2rem;
-  }
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    text-align: center;
-    line-height: 1;
-    margin: auto;
-  }
-  /* About section */
-  .text_box {
-    text-align: left;
-    word-spacing: normal;
-    height: max-content;
-    padding: 6rem 8rem;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 8rem;
-    margin-left: 0%;
-  }
-  .innerSection {
-    margin: 8rem;
-  }
-}
-
-/* Tablet Responsive */
-@media only screen and (max-width: 770px) {
-  /* Navbar */
-  .download_btn {
-    position: absolute;
-    top: 92vh;
-    right: 30%;
-    height: 40px;
-    width: 40%;
-    background: var(--background-color);
-  }
-  .download_btn::before {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-  }
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    line-height: 1.5;
-  }
-  #Header .container-fluid {
-    padding-top: 1.5rem;
-  }
-  /* Change Font_size */
-  .Name {
-    font-size: 450%;
-  }
-  .ShortIntro {
-    padding: 0px;
-    font-size: clamp(1rem, 3vw, 3rem);
-  }
-  /* Quote Section */
-
-  .firstQuote .container-fluid {
-    padding: 4rem clamp(8rem, 20vw, 30rem);
-  }
-
-  /* About section */
-  .text_box {
-    word-spacing: normal;
-    padding: 4rem 4rem;
-    text-align: left;
-  }
-
-  /* Skill section */
-  .skill-div {
-    height: max-content;
-    color: white;
-  }
-  #Skills .heading {
-    text-align: center;
-  }
-  #Skills .heading::before {
-    text-align: center;
-  }
-  #Skills .skill-div {
-    text-align: center;
-    word-spacing: normal;
-    padding: 2rem 1.5rem;
-  }
-
-  #Skills .content {
-    padding-right: 0px;
-  }
-  #Skills .content .d-flex {
-    justify-content: center;
-  }
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: center;
-    word-spacing: normal;
-    padding: 6rem 4rem;
-    margin-left: 0%;
-  }
-  .project-section-details {
-    border-radius: 5px;
-  }
-  .innerSection {
-    margin: 0px;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-  }
-  .innerSection ul {
-    padding: 5px;
-    font-size: 0.8rem;
-  }
-  .innerSection ul li {
-    list-style: none;
-    padding-bottom: 0px;
-  }
-  /* Hobbys Section */
-  #Hobbys {
-    padding: 5rem 10px;
-  }
-  #Hobbys .heading {
-    z-index: 0;
-    text-align: left;
-    font-size: 4rem !important;
-  }
-  #Hobbys .inner-text {
-    padding: 2rem 1rem;
-    font-size: 1.1rem;
-  }
-  #Hobbys .heading::before {
-    text-align: left;
-  }
-  #Hobbys .hobby {
-    padding: 10px;
-    font-size: 1.2rem;
-    margin-bottom: 0px;
-  }
-}
-
-/* *Android - Small Screen Responsive* */
-@media only screen and (max-width: 450px) {
-  .navbar {
-    margin: 0%;
-  }
-
-  .download_btn {
-    position: absolute;
-    top: 92vh;
-    right: 30%;
-    height: 40px;
-    width: 40%;
-    background: var(--background-color);
-    box-shadow: 1px 1px 5px black;
-  }
-  /* Message popup */
-  .callout-header {
-    display: none;
-  }
-
-  /* Header Section */
-  #Header {
-    height: 100vh;
-    line-height: 1.5;
-  }
-  #Header .container-fluid {
-    padding-top: 1.5rem;
-  }
-  .hey {
-    font-size: 150%;
-  }
-  .Name {
-    font-size: 350%;
-  }
-  #Header .container-fluid {
-    padding: 0%;
-  }
-
-  /* Quote Section */
-  .firstQuote .container-fluid {
-    height: max-content;
-    padding: 4rem 2rem;
-  }
-
-  /* About section */
-  .text_box {
-    word-spacing: normal;
-    padding: 4rem 1rem !important;
-    font-size: 0.8rem;
-  }
-  /* About section */
-  .heading {
-    font-size: 3rem !important;
-  }
-
-  #Achievements .heading {
-    font-size: 1.7rem !important;
-  }
-
-  /* Skill section */
-
-  #Skills .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-  #Skills .content .skill {
-    margin: 5px;
-    width: 12vw;
-    height: 12vw;
-    font-size: 1.6rem;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-  #Skills .content .sub-skill-heading {
-    text-align: center;
-  }
-  #Skills .content .sub-skill-heading::before {
-    text-align: center;
-    letter-spacing: 0px;
-  }
-
-  /* Project Section */
-  #Projects {
-    height: max-content;
-    text-align: left;
-    word-spacing: normal;
-    padding: 4rem 10px;
-    margin-left: 0%;
-  }
-  .project-section-details {
-    border-radius: 5px;
-  }
-  .innerSection {
-    margin: 0px;
-    margin-bottom: 2rem;
-    border-radius: 5px;
-  }
-  .innerSection ul {
-    padding: 5px;
-    font-size: 0.8rem;
-  }
-  .innerSection ul li {
-    list-style: none;
-    padding-bottom: 0px;
-  }
-
-  #Projects .item:nth-last-of-type(even) .right {
-    text-align: left;
-  }
-
-  #Projects .item .left .img {
-    height: 16rem;
-  }
-
-  #Projects .item .left .img img {
-    zoom: 50%;
-  }
-
-  #Projects .item .right {
-    padding: 2rem 1.5rem;
-    margin-top: -100px;
-  }
-
-  #Projects .item .right .project-title {
-    font-size: 7vw;
-    text-align: center;
-  }
-  #Projects .item .right .project-desc {
-    font-size: 4vw;
-    margin-bottom: 1.5rem;
-  }
-  #Projects .item .right strong {
-    display: none;
-  }
-  /* Hobbys Section */
-
-  #Hobbys {
-    padding: 5rem 10px;
-  }
-  #Hobbys .heading {
-    z-index: 0;
-    text-align: left;
-    font-size: 2rem !important;
-  }
-  #Hobbys .inner-text {
-    padding: 20px 0px;
-    font-size: 0.8rem;
-  }
-  #Hobbys .heading::before {
-    text-align: left;
-  }
-  #Hobbys .hobby {
-    padding: 10px;
-    font-size: 1.2rem;
-    margin-bottom: 0px;
-  }
-
-  /* Contact Section */
-
-  #Contact .content {
-    height: max-content;
-  }
-  #contact_box {
-    margin-bottom: 0rem;
-  }
-
-  #contact_box .right {
-    padding: 20px;
-    font-size: 12px;
-  }
-  #Contact .innerdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #contact_box .right h1 {
-    text-align: left;
-    font-size: 1.5rem;
-  }
-
-  #Contact ul {
-    margin-bottom: 0%;
-  }
-
-  #Contact ul li a {
-    border-radius: 50px;
-  }
-
-  #Contact .bottom_text {
-    font-size: 10px;
-  }
-
-  /* !Don't Know if needed */
-  /* .callout-header {
-    padding: 5px 10px;
-    background: rgba(199, 199, 199, 0.3);
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-  } */
-
-  /* Contact Section
-  .text_box .subheading {
-    font-size: 2rem;
-    color: #ffdd7e;
-  } */
-}

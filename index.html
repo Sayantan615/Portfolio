@@ -49,11 +49,7 @@
     <!-- Navigation Bar start -->
     <nav class="navbar fixed-top navbar-expand-md mb-0">
       <div class="container-fluid">
-        <a
-          class="navbar-brand fw-bold fst-italic"
-          href="#Header"
-          aria-label="Header"
-        >
+        <a class="navbar-brand fw-bold fst-italic" aria-label="Header">
           <img class="resize" src="Images/profile-pic.png" alt="" />
         </a>
         <button
@@ -108,52 +104,52 @@
     </div> -->
     <!-- !Message end -->
     <!-- Header Section start -->
+    <div class="pop_up_image">
+      <img
+        src="Images/profile-pic.png"
+        alt="Profile Pic"
+        class="profile_pic"
+        loading="lazy"
+      />
+    </div>
     <section id="Header">
       <div class="container-fluid">
-        <div class="img-1">
-          <img
-            src="Images/profile-pic.png"
-            alt="Profile Pic"
-            class="profile_pic"
-            loading="lazy"
-          />
-        </div>
-
         <span class="greetings"
           ><span
             class="typeWriter"
-            data-text='["স্বাগতম, নমস্কার",  
-                        "स्वागत, नमस्ते", 
-                        "Welcome, Hello", 
-                        "ಸುಸ್ವಾಗತ, ಹಲೋ",
-                        "வரவேற்பு, வணக்கம்", 
-                        "സ്വാഗതം, ഹലോ ",
-                        "ਜੀ ਆਇਆ ਨੂੰ, ਹੈਲੋ ",
-                        "ସ୍ୱାଗତ, ନମସ୍କାର", 
-                        "ようこそ, こんにちは", 
-                        "환영합니다, 안녕하세요", 
-                        "مرحباً, مرحباً", 
-                        "Bienvenue, Bonjour", 
-                        "Bienvenido, Hola"]'
+            data-text='[
+                        "नमस्ते ", 
+                        "Hola ",
+                        "Hello ", 
+                        "নমস্কার ",  
+                        "Bonjour ", 
+                        "안녕하세요 ", 
+                        "こんにちは " 
+                        ]'
             data-speed="4"
           ></span
         ></span>
-        <h2 class="starting_text">I'm Sayantan Chowdhury.</h2>
+        <h2 class="starting_text">I'm</h2>
+        <h2 class="starting_text">Sayantan</h2>
+        <h2 class="starting_text">Chowdhury.</h2>
         <p class="short_intro">
           Engineer <strong>•</strong> Programmer <strong>•</strong> Developer
         </p>
-        <div class="d-flex mb-3 header_button_container">
-          <a class="btn" href="https://github.com/Sayantan615"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            class="btn"
-            href="https://www.linkedin.com/in/sayantan-chowdhury-689772168/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a class="btn" href="https://twitter.com/Iamchowdhury_7"
-            ><i class="fa-brands fa-x"></i
-          ></a>
+        <div class="d-flex mb-3 header_link_container">
+          <div class="social_link text-gray">
+            X
+            <a href="https://twitter.com/Iamchowdhury_7">@Iamchowdhury_7</a>
+          </div>
+          <div class="social_link text-gray">
+            Instagram
+            <a href="https://www.instagram.com/iamchowdhury_/"
+              >@iamchowdhury_</a
+            >
+          </div>
+          <div class="social_link text-gray">
+            GitHub
+            <a href="https://github.com/Sayantan615">Sayantan615</a>
+          </div>
         </div>
       </div>
     </section>
@@ -164,7 +160,13 @@
       <div class="text_box">
         <div class="d-flex justify-content-between">
           <h3 class="heading" data-outline="about.">about.</h3>
-          <h3 class="heading" data-outline="tools.">tools.</h3>
+          <h3
+            class="heading d-md-flex"
+            style="display: none"
+            data-outline="tools."
+          >
+            tools.
+          </h3>
         </div>
         <div class="d-lg-flex">
           <div class="container">
@@ -343,296 +345,305 @@
       </div>
     </section>
     <!-- About Section end -->
-
     <hr class="section-breaker" />
     <!-- Project Section start -->
     <section id="Projects">
-      <h3 class="heading" data-outline="projects.">projects.</h3>
-      <div class="container">
-        <div class="d-grid g-5 container-grid">
-          <!-- Portfolio-->
-          <div class="p_div">
-            <div
-              class="d-flex flex-row justify-content-between align-items-center"
-            >
-              <h1 class="p_heading"><strong>2022</strong>/Portfolio</h1>
-              <button
-                id="fullviewbtn"
-                type="submit"
-                class="btn btn-outline-light fullviewbtn"
+      <div class="container-fluid">
+        <h3 class="heading" data-outline="projects.">projects.</h3>
+        <div class="container">
+          <div class="d-grid g-5 container-grid">
+            <!-- Portfolio-->
+            <div class="p_div">
+              <div
+                class="d-flex flex-row justify-content-between align-items-center"
               >
-                <i class="fa-solid fa-folder-open"></i>
-              </button>
-            </div>
-            <p class="p_text">
-              My portfolio website is a testament to my dedication and growth.
-              It's where I've poured my heart and soul, learning from every
-              misstep. It's the stage where I proudly display all my projects,
-              offering a holistic view of my journey and skills.
-            </p>
-            <div class="d-flex p_button_container">
-              <a
-                href="https://github.com/Sayantan615/Portfolio"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-brands fa-github"></i></a
-              ><a
-                href="https://sayantan615.github.io/Portfolio/"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="d-flex skill-container">
-              <div class="p_skill">
-                <i class="devicon-html5-plain"></i>
+                <h1 class="p_heading"><strong>2022</strong>/Portfolio</h1>
+                <button
+                  id="fullviewbtn"
+                  type="submit"
+                  class="btn btn-outline-light fullviewbtn"
+                >
+                  <i class="fa-solid fa-folder-open"></i>
+                </button>
               </div>
-              <div class="p_skill">
-                <i class="devicon-css3-plain"></i>
-              </div>
-              <div class="p_skill">
-                <i class="devicon-javascript-plain"></i>
-              </div>
-            </div>
-            <!-- Full Start -->
-            <div id="fullview_container" class="fullview_container">
-              <div class="d-flex">
-                <div class="fullview_img_div">
-                  <img src="./Images/PortfolioWebsite.jpg" alt="" />
-                </div>
-                <div class="fullview_text">
-                  <div class="d-flex flex-column">
-                    <h1 class="fullview_heading">Portfolio</h1>
-
-                    <p>
-                      My portfolio website is a testament to my dedication and
-                      growth. It's where I've poured my heart and soul, learning
-                      from every misstep. It's the stage where I proudly display
-                      all my projects, offering a holistic view of my journey
-                      and skills.
-                    </p>
-                    <div class="d-flex fullview_button_container">
-                      <a
-                        href="https://github.com/Sayantan615/Portfolio"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-brands fa-github"></i
-                        ><strong> GitHub </strong> </a
-                      ><a
-                        href="https://sayantan615.github.io/Portfolio/"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-solid fa-up-right-from-square"></i
-                        ><strong> Open </strong>
-                      </a>
-                    </div>
-                  </div>
+              <div class="inner-container">
+                <p class="p_text">
+                  My portfolio website is a testament to my dedication and
+                  growth. It's where I've poured my heart and soul, learning
+                  from every misstep. It's the stage where I proudly display all
+                  my projects, offering a holistic view of my journey and
+                  skills.
+                </p>
+                <div class="d-flex p_button_container">
+                  <a
+                    href="https://github.com/Sayantan615/Portfolio"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-brands fa-github"></i></a
+                  ><a
+                    href="https://sayantan615.github.io/Portfolio/"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
                 </div>
               </div>
-              <div class="d-flex fullview-skill-container">
-                <div class="fullview_skill">
+              <div class="d-flex skill-container">
+                <div class="p_skill">
                   <i class="devicon-html5-plain"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-css3-plain"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-javascript-plain"></i>
                 </div>
               </div>
-              <button id="closeviewbtn" class="btn closeviewbtn">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <!-- End -->
-          <!-- Simon Game-->
-          <div class="p_div">
-            <div
-              class="d-flex flex-row justify-content-between align-items-center"
-            >
-              <h1 class="p_heading"><strong>2021</strong>/Simon Game</h1>
-              <button
-                id="fullviewbtn"
-                type="submit"
-                class="btn btn-outline-light fullviewbtn"
-              >
-                <i class="fa-solid fa-folder-open"></i>
-              </button>
-            </div>
-            <p class="p_text">
-              I've crafted an engaging memory challenge game using HTML5, CSS,
-              and JavaScript. How many levels can you conquer? It's a
-              captivating test of your memory prowess.
-            </p>
-            <div class="d-flex p_button_container">
-              <a
-                href="https://github.com/Sayantan615/Simon_Game"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-brands fa-github"></i></a
-              ><a
-                href="https://simon-game-eight-sage.vercel.app/"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="d-flex skill-container">
-              <div class="p_skill">
-                <i class="devicon-html5-plain"></i>
-              </div>
-              <div class="p_skill">
-                <i class="devicon-css3-plain"></i>
-              </div>
-              <div class="p_skill">
-                <i class="devicon-javascript-plain"></i>
-              </div>
-            </div>
-            <!-- Full Start -->
-            <div id="fullview_container" class="fullview_container">
-              <div class="d-flex">
-                <div class="fullview_img_div">
-                  <img src="./Images/SaimonGame.jpg" alt="" />
-                </div>
-                <div class="fullview_text">
-                  <div class="d-flex flex-column">
-                    <h1 class="fullview_heading">Simon Game</h1>
+              <!-- Full Start -->
+              <div id="fullview_container" class="fullview_container">
+                <div class="d-flex">
+                  <div class="fullview_img_div">
+                    <img src="./Images/PortfolioWebsite.jpg" alt="" />
+                  </div>
+                  <div class="fullview_text">
+                    <div class="d-flex flex-column">
+                      <h1 class="fullview_heading">Portfolio</h1>
 
-                    <p>
-                      I've crafted an engaging memory challenge game using
-                      HTML5, CSS, and JavaScript. How many levels can you
-                      conquer? It's a captivating test of your memory prowess.
-                    </p>
-                    <div class="d-flex fullview_button_container">
-                      <a
-                        href="https://github.com/Sayantan615/Simon_Game"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-brands fa-github"></i
-                        ><strong> GitHub </strong> </a
-                      ><a
-                        href="https://simon-game-eight-sage.vercel.app/"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-solid fa-up-right-from-square"></i
-                        ><strong> Open </strong>
-                      </a>
+                      <p>
+                        My portfolio website is a testament to my dedication and
+                        growth. It's where I've poured my heart and soul,
+                        learning from every misstep. It's the stage where I
+                        proudly display all my projects, offering a holistic
+                        view of my journey and skills.
+                      </p>
+                      <div class="d-flex fullview_button_container">
+                        <a
+                          href="https://github.com/Sayantan615/Portfolio"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><strong> GitHub </strong> </a
+                        ><a
+                          href="https://sayantan615.github.io/Portfolio/"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-solid fa-up-right-from-square"></i
+                          ><strong> Open </strong>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="d-flex fullview-skill-container">
+                  <div class="fullview_skill">
+                    <i class="devicon-html5-plain"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-css3-plain"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-javascript-plain"></i>
+                  </div>
+                </div>
+                <button id="closeviewbtn" class="btn closeviewbtn">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
-              <div class="d-flex fullview-skill-container">
-                <div class="fullview_skill">
+            </div>
+            <!-- End -->
+            <!-- Simon Game-->
+            <div class="p_div">
+              <div
+                class="d-flex flex-row justify-content-between align-items-center"
+              >
+                <h1 class="p_heading"><strong>2021</strong>/Simon Game</h1>
+                <button
+                  id="fullviewbtn"
+                  type="submit"
+                  class="btn btn-outline-light fullviewbtn"
+                >
+                  <i class="fa-solid fa-folder-open"></i>
+                </button>
+              </div>
+              <div class="inner-container">
+                <p class="p_text">
+                  I've crafted an engaging memory challenge game using HTML5,
+                  CSS, and JavaScript. How many levels can you conquer? It's a
+                  captivating test of your memory prowess.
+                </p>
+                <div class="d-flex p_button_container">
+                  <a
+                    href="https://github.com/Sayantan615/Simon_Game"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-brands fa-github"></i></a
+                  ><a
+                    href="https://simon-game-eight-sage.vercel.app/"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex skill-container">
+                <div class="p_skill">
                   <i class="devicon-html5-plain"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-css3-plain"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-javascript-plain"></i>
                 </div>
               </div>
-              <button id="closeviewbtn" class="btn closeviewbtn">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <!-- End -->
-          <!-- Newsletter-->
-          <div class="p_div">
-            <div
-              class="d-flex flex-row justify-content-between align-items-center"
-            >
-              <h1 class="p_heading"><strong>2022</strong>/Newsletter</h1>
-              <button
-                id="fullviewbtn"
-                type="submit"
-                class="btn btn-outline-light fullviewbtn"
-              >
-                <i class="fa-solid fa-folder-open"></i>
-              </button>
-            </div>
-            <p class="p_text">
-              My first backend project, born from Node.js and Express.js, was an
-              unforgettable experience. It was a delightful journey, enriched
-              with various modules, and I absolutely loved building it!
-            </p>
-            <div class="d-flex p_button_container">
-              <a
-                href="https://github.com/Sayantan615/Newsletter"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-brands fa-github"></i></a
-              ><a
-                href="https://newsletter-git-main-sayantan615.vercel.app/"
-                class="btn btn-outline-light"
-              >
-                <i class="fa-solid fa-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="d-flex skill-container">
-              <div class="p_skill">
-                <i class="devicon-nodejs-plain"></i>
-              </div>
-              <div class="p_skill">
-                <i class="devicon-express-original"></i>
-              </div>
-              <div class="p_skill">
-                <i class="devicon-javascript-plain"></i>
-              </div>
-            </div>
-            <!-- Full Start -->
-            <div id="fullview_container" class="fullview_container">
-              <div class="d-flex">
-                <div class="fullview_img_div">
-                  <img src="./Images/Newsletter1.jpg" alt="" />
-                </div>
-                <div class="fullview_text">
-                  <div class="d-flex flex-column">
-                    <h1 class="fullview_heading">Newsletter</h1>
+              <!-- Full Start -->
+              <div id="fullview_container" class="fullview_container">
+                <div class="d-flex">
+                  <div class="fullview_img_div">
+                    <img src="./Images/SaimonGame.jpg" alt="" />
+                  </div>
+                  <div class="fullview_text">
+                    <div class="d-flex flex-column">
+                      <h1 class="fullview_heading">Simon Game</h1>
 
-                    <p>
-                      My first backend project, born from Node.js and
-                      Express.js, was an unforgettable experience. It was a
-                      delightful journey, enriched with various modules, and I
-                      absolutely loved building it!
-                    </p>
-                    <div class="d-flex fullview_button_container">
-                      <a
-                        href="https://github.com/Sayantan615/Newsletter"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-brands fa-github"></i
-                        ><strong> GitHub </strong> </a
-                      ><a
-                        href="https://newsletter-git-main-sayantan615.vercel.app/"
-                        class="btn btn-outline-light"
-                      >
-                        <i class="fa-solid fa-up-right-from-square"></i
-                        ><strong> Open </strong>
-                      </a>
+                      <p>
+                        I've crafted an engaging memory challenge game using
+                        HTML5, CSS, and JavaScript. How many levels can you
+                        conquer? It's a captivating test of your memory prowess.
+                      </p>
+                      <div class="d-flex fullview_button_container">
+                        <a
+                          href="https://github.com/Sayantan615/Simon_Game"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><strong> GitHub </strong> </a
+                        ><a
+                          href="https://simon-game-eight-sage.vercel.app/"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-solid fa-up-right-from-square"></i
+                          ><strong> Open </strong>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="d-flex fullview-skill-container">
+                  <div class="fullview_skill">
+                    <i class="devicon-html5-plain"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-css3-plain"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-javascript-plain"></i>
+                  </div>
+                </div>
+                <button id="closeviewbtn" class="btn closeviewbtn">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
-              <div class="d-flex fullview-skill-container">
-                <div class="fullview_skill">
+            </div>
+            <!-- End -->
+            <!-- Newsletter-->
+            <div class="p_div">
+              <div
+                class="d-flex flex-row justify-content-between align-items-center"
+              >
+                <h1 class="p_heading"><strong>2022</strong>/Newsletter</h1>
+                <button
+                  id="fullviewbtn"
+                  type="submit"
+                  class="btn btn-outline-light fullviewbtn"
+                >
+                  <i class="fa-solid fa-folder-open"></i>
+                </button>
+              </div>
+              <div class="inner-container">
+                <p class="p_text">
+                  My first backend project, born from Node.js and Express.js,
+                  was an unforgettable experience. It was a delightful journey,
+                  enriched with various modules, and I absolutely loved building
+                  it!
+                </p>
+                <div class="d-flex p_button_container">
+                  <a
+                    href="https://github.com/Sayantan615/Newsletter"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-brands fa-github"></i></a
+                  ><a
+                    href="https://newsletter-git-main-sayantan615.vercel.app/"
+                    class="btn btn-outline-light"
+                  >
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="d-flex skill-container">
+                <div class="p_skill">
                   <i class="devicon-nodejs-plain"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-express-original"></i>
                 </div>
-                <div class="fullview_skill">
+                <div class="p_skill">
                   <i class="devicon-javascript-plain"></i>
                 </div>
               </div>
-              <button id="closeviewbtn" class="btn closeviewbtn">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
+              <!-- Full Start -->
+              <div id="fullview_container" class="fullview_container">
+                <div class="d-flex">
+                  <div class="fullview_img_div">
+                    <img src="./Images/Newsletter1.jpg" alt="" />
+                  </div>
+                  <div class="fullview_text">
+                    <div class="d-flex flex-column">
+                      <h1 class="fullview_heading">Newsletter</h1>
+
+                      <p>
+                        My first backend project, born from Node.js and
+                        Express.js, was an unforgettable experience. It was a
+                        delightful journey, enriched with various modules, and I
+                        absolutely loved building it!
+                      </p>
+                      <div class="d-flex fullview_button_container">
+                        <a
+                          href="https://github.com/Sayantan615/Newsletter"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-brands fa-github"></i
+                          ><strong> GitHub </strong> </a
+                        ><a
+                          href="https://newsletter-git-main-sayantan615.vercel.app/"
+                          class="btn btn-outline-light"
+                        >
+                          <i class="fa-solid fa-up-right-from-square"></i
+                          ><strong> Open </strong>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex fullview-skill-container">
+                  <div class="fullview_skill">
+                    <i class="devicon-nodejs-plain"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-express-original"></i>
+                  </div>
+                  <div class="fullview_skill">
+                    <i class="devicon-javascript-plain"></i>
+                  </div>
+                </div>
+                <button id="closeviewbtn" class="btn closeviewbtn">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
             </div>
+            <!-- End -->
           </div>
-          <!-- End -->
         </div>
       </div>
     </section>
@@ -690,33 +701,11 @@
                   started solving DSA questions on GeeksforGeeks
                   <a href="">(🔗)</a> and LeetCode <a href="">(🔗)</a>.
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Event 4 -->
-          <div class="milestone">
-            <div class="stone">
-              <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="event">
-              <h4 class="event_year">2021</h4>
-              <div class="sub_events">
                 <p>started web development. 🔥</p>
               </div>
             </div>
           </div>
-          <!-- Event 5 -->
-          <div class="milestone">
-            <div class="stone">
-              <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="event">
-              <h4 class="event_year">2021</h4>
-              <div class="sub_events">
-                <p>started working on personal projects. 🌟💻</p>
-              </div>
-            </div>
-          </div>
+
           <!-- Event 6 -->
           <div class="milestone">
             <div class="stone">
@@ -725,21 +714,11 @@
             <div class="event">
               <h4 class="event_year">2022</h4>
               <div class="sub_events">
+                <p>started working on personal projects. 🌟💻</p>
                 <p>
-                  My final year of college turned into an unforgettable chapter
-                  in my life.
+                  final year of college turned into an unforgettable chapter in
+                  my life.
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Event 7 -->
-          <div class="milestone">
-            <div class="stone">
-              <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="event">
-              <h4 class="event_year">2023</h4>
-              <div class="sub_events">
                 <p>
                   B.Tech degree and a CGPA of 8.6 marked a significant
                   milestone. 🎓
@@ -750,68 +729,70 @@
           <!-- Event 8 -->
           <div class="milestone">
             <div class="stone">
-              <i class="fa-solid fa-circle"></i>
+              <i class="fa-regular fa-circle"></i>
             </div>
             <div class="event">
               <h4 class="event_year">2023</h4>
               <div class="sub_events">
+                <p>I am venturing into open-source.</p>
                 <p>
-                  I am venturing into open-source. By now, I'd collected more
-                  GeeksforGeeks points than Pokémon and kept a LeetCode coding
-                  streak longer than a giraffe's neck! 🕶️😄
+                  by now, I'd collected more GeeksforGeeks points than Pokémon
+                  and kept a LeetCode coding streak longer than a giraffe's
+                  neck! 🕶️😄
                 </p>
-              </div>
-            </div>
-          </div>
-          <!-- Event 9 -->
-          <div class="milestone">
-            <div class="stone">
-              <i class="fa-solid fa-circle"></i>
-            </div>
-            <div class="event">
-              <h4 class="event_year">2023</h4>
-              <div class="sub_events">
                 <p>
                   <!-- As I gaze into the future, I'm on the edge of my seat, waiting
                   for the next exciting chapter in my adventure to unfold. 🔭 -->
-                  Now me and my keybord ⌨️ can make crazy things happen.
+                  now me and my keybord ⌨️ can make crazy things happen.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <a class="btn download_button" href="Resume.pdf" download=""
+          >Resume <i class="fa-solid fa-cloud-arrow-down"></i
+        ></a>
       </div>
-      <a class="btn download_button" href="Resume.pdf" download=""
-        >Resume <i class="fa-solid fa-cloud-arrow-down"></i
-      ></a>
     </section>
     <!-- journey End -->
-    <hr class="section-breaker" />
     <!-- Contect Section Start-->
+    <hr class="my-0" />
     <section id="Contact">
       <div class="container-fluid">
         <div class="d-flex container">
           <div class="text">
-            <h1>Thank You.</h1>
-            <a href=""> mail me </a>
+            <h1 class="text-gray">
+              <span
+                class="typeWriter"
+                data-text='[
+                        "Thank You."
+                        ]'
+                data-speed="4"
+              ></span>
+            </h1>
+            <h1 class="text-gray quote">
+              “You only live once, but if you do it right, once is enough.” ―
+              Mae West
+            </h1>
+            <a href="mailto:sayantanchowdhury615@gmail.com?"> mail me </a>
           </div>
           <!-- here will be a floating div with a form -->
           <div class="social_handles">
-            <div class="social_link">
+            <div class="social_link text-gray">
               X
               <a href="https://twitter.com/Iamchowdhury_7">@Iamchowdhury_7</a>
             </div>
-            <div class="social_link">
+            <div class="social_link text-gray">
               Instagram
               <a href="https://www.instagram.com/iamchowdhury_/"
                 >@iamchowdhury_</a
               >
             </div>
-            <div class="social_link">
+            <div class="social_link text-gray">
               GitHub
-              <a href="https://github.com/Sayantan615">@Sayantan615</a>
+              <a href="https://github.com/Sayantan615">Sayantan615</a>
             </div>
-            <div class="social_link">
+            <div class="social_link text-gray">
               Linkdin
               <a
                 href="https://www.linkedin.com/in/sayantan-chowdhury-689772168/"
@@ -822,7 +803,7 @@
         </div>
         <hr />
         <div class="bottom_text">
-          <p>&copy; Sayantan 2022</p>
+          <p>&copy; Sayantan 2023</p>
           <p>•</p>
           <p>Design by yours truly</p>
         </div>

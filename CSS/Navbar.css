@@ -53,4 +53,15 @@ a.navbar-brand {
   box-shadow: none !important;
 }
 
-/* Navbar section end */
+/* desktops */
+@media (min-width: 1025px) {
+  /* Your CSS rules here */
+}
+/* tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your CSS rules here */
+}
+/* mobile phones */
+@media (max-width: 768px) {
+  /* Your CSS rules here */
+}

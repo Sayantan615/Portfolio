@@ -85,21 +85,19 @@ const changeMode = () => {
 
 let isOn = true;
 
-document
-  .querySelector("#theme-button")
-  .addEventListener("click", function () {
-    if (isOn) {
-      document.querySelector("#theme-button").innerHTML =
-        '<i class="fa-solid fa-sun"></i>';
-      isOn = false;
-      changeMode();
-    } else {
-      document.querySelector("#theme-button").innerHTML =
-        '<i class="fa-solid fa-sun"></i>';
-      isOn = true;
-      changeMode();
-    }
-  });
+document.querySelector("#theme-button").addEventListener("click", function () {
+  if (isOn) {
+    document.querySelector("#theme-button").innerHTML =
+      '<i class="fa-solid fa-sun"></i>';
+    isOn = false;
+    changeMode();
+  } else {
+    document.querySelector("#theme-button").innerHTML =
+      '<i class="fa-solid fa-sun"></i>';
+    isOn = true;
+    changeMode();
+  }
+});
 
 const fullviewbtn = document.querySelectorAll(".fullviewbtn");
 const fullview_container = document.querySelectorAll(".fullview_container");
@@ -140,4 +138,18 @@ even_years.forEach((ele, index) => {
   stones[index].setAttribute("data-aos-delay", `${delay}`);
   stones[index].setAttribute("data-aos-once", "true");
   delay = delay + 50;
+});
+
+const profile_picture_button = document.querySelector(".navbar-brand");
+const pop_up_image = document.querySelector(".pop_up_image");
+let show = false;
+profile_picture_button.addEventListener("click", () => {
+  console.log("clicked");
+  if (!show) {
+    pop_up_image.style.display = "flex";
+    show = true;
+  } else {
+    show = false;
+    pop_up_image.style.display = "none";
+  }
 });

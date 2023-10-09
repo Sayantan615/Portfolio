@@ -1,9 +1,9 @@
 /* Project Section */
-#Projects {
+#Projects .container-fluid{
   height: max-content;
   text-align: center;
   word-spacing: normal;
-  padding: clamp(8rem, 5vw, 20rem) clamp(2rem, 10vw, 10rem);
+  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
   margin-left: 0%;
   background: var(--background-color);
 }
@@ -40,10 +40,10 @@
 }
 .p_div {
   background-color: red;
-  width: 400px;
-  height: 320px;
   padding: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .p_div:hover {
@@ -61,7 +61,6 @@
   text-transform: uppercase;
   text-align: left;
   word-break: break-all;
-
 }
 
 .p_div .p_heading strong {
@@ -74,6 +73,13 @@
   font-size: 1rem;
 }
 
+.p_div .inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .p_div .skill-container {
   position: absolute;
   bottom: 2%;
@@ -82,8 +88,10 @@
   gap: 0.5rem;
   flex-direction: column;
 }
+
+
 .fullview_container .fullview-skill-container {
-   position: absolute;
+  position: absolute;
   bottom: 2%;
   right: -2%;
   font-size: 2.5rem;
@@ -128,7 +136,6 @@
 }
 
 .p_div .p_button_container {
-  position: absolute;
   gap: 0.5rem;
   bottom: 2%;
 }
@@ -191,7 +198,6 @@
   font-family: "Amatic SC", cursive;
   letter-spacing: 0.3rem;
   text-align: left;
-
 }
 .fullview_text {
   padding: 2rem;
@@ -207,8 +213,34 @@
   border: 2px solid white;
 }
 
-@media only screen and (min-width: 1500px) {
+/* desktops */
+@media (min-width: 1025px) {
+  /* Your CSS rules here */
   .container-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your CSS rules here */
+}
+/* mobile phones */
+@media (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .p_div {
+    padding-bottom: 3rem;
+    width: auto;
+  }
+
+  .p_div .p_heading {
+    font-size: 2rem;
+  }
+
+  .p_div .p_text {
+    font-size: 0.8rem;
+    padding-right: 3rem;
   }
 }
