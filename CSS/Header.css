@@ -37,9 +37,8 @@
   z-index: 9999;
 }
 .profile_pic {
-  height: 55vh;
+  height: 35vh;
   border-radius: 100%;
-  border: 4px solid var(--pop-color);
 }
 .greetings {
   font-size: 3vw;
