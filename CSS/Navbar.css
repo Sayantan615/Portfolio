@@ -28,7 +28,7 @@ a.navbar-brand {
   border-radius: 50%;
 }
 .nav-link {
-  text-shadow: 2px 2px red;
+  text-shadow: 2px 2px var(--second-pop-color);
   color: var(--font-color);
   font-weight: bold;
 }
@@ -38,7 +38,7 @@ a.navbar-brand {
 }
 .nav-item :hover {
   color: var(--pop-color);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 .nav-link.active:hover {
   text-decoration: none;
@@ -63,4 +63,8 @@ a.navbar-brand {
 /* mobile phones */
 @media (max-width: 768px) {
   /* Your CSS rules here */
+  .navbar {
+    /* display: none; */
+    margin: 0% 2%;
+  }
 }

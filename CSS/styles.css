@@ -28,33 +28,26 @@
 :root {
   /* Light Mode Colors */
   --font-color: white;
-  --inverse-font-color: white;
   --pop-color: #ffdd7e;
+  --second-pop-color: red;
   --heading-color: #eeebdd;
-  --inverse-heading-color: #c70039;
   --header-background-color: linear-gradient(
     25deg,
     #0f0e0e 5%,
     rgba(148, 44, 31, 0.784) 99%
   );
   --background-color: #0f0e0e;
-  --inverse-background-color: #0f0e0e;
   --shadow-color: rgba(255, 255, 255, 0.103);
-  --inverse-shadow-color: rgba(255, 255, 255, 0.1);
   --skill-background-color: black;
 
   /* Dark Mode colors */
   --dark-font-color: white;
-  --dark-inverse-font-color: black;
   --dark-pop-color: #ebef95;
-  --dark-heading-color: #ebef95;
-  --dark-inverse-heading-color: #ee046c;
-  --dark-header-background-color: #e25e3e;
-  --dark-background-color: #e25e3e;
-  --dark-inverse-background-color: #ebef95;
+  --dark-second-pop-color: #ee046c;
+  --dark-heading-color: white;
+  --dark-header-background-color: rgb(186, 73, 73);
+  --dark-background-color: rgb(186, 73, 73);
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
-  --dark-inverse-shadow-color: rgba(0, 0, 0, 0.1);
-
   /* Font Family */
   --heading-font-family: "caveat", sans-serif;
 }
@@ -104,7 +97,6 @@ a:hover {
   margin: auto;
   border-color: white;
   background: black;
-  
 }
 
 h3 {

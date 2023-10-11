@@ -63,10 +63,7 @@ let customeColorPropartys = [
   ["pop", "dark-pop"],
   ["shadow", "dark-shadow"],
   ["background", "dark-background"],
-  ["inverse-background", "dark-inverse-background"],
-  ["inverse-heading", "dark-inverse-heading"],
-  ["inverse-shadow", "dark-inverse-shadow"],
-  ["inverse-font", "dark-inverse-font"],
+  ["second-pop", "dark-second-pop"],
 ];
 const changeMode = () => {
   const customVals = document.documentElement;

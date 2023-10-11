@@ -42,7 +42,7 @@
   padding: 5px;
   color: var(--pop-color);
   text-decoration: none;
-  text-shadow: 2px 2px red;
+  text-shadow: 2px 2px var(--second-pop-color);
 }
 
 .text a:hover {
@@ -60,7 +60,7 @@
 }
 
 .social_link a {
-  text-shadow: 2px 2px red;
+  text-shadow: 2px 2px var(--second-pop-color);
   text-decoration: none;
   color: var(--pop-color);
 }

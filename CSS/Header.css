@@ -46,7 +46,7 @@
     "Noto Serif JP", "Noto Serif KR";
   color: var(--pop-color);
   margin-bottom: 2.4rem;
-  text-shadow: 4px 4px red;
+  text-shadow: 4px 4px var(--second-pop-color);
 }
 
 .starting_text {
@@ -57,7 +57,7 @@
   -webkit-text-stroke: 1.5px var(--pop-color);
   margin-block-end: 1rem;
   letter-spacing: 2px;
-  text-shadow: 2px 2px red;
+  text-shadow: 2px 2px var(--second-pop-color);
   animation: animate 2s ease-in-out infinite;
   -webkit-animation: animate 2s ease-in-out infinite;
 }
@@ -82,7 +82,7 @@
   font-family: var(--heading-font-family);
 }
 .short_intro strong {
-  color: red;
+  color: var(--second-pop-color);
 }
 
 /* desktops */

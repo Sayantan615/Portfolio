@@ -1,5 +1,5 @@
 #About {
-  background: var(--inverse-background-color);
+  background: var(--background-color);
 }
 #About .text_box {
   height: max-content;
@@ -58,8 +58,8 @@
 
 .skill-div {
   height: max-content;
-  background: var(--inverse-background-color);
-  color: var(--inverse-font-color);
+  background: var(--background-color);
+  color: var(--font-color);
   text-align: center;
   word-spacing: normal;
   padding: 0rem 0rem 2rem 2rem;
