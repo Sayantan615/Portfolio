@@ -1,31 +1,18 @@
-// Insitializeing AOS for div animations
+// Get a reference to the navbar element
+var navbar = document.querySelector("#navbarNav");
 
-// async function updateQuote() {
-//   const quote = document.querySelector("blockquote p");
-//   const cite = document.querySelector("blockquote cite");
-//   // Fetch a random quote from the Quotable API
-//   const response = await fetch("https://api.quotable.io/random");
-//   const data = await response.json();
-//   if (response.ok) {
-//     // Update DOM elements
-//     quote.textContent = `${data.content}`;
-//     cite.textContent = `- ${data.author}`;
-//   } else {
-//     quote.textContent = "An error occured";
-//     console.log(data);
-//   }
-// }
-// // Random Quate Section
-// document.addEventListener("DOMContentLoaded", () => {
-//   // call updateQuote once when page loads
-//   updateQuote();
-// });
+// Get all the navbar items (adjust the selector as needed)
+var navbarItems = document.querySelectorAll(".navbar-nav .nav-item");
 
-// const randomQ = document.querySelector(".RandomQ");
-
-// randomQ.addEventListener("click", () => {
-//   updateQuote();
-// });
+// Add a click event listener to each navbar item
+navbarItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    if (navbar.classList.contains("show")) {
+      console.log("Does Contain");
+      navbar.classList.remove("show");
+    }
+  });
+});
 
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: "#navbarNav",
