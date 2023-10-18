@@ -137,3 +137,4 @@ profile_picture_button.addEventListener("click", () => {
     pop_up_image.style.display = "none";
   }
 });
+

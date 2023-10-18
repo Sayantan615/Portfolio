@@ -20,6 +20,9 @@
   margin-block-end: 2rem;
   flex-grow: 1;
 }
+#Contact .text-gray {
+  color: rgb(128, 124, 124) !important;
+}
 .text {
   width: 50%;
   font-size: 1rem;
@@ -31,6 +34,7 @@
   padding: 10%;
 }
 .text h1 {
+  font-family: "caveat";
   font-size: 4em;
 }
 .text .quote {
@@ -38,7 +42,7 @@
 }
 
 .text a {
-  font-size: 4em;
+  font-size: 2.5em;
   padding: 5px;
   color: var(--pop-color);
   text-decoration: none;
