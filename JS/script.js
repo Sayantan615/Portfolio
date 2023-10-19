@@ -106,29 +106,28 @@ pdivs.forEach((ele) => {
 });
 const headings = document.querySelectorAll(".p_heading");
 
-const even_years = document.querySelectorAll(".event_year");
+const event_years = document.querySelectorAll(".event_year");
 const sub_events = document.querySelectorAll(".sub_events");
 const stones = document.querySelectorAll(".stone");
 
-let delay = 300;
-even_years.forEach((ele, index) => {
-  ele.setAttribute("data-aos", "fade-up");
+let delay = 0;
+event_years.forEach((ele, index) => {
+  ele.setAttribute("data-aos", "zoom-out-down");
   ele.setAttribute("data-aos-delay", `${delay}`);
   ele.setAttribute("data-aos-once", "true");
-  sub_events[index].setAttribute("data-aos", "fade-up");
+  sub_events[index].setAttribute("data-aos", "fade-left");
   sub_events[index].setAttribute("data-aos-delay", `${delay}`);
   sub_events[index].setAttribute("data-aos-once", "true");
   stones[index].setAttribute("data-aos", "fade-up");
   stones[index].setAttribute("data-aos-delay", `${delay}`);
   stones[index].setAttribute("data-aos-once", "true");
-  delay = delay + 50;
+  delay = delay + 200;
 });
 
 const profile_picture_button = document.querySelector(".navbar-brand");
 const pop_up_image = document.querySelector(".pop_up_image");
 let show = false;
 profile_picture_button.addEventListener("click", () => {
-  console.log("clicked");
   if (!show) {
     pop_up_image.style.display = "flex";
     show = true;
@@ -137,4 +136,3 @@ profile_picture_button.addEventListener("click", () => {
     pop_up_image.style.display = "none";
   }
 });
-

@@ -22,6 +22,7 @@ a.navbar-brand {
   margin-right: 0px;
 }
 .navbar-brand .resize {
+  border: 2px solid white;
   height: 40px;
   width: 40px;
   margin: 0px;
