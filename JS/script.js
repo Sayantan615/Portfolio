@@ -115,7 +115,7 @@ event_years.forEach((ele, index) => {
   ele.setAttribute("data-aos", "zoom-out-down");
   ele.setAttribute("data-aos-delay", `${delay}`);
   ele.setAttribute("data-aos-once", "true");
-  sub_events[index].setAttribute("data-aos", "fade-left");
+  sub_events[index].setAttribute("data-aos", "fade-right");
   sub_events[index].setAttribute("data-aos-delay", `${delay}`);
   sub_events[index].setAttribute("data-aos-once", "true");
   stones[index].setAttribute("data-aos", "fade-up");
