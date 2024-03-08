@@ -67,6 +67,7 @@
 
 #Skills .container {
   padding: 8%;
+  margin-inline-end: 10rem;
 }
 
 #Skills .content {

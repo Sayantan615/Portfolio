@@ -90,9 +90,9 @@ a:hover {
 
 .section-breaker {
   border-style: solid none none;
-  border-width: 0.4rem;
+  border-width: 0.2rem;
   height: 0rem;
-  width: 100%;
+  width: 86%;
   margin: auto;
   border-color: white;
   background: black;

@@ -124,15 +124,3 @@ event_years.forEach((ele, index) => {
   delay = delay + 200;
 });
 
-const profile_picture_button = document.querySelector(".navbar-brand");
-const pop_up_image = document.querySelector(".pop_up_image");
-let show = false;
-profile_picture_button.addEventListener("click", () => {
-  if (!show) {
-    pop_up_image.style.display = "flex";
-    show = true;
-  } else {
-    show = false;
-    pop_up_image.style.display = "none";
-  }
-});

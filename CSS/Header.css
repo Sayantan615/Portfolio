@@ -6,8 +6,9 @@
 #Header .container-fluid {
   height: 100vh;
   display: flex;
+  position: relative;
   justify-content: end;
-  padding: 5% 5%;
+  padding: clamp(6rem, 5vw, 8rem) clamp(2rem, 10vw, 10rem);
   padding-block-end: 2%;
   text-align: left;
   line-height: 1;
@@ -32,18 +33,15 @@
   font-family: "caveat", "Noto Sans Bengali", "Noto Serif Devanagari",
     "Noto Serif JP", "Noto Serif KR";
   color: var(--pop-color);
-  margin-bottom: 2.4rem;
   text-shadow: 4px 4px var(--second-pop-color);
 }
 
 .starting_text {
   position: relative;
-  font-family: "stanly";
-  font-size: 3vw;
+  font-family: "caveat";
+  font-size: 6.5vw;
   color: transparent;
-  -webkit-text-stroke: 1.5px var(--pop-color);
-  margin-block-end: 1rem;
-  letter-spacing: 2px;
+  -webkit-text-stroke: 1px var(--pop-color);
   text-shadow: 2px 2px var(--second-pop-color);
   animation: animate 2s ease-in-out infinite;
   -webkit-animation: animate 2s ease-in-out infinite;
@@ -65,11 +63,50 @@
 .short_intro {
   font-size: clamp(1.5rem, 3vw, 5rem);
   word-spacing: 5px;
-  color: var(--font-color);
   font-family: var(--heading-font-family);
 }
 .short_intro strong {
-  color: var(--second-pop-color);
+  color: var(--pop-color);
+}
+
+.scroller_div {
+  position: absolute;
+  bottom: 5%;
+  left: 1%;
+  display: flex;
+  font-family: "Amatic SC";
+  flex-direction: column;
+  align-items: center;
+  margin-inline-end: 5px;
+}
+
+
+.scroll_anchor {
+  text-decoration: none;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}
+
+.scroller_animation {
+  position: relative;
+  animation: change 1s ease-in-out infinite;
+  -webkit-animation: change 1s ease-in-out infinite;
+}
+
+@keyframes change {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 8px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 /* desktops */
@@ -94,5 +131,8 @@
   }
   .header_link_container {
     flex-direction: column;
+  }
+  .scroller_div {
+    bottom: 20%;
   }
 }
