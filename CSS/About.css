@@ -150,4 +150,10 @@
     width: 40px;
     font-size: 1.4rem;
   }
+  #About .text_box .container {
+    width: auto;
+  }
+  #About .text_box .container p {
+    width: auto;
+  }
 }
