@@ -70,7 +70,7 @@ body {
   background: var(--background-color);
   text-align: center;
   color: var(--font-color);
-  font-family: "Montserrat";
+  font-family: cursive;
   position: relative;
 }
 
@@ -103,6 +103,13 @@ h3 {
 }
 div {
   display: block;
+}
+
+.font-Amatic {
+  font-family: "Amatic SC";
+  color: gray;
+  letter-spacing: 2px;
+  font-weight: bolder;
 }
 
 /* Global Classes */

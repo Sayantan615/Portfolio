@@ -15,8 +15,15 @@
 
 #About .text_box .container {
   padding: 0px;
+  width: 59%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 #About .text_box .container p {
+  width: 70%;
+  text-align: justify;
   margin-bottom: 10px;
 }
 
@@ -39,7 +46,7 @@
   letter-spacing: 0.3rem;
   text-align: left;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 #About .heading::before {
   content: attr(data-outline);
@@ -56,13 +63,16 @@
   z-index: 0;
 }
 
+#Skills {
+  width: 41%;
+}
+
 .skill-div {
   height: max-content;
   background: var(--background-color);
   color: var(--font-color);
   text-align: center;
   word-spacing: normal;
-  padding: 0rem 0rem 2rem 2rem;
 }
 
 #Skills .container {
@@ -80,30 +90,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 3.5vw;
+  height: 3.5vw;
   background: var(--skill-background-color);
-  border: 2px solid var(--background-color);
+  border: 1.5px solid var(--heading-color);
   border-radius: 50px;
-  text-align: center;
   margin: 0.5rem 0.2rem;
   color: var(--heading-color);
   cursor: pointer;
   font-size: 2rem;
-  border: 0.2vw solid var(--heading-color);
   overflow: hidden;
 }
 
 #Skills .content .sub-skill-heading {
-  font-size: clamp(1rem, 4vw, 3rem);
-  text-transform: uppercase;
-  font-family: "Caveat", cursive;
+  font-size: 1rem;
+  font-family: "Amatic SC";
   text-align: right;
   position: relative;
   margin-bottom: 0.5rem;
-  color: transparent;
+  color: gray;
   -webkit-text-stroke: 1.5px var(--shadow-color);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 #Skills .content .skill p {

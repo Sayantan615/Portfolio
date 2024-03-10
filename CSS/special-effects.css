@@ -1,7 +1,7 @@
 @import "./styles.css";
 /* Scroller Effect */
 :root {
-  --_animation-duration: 80s;
+  --_animation-duration: 15s;
   --_animation-direction: forwards;
 }
 .skill img {
@@ -10,7 +10,7 @@
 }
 
 .scroller {
-  max-width: 20vw;
+  max-width: 25vw;
   margin-left: auto;
 }
 
