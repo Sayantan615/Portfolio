@@ -18,23 +18,6 @@ Alkatra
 @import "./Projects.css";
 @import "./Journey.css";
 @import "./contact.css";
-@font-face {
-  font-family: "stanly";
-  src: url("../Fonts/Stanley.woff") format("woff");
-}
-@font-face {
-  font-family: "Nighty";
-  src: url("../Fonts/Nighty.woff") format("woff");
-}
-@font-face {
-  font-family: "Elanor";
-  src: url("../Fonts/ElanorFreePersonalUse-ExBdIt.woff") format("woff"),
-    url("../Fonts/ElanorFreePersonalUse-ExtLt.woff") format("woff");
-}
-@font-face {
-  font-family: "Casta";
-  src: url("../Fonts/Casta-ThinSlanted.woff") format("woff");
-}
 :root {
   /* Light Mode Colors */
   --font-color: white;
@@ -42,8 +25,8 @@ Alkatra
   --second-pop-color: red;
   --heading-color: #eeebdd;
   --header-background-color: linear-gradient(
-    25deg,
-    #0f0e0e 5%,
+    13deg,
+    #0f0e0e 27%,
     rgba(148, 44, 31, 0.784) 99%
   );
   --background-color: #0f0e0e;
@@ -96,7 +79,7 @@ a:hover {
   position: relative;
 }
 .text-gray {
-  color: rgb(71, 65, 65) !important;
+  color: rgb(105, 103, 103) !important;
 }
 
 .section-breaker {

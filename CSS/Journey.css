@@ -59,7 +59,6 @@
   }
 }
 
-
 .milestone {
   display: flex;
   margin-bottom: 1rem;
@@ -127,6 +126,7 @@
   background: var(--heading-color);
   color: var(--background-color);
   border: 2px solid var(--background-color);
+  font-weight: bolder;
 }
 
 /* desktops */

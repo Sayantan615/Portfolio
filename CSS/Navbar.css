@@ -12,6 +12,8 @@
   padding: 0px;
   font-family: "caveat";
   font-size: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .navbar-nav {

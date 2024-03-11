@@ -66,8 +66,8 @@
 }
 
 .scroller[animation-speed="faster"] .scroller-inner {
-  animation: scroll 10s reverse linear infinite;
-  -webkit-animation: scroll 10s reverse linear infinite;
+  animation: scroll 5s reverse linear infinite;
+  -webkit-animation: scroll 5s reverse linear infinite;
 }
 
 @media only screen and (max-width: 768px) {
