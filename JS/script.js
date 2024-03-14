@@ -83,44 +83,33 @@ document.querySelector("#theme-button").addEventListener("click", function () {
   }
 });
 
-const fullviewbtn = document.querySelectorAll(".fullviewbtn");
-const fullview_container = document.querySelectorAll(".fullview_container");
-const closeviewbtn = document.querySelectorAll(".closeviewbtn");
-fullviewbtn.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    fullview_container[index].style.display = "flex";
-  });
-  closeviewbtn[index].addEventListener("click", () => {
-    fullview_container[index].style.display = "none";
-  });
-});
 
 // changeMode();
-let startingdelay = 300;
-const pdivs = document.querySelectorAll(".p_div");
-pdivs.forEach((ele) => {
-  ele.setAttribute("data-aos", "fade-right");
-  ele.setAttribute("data-aos-once", "true");
-  ele.setAttribute("data-aos-delay", `${startingdelay}`);
-  startingdelay += 300;
-});
-const headings = document.querySelectorAll(".p_heading");
+// let startingdelay = 300;
+// const pdivs = document.querySelectorAll(".p_div");
+// pdivs.forEach((ele) => {
+//   ele.setAttribute("data-aos", "fade-right");
+//   ele.setAttribute("data-aos-once", "true");
+//   ele.setAttribute("data-aos-delay", `${startingdelay}`);
+//   startingdelay += 300;
+// });
+// const headings = document.querySelectorAll(".p_heading");
 
-const event_years = document.querySelectorAll(".event_year");
-const sub_events = document.querySelectorAll(".sub_events");
-const stones = document.querySelectorAll(".stone");
+// const event_years = document.querySelectorAll(".event_year");
+// const sub_events = document.querySelectorAll(".sub_events");
+// const stones = document.querySelectorAll(".stone");
 
-let delay = 0;
-event_years.forEach((ele, index) => {
-  ele.setAttribute("data-aos", "zoom-out-down");
-  ele.setAttribute("data-aos-delay", `${delay}`);
-  ele.setAttribute("data-aos-once", "true");
-  sub_events[index].setAttribute("data-aos", "fade-right");
-  sub_events[index].setAttribute("data-aos-delay", `${delay}`);
-  sub_events[index].setAttribute("data-aos-once", "true");
-  stones[index].setAttribute("data-aos", "fade-up");
-  stones[index].setAttribute("data-aos-delay", `${delay}`);
-  stones[index].setAttribute("data-aos-once", "true");
-  delay = delay + 200;
-});
+// let delay = 0;
+// event_years.forEach((ele, index) => {
+//   ele.setAttribute("data-aos", "zoom-out-down");
+//   ele.setAttribute("data-aos-delay", `${delay}`);
+//   ele.setAttribute("data-aos-once", "true");
+//   sub_events[index].setAttribute("data-aos", "fade-right");
+//   sub_events[index].setAttribute("data-aos-delay", `${delay}`);
+//   sub_events[index].setAttribute("data-aos-once", "true");
+//   stones[index].setAttribute("data-aos", "fade-up");
+//   stones[index].setAttribute("data-aos-delay", `${delay}`);
+//   stones[index].setAttribute("data-aos-once", "true");
+//   delay = delay + 200;
+// });
 

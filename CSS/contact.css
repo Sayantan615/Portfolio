@@ -23,7 +23,7 @@
 }
 .text {
   width: 50%;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-family: var(--heading-font-family);
   display: flex;
   flex-direction: column;
@@ -43,7 +43,6 @@
 
 .text a {
   font-size: 3em;
-  padding: 5px;
   color: var(--pop-color);
   text-decoration: none;
   text-shadow: 2px 2px var(--second-pop-color);
@@ -60,7 +59,7 @@
   align-items: flex-end;
   width: 50%;
   font-family: "Caveat";
-  font-size: 0.75rem;
+  font-size: 0.75em;
   letter-spacing: 0.5px;
   padding: 2%;
 }
@@ -89,9 +88,13 @@
   font-family: "Caveat";
   font-size: 1.4rem;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
   margin: auto;
+}
+
+.bottom_text p i{
+  font-size: 1rem;
 }
 
 /* desktops */
@@ -101,12 +104,6 @@
 /* tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Your CSS rules here */
-  .text {
-    font-size: 0.7rem;
-  }
-  .social_handles {
-    font-size: 1.5rem;
-  }
 }
 
 .bottom_hr {
@@ -115,23 +112,12 @@
 
 /* mobile phones */
 @media (max-width: 768px) {
-  #Contact {
-    font-size: 5px;
-  }
   .text {
     width: 100%;
-    font-size: 5em;
   }
-  .text h1,
-  .text a {
-    font-size: 2em;
-  }
-  .text .quote {
-    font-size: 1.5rem;
-  }
+  
   .social_handles {
     width: 100%;
-    font-size: 4em;
   }
   #Contact .container {
     height: max-content;
@@ -141,10 +127,8 @@
   }
   .bottom_text {
     width: 100%;
-    font-size: 3em;
-  }
-  .bottom_text p {
-    margin-bottom: 0px;
+    font-size: 1em;
+      margin-bottom: 1rem;
   }
   .fixed-button {
     bottom: 5px !important;

@@ -29,7 +29,7 @@
   border: 2px solid white;
 }
 .greetings {
-  font-size: 3vw;
+  font-size: clamp(1em, 5vw, 3em);
   font-family: "caveat", "Noto Sans Bengali", "Noto Serif Devanagari",
     "Noto Serif JP", "Noto Serif KR";
   color: var(--pop-color);
@@ -39,7 +39,7 @@
 .starting_text {
   position: relative;
   font-family: "caveat";
-  font-size: 6.5vw;
+  font-size: clamp(1em, 10vw, 4.5em);
   color: transparent;
   -webkit-text-stroke: 1px var(--pop-color);
   text-shadow: 2px 2px var(--second-pop-color);
@@ -51,17 +51,18 @@
   width: max-content;
   gap: 1rem;
   font-family: "caveat";
-  font-size: 1.5rem;
+  font-size: 0.75rem;
 }
 
 .header_link_container .social_link {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  font-size: clamp(1.5em, 5vw, 2.2em);
 }
 
 .short_intro {
-  font-size: clamp(1.5rem, 3vw, 5rem);
+  font-size: clamp(1em, 5vw, 2.4em);
   word-spacing: 5px;
   font-family: var(--heading-font-family);
 }
@@ -79,7 +80,6 @@
   align-items: center;
   margin-inline-end: 5px;
 }
-
 
 .scroll_anchor {
   text-decoration: none;
@@ -119,18 +119,14 @@
 }
 /* mobile phones */
 @media (max-width: 768px) {
-  #Header .container-fluid {
-    padding-block-end: 20%;
-  }
   .greetings {
-    font-size: 1.3rem;
     padding-left: 0px;
-  }
-  .starting_text {
-    font-size: clamp(1rem, 7vw, 4rem);
   }
   .header_link_container {
     flex-direction: column;
+  }
+  .header_link_container .social_link {
+    gap: 0px;
   }
   .scroller_div {
     bottom: 15%;
