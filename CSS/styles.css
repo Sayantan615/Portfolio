@@ -44,9 +44,11 @@ Alkatra
   /* Font Family */
   --heading-font-family: "caveat", sans-serif;
 }
-/* ::-webkit-scrollbar {
+
+::-webkit-scrollbar {
   display: none;
-} */
+}
+
 * {
   box-sizing: border-box;
 }

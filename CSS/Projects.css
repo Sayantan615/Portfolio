@@ -7,6 +7,7 @@
   margin-left: 0%;
   background: var(--background-color);
 }
+
 #Projects .heading {
   color: var(--heading-color);
   font-size: clamp(4rem, 8vw, 10rem);
@@ -16,6 +17,7 @@
   position: relative;
   margin-bottom: clamp(4rem, 4vh, 8rem);
 }
+
 #Projects .heading::before {
   content: attr(data-outline);
   position: absolute;
@@ -38,13 +40,9 @@
   grid-gap: 20px;
   justify-items: center;
 }
+
 .p_div {
-  background: linear-gradient(
-    45deg,
-    var(--pop-color) -20%,
-    var(--second-pop-color),
-    transparent 88%
-  );
+  background: linear-gradient(13deg, black 70%, var(--second-pop-color));
   padding: 10px;
   position: relative;
   display: flex;
