@@ -39,7 +39,7 @@
 .starting_text {
   position: relative;
   font-family: "caveat";
-  font-size: clamp(1em, 10vw, 4.5em);
+  font-size: clamp(1em, 10vw, 5.2em);
   color: transparent;
   -webkit-text-stroke: 1px var(--pop-color);
   text-shadow: 2px 2px var(--second-pop-color);
@@ -119,6 +119,9 @@
 }
 /* mobile phones */
 @media (max-width: 768px) {
+  #Header .container-fluid {
+    padding-block-end: 15%;
+  }
   .greetings {
     padding-left: 0px;
   }

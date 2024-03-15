@@ -42,7 +42,7 @@
 }
 
 .text a {
-  font-size: 3em;
+  font-size: 4em;
   color: var(--pop-color);
   text-decoration: none;
   text-shadow: 2px 2px var(--second-pop-color);
@@ -93,7 +93,7 @@
   margin: auto;
 }
 
-.bottom_text p i{
+.bottom_text p i {
   font-size: 1rem;
 }
 
@@ -115,7 +115,7 @@
   .text {
     width: 100%;
   }
-  
+
   .social_handles {
     width: 100%;
   }
@@ -128,7 +128,10 @@
   .bottom_text {
     width: 100%;
     font-size: 1em;
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .text a {
+    font-size: 3em;
   }
   .fixed-button {
     bottom: 5px !important;
