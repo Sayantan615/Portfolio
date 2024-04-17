@@ -53,6 +53,7 @@
   border: 2px solid black;
 }
 
+
 .p_div:hover {
   background: black;
   border: 2px solid var(--pop-color);
@@ -69,6 +70,7 @@
   text-transform: uppercase;
   text-align: left;
   word-break: break-all;
+  text-shadow: 2px 2px var(--second-pop-color);
 }
 
 .p_div .p_heading strong {
@@ -116,6 +118,7 @@
 .p_div .skill-container .p_skill:hover {
   border: 2px solid var(--pop-color);
   color: var(--pop-color);
+  text-shadow: 2px 2px var(--second-pop-color);
 }
 
 .p_div .p_button_container {
@@ -138,12 +141,11 @@
   background: black;
   border: 2px solid white;
   box-shadow: 2px 2px 2px black;
-}
-
-.p_div .p_button_container .btn:hover {
   border-color: var(--pop-color);
   color: var(--pop-color);
+  text-shadow: 2px 2px var(--second-pop-color);
 }
+
 
 /* desktops */
 @media (min-width: 1025px) {

@@ -29,17 +29,17 @@
   border: 2px solid white;
 }
 .greetings {
-  font-size: clamp(1em, 5vw, 3em);
+  font-size: 1.5em;
   font-family: "caveat", "Noto Sans Bengali", "Noto Serif Devanagari",
     "Noto Serif JP", "Noto Serif KR";
   color: var(--pop-color);
-  text-shadow: 4px 4px var(--second-pop-color);
+  text-shadow: 2px 2px var(--second-pop-color);
 }
 
 .starting_text {
   position: relative;
   font-family: "caveat";
-  font-size: clamp(1em, 10vw, 5.2em);
+  font-size: clamp(2em, 10vw, 5.2em);
   color: transparent;
   -webkit-text-stroke: 1px var(--pop-color);
   text-shadow: 2px 2px var(--second-pop-color);
@@ -51,7 +51,7 @@
   width: max-content;
   gap: 1rem;
   font-family: "caveat";
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 .header_link_container .social_link {

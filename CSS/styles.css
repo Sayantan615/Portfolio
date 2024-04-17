@@ -73,7 +73,7 @@ a {
   color: var(--font-color);
 }
 a:hover {
-  color: var(--font-color);
+  color: papayawhip;
 }
 
 .relative {
