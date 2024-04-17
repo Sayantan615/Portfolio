@@ -114,17 +114,17 @@
 @media (max-width: 768px) {
   .text {
     width: 100%;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   
   .social_handles {
     width: 100%;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   #Contact .container {
     height: max-content;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
   .bottom_text {
