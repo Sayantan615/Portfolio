@@ -16,7 +16,6 @@ Alkatra
 @import "./About.css";
 @import "./special-effects.css";
 @import "./Projects.css";
-@import "./Journey.css";
 @import "./contact.css";
 :root {
   /* Light Mode Colors */
@@ -86,12 +85,15 @@ a:hover {
 
 .section-breaker {
   border-style: solid none none;
-  border-width: 0.2rem;
+  border-width: 0.3rem;
+  border-radius: 50px;
   height: 0rem;
   width: 86%;
   margin: auto;
-  border-color: white;
+  border-color: gray;
   background: black;
+  position: relative;
+  bottom: -2.5px;
 }
 
 h3 {
@@ -109,30 +111,6 @@ div {
 }
 
 /* Global Classes */
-
-/*! Message call out */
-.callout {
-  width: 100%;
-  position: relative;
-  margin: 1% 0% 3% 0%;
-}
-
-.callout-header {
-  width: 100%;
-  position: relative;
-  top: 50px;
-  padding: 10px 50px;
-  background: rgba(199, 199, 199, 0.3);
-  font-size: 20px;
-  color: black;
-}
-
-.callout-header a {
-  text-decoration: none;
-  color: var(--pop-color);
-  font-weight: bolder;
-}
-/*! Message call out end */
 
 /* Buttons */
 .fixed-button {

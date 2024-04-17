@@ -46,19 +46,20 @@
   padding: 10px;
   position: relative;
   display: flex;
+  height: 19rem;
   flex-direction: column;
-  box-shadow: 0px 0px 5px white;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.333);
   border-radius: 10px 10px 10px 30px;
   border: 2px solid black;
 }
 
 .p_div:hover {
   background: black;
-  border: 2px solid red;
+  border: 2px solid var(--pop-color);
 }
 
 .p_div:hover .p_heading {
-  color: var(--second-pop-color);
+  color: var(--pop-color);
 }
 
 .p_div .p_heading {
@@ -77,8 +78,8 @@
 .p_div .p_text {
   padding-right: 4rem;
   text-align: left;
-  font-size: 1rem;
-  line-break:loose;
+  font-size: 0.8rem;
+  line-break: loose;
 }
 
 .p_div .inner-container {
@@ -97,8 +98,6 @@
   flex-direction: column;
 }
 
-
-
 .p_div .skill-container .p_skill {
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -114,11 +113,9 @@
   box-shadow: 2px 2px 2px black;
 }
 
-
-
 .p_div .skill-container .p_skill:hover {
-  border: 2px solid var(--second-pop-color);
-  color: var(--second-pop-color);
+  border: 2px solid var(--pop-color);
+  color: var(--pop-color);
 }
 
 .p_div .p_button_container {
@@ -144,10 +141,9 @@
 }
 
 .p_div .p_button_container .btn:hover {
-  border-color: var(--second-pop-color);
-  color: var(--second-pop-color);
+  border-color: var(--pop-color);
+  color: var(--pop-color);
 }
-
 
 /* desktops */
 @media (min-width: 1025px) {
@@ -164,10 +160,6 @@
 @media (max-width: 768px) {
   .container-grid {
     grid-template-columns: 1fr;
-  }
-
-  .p_div {
-    width: 75%;
   }
 
   .p_div .p_heading {

@@ -114,10 +114,12 @@
 @media (max-width: 768px) {
   .text {
     width: 100%;
+    font-size: 0.5rem;
   }
-
+  
   .social_handles {
     width: 100%;
+    font-size: 0.5rem;
   }
   #Contact .container {
     height: max-content;
