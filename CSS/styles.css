@@ -31,14 +31,15 @@ Alkatra
   --background-color: #0f0e0e;
   --shadow-color: rgba(255, 255, 255, 0.103);
   --skill-background-color: black;
+  --text-gray-color: rgb(105, 103, 103);
 
   /* Dark Mode colors */
   --dark-font-color: white;
   --dark-pop-color: #ebef95;
-  --dark-second-pop-color: #ee046c;
+  --dark-second-pop-color: white;
   --dark-heading-color: white;
-  --dark-header-background-color: rgb(186, 73, 73);
-  --dark-background-color: rgb(186, 73, 73);
+  --dark-header-background-color: brown;
+  --dark-background-color: brown;
   --dark-shadow-color: rgba(255, 255, 255, 0.1);
   /* Font Family */
   --heading-font-family: "caveat", sans-serif;
@@ -80,7 +81,7 @@ a:hover {
   position: relative;
 }
 .text-gray {
-  color: rgb(105, 103, 103) !important;
+  color: var(--text-gray-color) !important;
 }
 
 .section-breaker {
@@ -136,3 +137,12 @@ div {
 
 /* New Responsive settings */
 /* Desktop Responsive */
+@media (max-width: 768px) {
+  :root {
+    --header-background-color: linear-gradient(
+      13deg,
+      #0f0e0e 57%,
+      rgba(148, 44, 31, 0.784) 99%
+    );
+  }
+}

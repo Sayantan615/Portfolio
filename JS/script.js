@@ -47,6 +47,7 @@ if (isAndroid) {
 let customeColorPropartys = [
   ["font", "dark-font"],
   ["heading", "dark-heading"],
+  ["header-background", "dark-header-background"],
   ["pop", "dark-pop"],
   ["shadow", "dark-shadow"],
   ["background", "dark-background"],

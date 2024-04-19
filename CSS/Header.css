@@ -119,11 +119,24 @@
 }
 /* mobile phones */
 @media (max-width: 768px) {
+  :root {
+    --header-background-color: linear-gradient(
+      13deg,
+      #0f0e0e 57%,
+      rgba(148, 44, 31, 0.784) 99%
+    );
+  }
+  
   #Header .container-fluid {
-    padding-block-end: 15%;
+    padding: 15% 5%;
   }
   .greetings {
     padding-left: 0px;
+  }
+  .starting_text {
+    line-height: 50px;
+    margin-block: 0.2em 0.4em;
+    font-size: clamp(4.5em, 10vw, 5.2em);
   }
   .header_link_container {
     flex-direction: column;
@@ -132,6 +145,12 @@
     gap: 0px;
   }
   .scroller_div {
-    bottom: 15%;
+    display: none;
+  }
+  .header_link_container .social_link {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem !important;
+    font-size: clamp(1.5em, 5vw, 2.2em);
   }
 }

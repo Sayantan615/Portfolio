@@ -66,8 +66,21 @@ a.navbar-brand {
 /* mobile phones */
 @media (max-width: 768px) {
   /* Your CSS rules here */
+  #b-nav {
+    display: none;
+  }
+
+  #sm-nav {
+    display: flex !important;
+    width: max-content;
+  }
+
   .navbar {
-    /* display: none; */
     margin: 0% 2%;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 2rem;
   }
 }
