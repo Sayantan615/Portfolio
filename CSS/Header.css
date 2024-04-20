@@ -39,6 +39,7 @@
 .starting_text {
   display: flex;
   flex-direction: row;
+  gap: 0.5rem;
   font-family: "caveat";
   color: transparent;
   -webkit-text-stroke: 1px var(--pop-color);
