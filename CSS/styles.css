@@ -20,7 +20,7 @@ Alkatra
 :root {
   /* Light Mode Colors */
   --font-color: white;
-  --pop-color: #ffdd7e;
+  --pop-color: rgb(255, 221, 126);
   --second-pop-color: red;
   --heading-color: #eeebdd;
   --header-background-color: linear-gradient(
@@ -146,7 +146,6 @@ div {
     );
   }
 }
-
 
 abbr {
   text-decoration: none !important;

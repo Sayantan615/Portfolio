@@ -1,6 +1,46 @@
+@keyframes moveCircles {
+  0% {
+    background-position: 10% 20%, 60% 80%, 90% 50%;
+  }
+  25% {
+    background-position: 20% 30%, 50% 60%, 70% 40%;
+  }
+  50% {
+    background-position: 30% 50%, 40% 70%, 60% 10%;
+  }
+  75% {
+    background-position: 15% 60%, 70% 30%, 85% 70%;
+  }
+  100% {
+    background-position: 10% 20%, 60% 80%, 90% 50%;
+  }
+}
+
 #Header {
-  background: var(--header-background-color);
-  background-size: 100% 100%;
+  background: radial-gradient(
+      circle at 10% 20%,
+      rgba(200, 200, 200, 0.2) 100px,
+      transparent 101px
+    ),
+    radial-gradient(
+      circle at 60% 80%,
+      rgba(200, 200, 200, 0.2) 150px,
+      transparent 151px
+    ),
+    radial-gradient(
+      circle at 90% 50%,
+      rgba(200, 200, 200, 0.2) 120px,
+      transparent 121px
+    ),
+    radial-gradient(
+      circle at 40% 20%,
+      rgba(255, 221, 126, 0.2) 90px,
+      transparent 91px
+    );
+
+  background-size: 200% 200%;
+  background-color: black;
+  animation: moveCircles 30s infinite linear;
 }
 
 #Header .container-fluid {
@@ -125,16 +165,9 @@
 }
 /* mobile phones */
 @media (max-width: 768px) {
-  :root {
-    --header-background-color: linear-gradient(
-      13deg,
-      #0f0e0e 57%,
-      rgba(148, 44, 31, 0.784) 99%
-    );
-  }
-
   #Header .container-fluid {
-    padding: 15% 5%;
+    padding: 5% 15%;
+    justify-content: center;
   }
   .greetings {
     padding-left: 0px;
