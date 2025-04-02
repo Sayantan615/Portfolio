@@ -90,8 +90,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 4rem;
+  height: 4rem;
   background: var(--skill-background-color);
   border: 1.5px solid var(--heading-color);
   border-radius: 50px;
@@ -127,8 +127,41 @@
   /* Your CSS rules here */
 }
 /* tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 992px) {
   /* Your CSS rules here */
+  #About .text_box {
+    font-size: 0.8rem;
+  }
+  .skill-div {
+    padding: 0px;
+    margin-top: 2rem;
+  }
+  #Skills .content {
+    margin-left: 0px;
+  }
+  #Skills .content .sub-skill-heading {
+    text-align: left;
+  }
+  #Skills .content .skill {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.4rem;
+  }
+
+  #Skills .scroller {
+    max-width: 80vw;
+    margin-left: auto;
+  }
+
+  #About .text_box .container {
+    width: auto;
+  }
+  #About .text_box .container p {
+    width: auto;
+  }
+  #Skills .heading {
+    margin-block-start: 2rem;
+  }
 }
 /* mobile phones */
 @media (max-width: 768px) {
